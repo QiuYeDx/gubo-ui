@@ -142,8 +142,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0
       '@pnpm/types':
-        specifier: ^8.4.0
-        version: 8.10.0
+        specifier: ^12.2.0
+        version: 12.2.0
       '@types/fs-extra':
         specifier: ^9.0.13
         version: 9.0.13
@@ -360,8 +360,8 @@ importers:
         version: 0.2.15
     devDependencies:
       '@pnpm/types':
-        specifier: ^8.4.0
-        version: 8.10.0
+        specifier: ^12.2.0
+        version: 12.2.0
       unbuild:
         specifier: ^3.0.0
         version: 3.6.1(sass@1.97.3)(typescript@5.5.4)(vue-tsc@3.2.3(typescript@5.5.4))(vue@3.5.25(typescript@5.5.4))
@@ -2343,9 +2343,9 @@ packages:
     peerDependencies:
       '@pnpm/logger': ^4.0.0
 
-  '@pnpm/types@8.10.0':
-    resolution: {integrity: sha512-A4pcNNvFJdkMXArEjTCOIYNL2VxD4uBynWZ6cBIELXb5qJ0tUzwKsaSz4J953I0rQFqnsFpUYqaWIquI10W1sw==}
-    engines: {node: '>=14.6'}
+  '@pnpm/types@12.2.0':
+    resolution: {integrity: sha512-5RtwWhX39j89/Tmyv2QSlpiNjErA357T/8r1Dkg+2lD3P7RuS7Xi2tChvmOC3VlezEFNcWnEGCOeKoGRkDuqFA==}
+    engines: {node: '>=18.12'}
 
   '@pnpm/types@8.7.0':
     resolution: {integrity: sha512-2j4ldzfOQNa3EZfJEmJrBQefE+OWBMgAoWWnVeXi5B7itVHRcg27Np+q0FxzuZE//O0N44WKH4WJG53sBsUqCQ==}
@@ -10390,7 +10390,7 @@ snapshots:
       '@pnpm/types': 8.7.0
       symlink-dir: 5.2.1
 
-  '@pnpm/types@8.10.0': {}
+  '@pnpm/types@12.2.0': {}
 
   '@pnpm/types@8.7.0': {}
 
