@@ -1,6 +1,6 @@
 {
   "name": "@guwave/ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gubo UI Component Library for Vue 3",
   "keywords": [
     "gubo-ui",

@@ -1,4 +1,4 @@
-<p align="center">GuBo UI - A Vue.js 3 UI library</p>
+# GuBo UI - A Vue.js 3 UI library
 
 - 💪 Vue 3 Composition API
 - 🔥 Written in TypeScript
@@ -10,3 +10,38 @@
 ## 构建发布
 
 - `pnpm build`, 发布 `dist/guwave-ui`
+
+## 使用
+
+### 导入组件示例
+
+```ts
+import {
+  GButton,
+  GCheckbox,
+  GCheckboxGroup,
+  GDatePicker,
+  GDialog,
+  GDivider,
+  GEmpty,
+  GInput,
+  GMessage,
+  GNotification,
+  GPagination,
+  GPopconfirm,
+  GPopover,
+  GProgress,
+  GRadio,
+  GRadioGroup,
+  GSelect,
+  GSpace,
+  GSwitch,
+  GTooltip,
+} from '@guwave/ui'
+```
+
+### 引入 reset 样式
+
+```ts
+import '@guwave/ui/theme-chalk/src/g-reset.css'
+```
