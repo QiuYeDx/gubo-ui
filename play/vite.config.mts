@@ -58,6 +58,13 @@ export default defineConfig(async ({ mode }) => {
         include: `${__dirname}/**`,
         resolvers: [
           (componentName) => {
+            if (componentName.startsWith('GIcon') && componentName !== 'GIcon') {
+              const iconName = componentName.slice(5)
+              return {
+                name: iconName,
+                from: '@element-plus/icons-vue',
+              }
+            }
             if (componentName.startsWith('G')) {
               const name = componentName.slice(1)
               const kebab = name
@@ -67,7 +74,7 @@ export default defineConfig(async ({ mode }) => {
               return {
                 name: componentName,
                 from: '@guwave/ui',
-                sideEffects: `@guwave/ui/es/components/${kebab}/style/css`,
+                sideEffects: `@guwave/ui/es/components/${kebab}/style/index`,
               }
             }
           },
