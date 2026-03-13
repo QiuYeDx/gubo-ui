@@ -2,15 +2,15 @@
   <div class="demo-image__placeholder">
     <div class="block">
       <span class="demonstration">Default</span>
-      <el-image :src="src" />
+      <g-image :src="src" />
     </div>
     <div class="block">
       <span class="demonstration">Custom</span>
-      <el-image :src="src">
+      <g-image :src="src">
         <template #placeholder>
           <div class="image-slot">Loading<span class="dot">...</span></div>
         </template>
-      </el-image>
+      </g-image>
     </div>
   </div>
 </template>
@@ -24,7 +24,7 @@ const src =
 .demo-image__placeholder .block {
   padding: 30px 0;
   text-align: center;
-  border-right: solid 1px var(--el-border-color);
+  border-right: solid 1px var(--g-border-color);
   display: inline-block;
   width: 49%;
   box-sizing: border-box;
@@ -32,11 +32,11 @@ const src =
 }
 .demo-image__placeholder .demonstration {
   display: block;
-  color: var(--el-text-color-secondary);
+  color: var(--g-text-color-secondary);
   font-size: 14px;
   margin-bottom: 20px;
 }
-.demo-image__placeholder .el-image {
+.demo-image__placeholder .g-image {
   padding: 0 5px;
   max-width: 300px;
   max-height: 200px;
@@ -48,8 +48,8 @@ const src =
   align-items: center;
   width: 100%;
   height: 100%;
-  background: var(--el-fill-color-light);
-  color: var(--el-text-color-secondary);
+  background: var(--g-fill-color-light);
+  color: var(--g-text-color-secondary);
   font-size: 14px;
 }
 .demo-image__placeholder .dot {

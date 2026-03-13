@@ -1,6 +1,6 @@
 <template>
-  <el-pagination size="small" layout="prev, pager, next" :total="50" />
-  <el-pagination
+  <g-pagination size="small" layout="prev, pager, next" :total="50" />
+  <g-pagination
     size="small"
     background
     layout="prev, pager, next"

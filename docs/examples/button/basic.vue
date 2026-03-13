@@ -1,48 +1,48 @@
 <template>
   <div class="button-example">
     <div class="button-row">
-      <el-button>Default</el-button>
-      <el-button type="primary">Primary</el-button>
-      <el-button type="success">Success</el-button>
-      <el-button type="info">Info</el-button>
-      <el-button type="warning">Warning</el-button>
-      <el-button type="danger">Danger</el-button>
+      <g-button>Default</g-button>
+      <g-button type="primary">Primary</g-button>
+      <g-button type="success">Success</g-button>
+      <g-button type="info">Info</g-button>
+      <g-button type="warning">Warning</g-button>
+      <g-button type="danger">Danger</g-button>
     </div>
 
     <div class="button-row">
-      <el-button plain>Plain</el-button>
-      <el-button type="primary" plain>Primary</el-button>
-      <el-button type="success" plain>Success</el-button>
-      <el-button type="info" plain>Info</el-button>
-      <el-button type="warning" plain>Warning</el-button>
-      <el-button type="danger" plain>Danger</el-button>
+      <g-button plain>Plain</g-button>
+      <g-button type="primary" plain>Primary</g-button>
+      <g-button type="success" plain>Success</g-button>
+      <g-button type="info" plain>Info</g-button>
+      <g-button type="warning" plain>Warning</g-button>
+      <g-button type="danger" plain>Danger</g-button>
     </div>
 
     <div class="button-row">
-      <el-button round>Round</el-button>
-      <el-button type="primary" round>Primary</el-button>
-      <el-button type="success" round>Success</el-button>
-      <el-button type="info" round>Info</el-button>
-      <el-button type="warning" round>Warning</el-button>
-      <el-button type="danger" round>Danger</el-button>
+      <g-button round>Round</g-button>
+      <g-button type="primary" round>Primary</g-button>
+      <g-button type="success" round>Success</g-button>
+      <g-button type="info" round>Info</g-button>
+      <g-button type="warning" round>Warning</g-button>
+      <g-button type="danger" round>Danger</g-button>
     </div>
 
     <div class="button-row">
-      <el-button dashed>Dashed</el-button>
-      <el-button type="primary" dashed>Primary</el-button>
-      <el-button type="success" dashed>Success</el-button>
-      <el-button type="info" dashed>Info</el-button>
-      <el-button type="warning" dashed>Warning</el-button>
-      <el-button type="danger" dashed>Danger</el-button>
+      <g-button dashed>Dashed</g-button>
+      <g-button type="primary" dashed>Primary</g-button>
+      <g-button type="success" dashed>Success</g-button>
+      <g-button type="info" dashed>Info</g-button>
+      <g-button type="warning" dashed>Warning</g-button>
+      <g-button type="danger" dashed>Danger</g-button>
     </div>
 
     <div class="button-row">
-      <el-button :icon="Search" circle />
-      <el-button type="primary" :icon="Edit" circle />
-      <el-button type="success" :icon="Check" circle />
-      <el-button type="info" :icon="Message" circle />
-      <el-button type="warning" :icon="Star" circle />
-      <el-button type="danger" :icon="Delete" circle />
+      <g-button :icon="Search" circle />
+      <g-button type="primary" :icon="Edit" circle />
+      <g-button type="success" :icon="Check" circle />
+      <g-button type="info" :icon="Message" circle />
+      <g-button type="warning" :icon="Star" circle />
+      <g-button type="danger" :icon="Delete" circle />
     </div>
   </div>
 </template>

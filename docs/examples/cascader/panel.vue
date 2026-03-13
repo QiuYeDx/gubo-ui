@@ -1,5 +1,5 @@
 <template>
-  <el-cascader-panel :options="options" />
+  <g-cascader-panel :options="options" />
 </template>
 
 <script lang="ts" setup>

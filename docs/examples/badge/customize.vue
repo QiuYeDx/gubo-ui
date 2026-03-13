@@ -1,21 +1,21 @@
 <template>
-  <el-badge value="new" class="item">
-    <el-button>comments</el-button>
-  </el-badge>
-  <el-badge value="hot" class="item">
-    <el-button>replies</el-button>
-  </el-badge>
-  <el-badge value="99" class="item">
-    <el-button>share</el-button>
+  <g-badge value="new" class="item">
+    <g-button>comments</g-button>
+  </g-badge>
+  <g-badge value="hot" class="item">
+    <g-button>replies</g-button>
+  </g-badge>
+  <g-badge value="99" class="item">
+    <g-button>share</g-button>
     <template #content="{ value }">
       <div class="custom-content">
-        <el-icon>
+        <g-icon>
           <Message />
-        </el-icon>
+        </g-icon>
         <span>{{ value }}</span>
       </div>
     </template>
-  </el-badge>
+  </g-badge>
 </template>
 
 <script setup lang="ts">

@@ -1,29 +1,29 @@
 <template>
-  <el-select v-model="value" placeholder="Select" style="width: 240px">
-    <el-option
+  <g-select v-model="value" placeholder="Select" style="width: 240px">
+    <g-option
       v-for="item in cities"
       :key="item.value"
       :label="item.label"
       :value="item.value"
     />
     <template #footer>
-      <el-button v-if="!isAdding" text bg size="small" @click="onAddOption">
+      <g-button v-if="!isAdding" text bg size="small" @click="onAddOption">
         Add an option
-      </el-button>
+      </g-button>
       <template v-else>
-        <el-input
+        <g-input
           v-model="optionName"
           class="option-input"
           placeholder="input option name"
           size="small"
         />
-        <el-button type="primary" size="small" @click="onConfirm">
+        <g-button type="primary" size="small" @click="onConfirm">
           confirm
-        </el-button>
-        <el-button size="small" @click="clear">cancel</el-button>
+        </g-button>
+        <g-button size="small" @click="clear">cancel</g-button>
       </template>
     </template>
-  </el-select>
+  </g-select>
 </template>
 
 <script lang="ts" setup>

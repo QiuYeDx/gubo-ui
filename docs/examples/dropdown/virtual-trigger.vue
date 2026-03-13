@@ -1,12 +1,12 @@
 <template>
-  <el-card
+  <g-card
     class="content"
     @click="handleClick"
     @contextmenu="handleContextmenu"
   >
     Right click
-  </el-card>
-  <el-dropdown
+  </g-card>
+  <g-dropdown
     ref="dropdownRef"
     :virtual-ref="triggerRef"
     :show-arrow="false"
@@ -18,15 +18,15 @@
     placement="bottom-start"
   >
     <template #dropdown>
-      <el-dropdown-menu>
-        <el-dropdown-item :icon="Plus">Action 1</el-dropdown-item>
-        <el-dropdown-item :icon="CirclePlusFilled"> Action 2 </el-dropdown-item>
-        <el-dropdown-item :icon="CirclePlus">Action 3</el-dropdown-item>
-        <el-dropdown-item :icon="Check">Action 4</el-dropdown-item>
-        <el-dropdown-item :icon="CircleCheck">Action 5</el-dropdown-item>
-      </el-dropdown-menu>
+      <g-dropdown-menu>
+        <g-dropdown-item :icon="Plus">Action 1</g-dropdown-item>
+        <g-dropdown-item :icon="CirclePlusFilled"> Action 2 </g-dropdown-item>
+        <g-dropdown-item :icon="CirclePlus">Action 3</g-dropdown-item>
+        <g-dropdown-item :icon="Check">Action 4</g-dropdown-item>
+        <g-dropdown-item :icon="CircleCheck">Action 5</g-dropdown-item>
+      </g-dropdown-menu>
     </template>
-  </el-dropdown>
+  </g-dropdown>
 </template>
 
 <script lang="ts" setup>

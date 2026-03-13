@@ -1,21 +1,21 @@
 <template>
-  <el-dropdown>
-    <span class="el-dropdown-link">
+  <g-dropdown>
+    <span class="g-dropdown-link">
       Dropdown List
-      <el-icon class="el-icon--right">
+      <g-icon class="g-icon--right">
         <arrow-down />
-      </el-icon>
+      </g-icon>
     </span>
     <template #dropdown>
-      <el-dropdown-menu>
-        <el-dropdown-item>Action 1</el-dropdown-item>
-        <el-dropdown-item>Action 2</el-dropdown-item>
-        <el-dropdown-item>Action 3</el-dropdown-item>
-        <el-dropdown-item disabled>Action 4</el-dropdown-item>
-        <el-dropdown-item divided>Action 5</el-dropdown-item>
-      </el-dropdown-menu>
+      <g-dropdown-menu>
+        <g-dropdown-item>Action 1</g-dropdown-item>
+        <g-dropdown-item>Action 2</g-dropdown-item>
+        <g-dropdown-item>Action 3</g-dropdown-item>
+        <g-dropdown-item disabled>Action 4</g-dropdown-item>
+        <g-dropdown-item divided>Action 5</g-dropdown-item>
+      </g-dropdown-menu>
     </template>
-  </el-dropdown>
+  </g-dropdown>
 </template>
 
 <script lang="ts" setup>
@@ -23,9 +23,9 @@ import { ArrowDown } from '@element-plus/icons-vue'
 </script>
 
 <style scoped>
-.example-showcase .el-dropdown-link {
+.example-showcase .g-dropdown-link {
   cursor: pointer;
-  color: var(--el-color-primary);
+  color: var(--g-color-primary);
   display: flex;
   align-items: center;
 }

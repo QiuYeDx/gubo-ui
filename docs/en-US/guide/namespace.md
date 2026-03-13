@@ -18,17 +18,17 @@ In special cases, we may need to customize its namespace.
 Since we use sass to write styles, if you want to customize all namespaces.
 We have to assume that you already use sass.
 
-You must set `ElConfigProvider` and scss `$namespace` at the same time.
+You must set `GConfigProvider` and scss `$namespace` at the same time.
 
-### Set `ElConfigProvider`
+### Set `GConfigProvider`
 
-Use `ElConfigProvider` wrap your root component.
+Use `GConfigProvider` wrap your root component.
 
 ```vue [App.vue]
 <template>
-  <el-config-provider namespace="ep">
+  <g-config-provider namespace="ep">
     <!-- ... -->
-  </el-config-provider>
+  </g-config-provider>
 </template>
 ```
 

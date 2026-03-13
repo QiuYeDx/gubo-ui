@@ -1,15 +1,15 @@
 <template>
   <div>
-    <el-segmented v-model="value" :options="options">
+    <g-segmented v-model="value" :options="options">
       <template #default="scope">
         <div class="flex flex-col items-center gap-2 p-2">
-          <el-icon size="20">
+          <g-icon size="20">
             <component :is="scope.item.icon" />
-          </el-icon>
+          </g-icon>
           <div>{{ scope.item.label }}</div>
         </div>
       </template>
-    </el-segmented>
+    </g-segmented>
   </div>
 </template>
 

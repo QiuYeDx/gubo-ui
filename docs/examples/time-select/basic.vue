@@ -1,5 +1,5 @@
 <template>
-  <el-time-select
+  <g-time-select
     v-model="value"
     style="width: 240px"
     start="08:30"

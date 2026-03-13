@@ -18,9 +18,9 @@ defineProps<{
     :rel="isExternal(href) ? 'noopener noreferrer' : undefined"
   >
     <slot />
-    <ElIcon v-if="isExternal(href) && !noIcon">
+    <GIcon v-if="isExternal(href) && !noIcon">
       <i-ri-external-link-line class="link-icon" />
-    </ElIcon>
+    </GIcon>
   </component>
 </template>
 
@@ -30,7 +30,7 @@ defineProps<{
   align-items: center;
 }
 
-.el-icon {
+.g-icon {
   margin-left: 4px;
 }
 </style>

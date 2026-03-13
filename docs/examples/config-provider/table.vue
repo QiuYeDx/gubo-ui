@@ -1,38 +1,38 @@
 <template>
   <div>
     <div>
-      <el-checkbox v-model="config.showOverflowTooltip">
+      <g-checkbox v-model="config.showOverflowTooltip">
         showOverflowTooltip
-      </el-checkbox>
-      <el-select
+      </g-checkbox>
+      <g-select
         v-model="config.tooltipEffect"
         class="ml-5"
         style="max-width: 150px"
       >
-        <el-option value="dark" label="dark" />
-        <el-option value="light" label="light" />
-      </el-select>
+        <g-option value="dark" label="dark" />
+        <g-option value="light" label="light" />
+      </g-select>
     </div>
-    <el-divider />
-    <el-config-provider :table="config">
-      <el-table :data="tableData" style="width: 100%">
-        <el-table-column type="selection" width="55" />
-        <el-table-column label="Date" width="120">
+    <g-divider />
+    <g-config-provider :table="config">
+      <g-table :data="tableData" style="width: 100%">
+        <g-table-column type="selection" width="55" />
+        <g-table-column label="Date" width="120">
           <template #default="scope">{{ scope.row.date }}</template>
-        </el-table-column>
-        <el-table-column property="name" label="Name" width="120" />
-        <el-table-column
+        </g-table-column>
+        <g-table-column property="name" label="Name" width="120" />
+        <g-table-column
           property="address"
           label="Address (inherited from config-provider)"
           width="300"
         />
-        <el-table-column
+        <g-table-column
           property="address"
           label="Address (explicit false)"
           :show-overflow-tooltip="false"
         />
-      </el-table>
-    </el-config-provider>
+      </g-table>
+    </g-config-provider>
   </div>
 </template>
 

@@ -20,7 +20,7 @@ watch(
 </script>
 
 <template>
-  <el-watermark :font="font" :content="['Element+', 'Element Plus']">
+  <g-watermark :font="font" :content="['Element+', 'Element Plus']">
     <div style="height: 500px" />
-  </el-watermark>
+  </g-watermark>
 </template>

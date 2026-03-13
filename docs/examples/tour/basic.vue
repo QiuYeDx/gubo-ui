@@ -1,34 +1,34 @@
 <template>
-  <el-button type="primary" @click="open = true">Begin Tour</el-button>
+  <g-button type="primary" @click="open = true">Begin Tour</g-button>
 
-  <el-divider />
+  <g-divider />
 
-  <el-space>
-    <el-button ref="ref1">Upload</el-button>
-    <el-button ref="ref2" type="primary">Save</el-button>
-    <el-button ref="ref3" :icon="MoreFilled" />
-  </el-space>
+  <g-space>
+    <g-button ref="ref1">Upload</g-button>
+    <g-button ref="ref2" type="primary">Save</g-button>
+    <g-button ref="ref3" :icon="MoreFilled" />
+  </g-space>
 
-  <el-tour v-model="open">
-    <el-tour-step :target="ref1?.$el" title="Upload File">
+  <g-tour v-model="open">
+    <g-tour-step :target="ref1?.$el" title="Upload File">
       <img
         style="width: 240px"
         src="https://element-plus.org/images/element-plus-logo.svg"
         alt="tour.png"
       />
       <div>Put you files here.</div>
-    </el-tour-step>
-    <el-tour-step
+    </g-tour-step>
+    <g-tour-step
       :target="ref2?.$el"
       title="Save"
       description="Save your changes"
     />
-    <el-tour-step
+    <g-tour-step
       :target="ref3?.$el"
       title="Other Actions"
       description="Click to see other"
     />
-  </el-tour>
+  </g-tour>
 </template>
 
 <script setup lang="ts">

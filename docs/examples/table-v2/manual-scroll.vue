@@ -1,20 +1,20 @@
 <template>
   <div class="mb-4 flex items-center">
-    <el-form-item label="Scroll pixels" class="mr-4">
-      <el-input v-model="scrollDelta" />
-    </el-form-item>
-    <el-form-item label="Scroll rows">
-      <el-input v-model="scrollRows" />
-    </el-form-item>
+    <g-form-item label="Scroll pixels" class="mr-4">
+      <g-input v-model="scrollDelta" />
+    </g-form-item>
+    <g-form-item label="Scroll rows">
+      <g-input v-model="scrollRows" />
+    </g-form-item>
   </div>
   <div class="mb-4 flex items-center">
-    <el-button @click="scrollByPixels"> Scroll by pixels </el-button>
-    <el-button @click="scrollByRows"> Scroll by rows </el-button>
+    <g-button @click="scrollByPixels"> Scroll by pixels </g-button>
+    <g-button @click="scrollByRows"> Scroll by rows </g-button>
   </div>
   <div style="height: 400px">
-    <el-auto-resizer>
+    <g-auto-resizer>
       <template #default="{ height, width }">
-        <el-table-v2
+        <g-table-v2
           ref="tableRef"
           :columns="columns"
           :data="data"
@@ -23,7 +23,7 @@
           fixed
         />
       </template>
-    </el-auto-resizer>
+    </g-auto-resizer>
   </div>
 </template>
 

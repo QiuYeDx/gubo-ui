@@ -1,5 +1,5 @@
 <template>
-  <el-transfer
+  <g-transfer
     v-model="value"
     :props="{
       key: 'value',

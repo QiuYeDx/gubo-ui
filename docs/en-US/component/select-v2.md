@@ -183,7 +183,7 @@ select-v2/props
 
 You can customize tags.
 
-:::demo Insert customized tags into the slot of `el-select`. `collapse-tags`, `collapse-tags-tooltip`, `max-collapse-tags` will not work.
+:::demo Insert customized tags into the slot of `g-select`. `collapse-tags`, `collapse-tags-tooltip`, `max-collapse-tags` will not work.
 
 select-v2/custom-tag
 
@@ -310,8 +310,8 @@ select-v2/custom-width
 Properties in tag-tooltip follow this priority order:
 
 1. Explicitly defined fields within the tag-tooltip object.
-2. Shared props inherited from el-select-v2 (e.g. effect, popper-class, popper-style, teleported, append-to, popper-options).
-3. Default values of the underlying el-tooltip component.
+2. Shared props inherited from g-select-v2 (e.g. effect, popper-class, popper-style, teleported, append-to, popper-options).
+3. Default values of the underlying g-tooltip component.
    This allows you to override specific tooltip behaviors for tags while maintaining consistency with the Select dropdown by default.
 
 :::

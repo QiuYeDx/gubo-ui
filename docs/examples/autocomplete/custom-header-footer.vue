@@ -2,18 +2,18 @@
   <div class="autocomplete-custom-header-footer">
     <div>
       <p>Custom header content</p>
-      <el-autocomplete
+      <g-autocomplete
         v-model="headerSlotState"
         :fetch-suggestions="querySearchAsync"
         placeholder="Please input"
         @select="handleSelect"
       >
         <template #header>header content</template>
-      </el-autocomplete>
+      </g-autocomplete>
     </div>
     <div>
       <p>Custom footer content</p>
-      <el-autocomplete
+      <g-autocomplete
         ref="footerAutocompleteRef"
         v-model="footerSlotstate"
         :fetch-suggestions="querySearchAsync"
@@ -21,9 +21,9 @@
         @select="handleSelect"
       >
         <template #footer>
-          <el-button link size="small" @click="handleClear"> Clear </el-button>
+          <g-button link size="small" @click="handleClear"> Clear </g-button>
         </template>
-      </el-autocomplete>
+      </g-autocomplete>
     </div>
   </div>
 </template>
@@ -96,11 +96,11 @@ const handleClear = () => {
   flex: 1;
   text-align: center;
 }
-.autocomplete-custom-header-footer > div > :deep(.el-autocomplete) {
+.autocomplete-custom-header-footer > div > :deep(.g-autocomplete) {
   width: 50%;
 }
 
 .autocomplete-custom-header-footer > div:not(:last-child) {
-  border-right: 1px solid var(--el-border-color);
+  border-right: 1px solid var(--g-border-color);
 }
 </style>

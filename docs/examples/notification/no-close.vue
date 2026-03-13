@@ -1,12 +1,12 @@
 <template>
-  <el-button plain @click="open"> Hide close button </el-button>
+  <g-button plain @click="open"> Hide close button </g-button>
 </template>
 
 <script lang="ts" setup>
-import { ElNotification } from 'element-plus'
+import { GNotification } from 'element-plus'
 
 const open = () => {
-  ElNotification.success({
+  GNotification.success({
     title: 'Info',
     message: 'This is a message without close button',
     showClose: false,

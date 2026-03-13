@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-2">
-    <el-tag
+    <g-tag
       v-for="item in items"
       :key="item.label"
       :type="item.type"
@@ -8,10 +8,10 @@
       round
     >
       {{ item.label }}
-    </el-tag>
+    </g-tag>
   </div>
   <div class="flex gap-2 mt-4">
-    <el-tag
+    <g-tag
       v-for="item in items"
       :key="item.label"
       :type="item.type"
@@ -19,10 +19,10 @@
       round
     >
       {{ item.label }}
-    </el-tag>
+    </g-tag>
   </div>
   <div class="flex gap-2 mt-4">
-    <el-tag
+    <g-tag
       v-for="item in items"
       :key="item.label"
       :type="item.type"
@@ -30,7 +30,7 @@
       round
     >
       {{ item.label }}
-    </el-tag>
+    </g-tag>
   </div>
 </template>
 

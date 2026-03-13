@@ -18,7 +18,7 @@ const onSwitchLang = (lang: string) => {
 
 <template>
   <div class="full-screen-translation">
-    <ElButton
+    <GButton
       :aria-label="locale.language"
       :aria-expanded="show"
       aria-controls="translation-items"
@@ -28,11 +28,11 @@ const onSwitchLang = (lang: string) => {
     >
       <div class="translation-toggler">
         <span> Translations </span>
-        <ElIcon :size="14">
+        <GIcon :size="14">
           <ExpandIcon class="toggle-icon" :class="{ expanded: show }" />
-        </ElIcon>
+        </GIcon>
       </div>
-    </ElButton>
+    </GButton>
     <div v-show="show" class="translation-items">
       <p
         v-for="l in langs"
@@ -67,7 +67,7 @@ const onSwitchLang = (lang: string) => {
   justify-content: space-between;
   line-height: 24px;
   .toggle-icon {
-    transition: transform var(--el-transition-duration);
+    transition: transform var(--g-transition-duration);
     transform: rotate(180deg);
 
     &.expanded {

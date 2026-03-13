@@ -1,27 +1,27 @@
 <template>
-  <el-button type="primary" @click="open = true">Begin Tour</el-button>
+  <g-button type="primary" @click="open = true">Begin Tour</g-button>
 
-  <el-divider />
+  <g-divider />
 
-  <el-space>
-    <el-button id="btn1">Upload</el-button>
-    <el-button id="btn2" type="primary">Save</el-button>
-    <el-button ref="btnRef" :icon="MoreFilled" />
-  </el-space>
+  <g-space>
+    <g-button id="btn1">Upload</g-button>
+    <g-button id="btn2" type="primary">Save</g-button>
+    <g-button ref="btnRef" :icon="MoreFilled" />
+  </g-space>
 
-  <el-tour v-model="open">
-    <el-tour-step
+  <g-tour v-model="open">
+    <g-tour-step
       target="#btn1"
       title="Upload File"
       description="Put you files here."
     />
-    <el-tour-step :target="el" title="Save" description="Save your changes" />
-    <el-tour-step
+    <g-tour-step :target="el" title="Save" description="Save your changes" />
+    <g-tour-step
       :target="btnRef?.$el"
       title="Other Actions"
       description="Click to see other"
     />
-  </el-tour>
+  </g-tour>
 </template>
 
 <script setup lang="ts">

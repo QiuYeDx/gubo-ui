@@ -1,13 +1,13 @@
 <template>
-  <el-table
+  <g-table
     :data="tableData"
     :default-sort="{ prop: 'date', order: 'descending' }"
     style="width: 100%"
   >
-    <el-table-column prop="date" label="Date" sortable width="180" />
-    <el-table-column prop="name" label="Name" width="180" />
-    <el-table-column prop="address" label="Address" :formatter="formatter" />
-  </el-table>
+    <g-table-column prop="date" label="Date" sortable width="180" />
+    <g-table-column prop="name" label="Name" width="180" />
+    <g-table-column prop="address" label="Address" :formatter="formatter" />
+  </g-table>
 </template>
 
 <script lang="ts" setup>

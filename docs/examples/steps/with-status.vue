@@ -1,12 +1,12 @@
 <template>
-  <el-steps
+  <g-steps
     style="max-width: 600px"
     :space="200"
     :active="1"
     finish-status="success"
   >
-    <el-step title="Done" />
-    <el-step title="Processing" />
-    <el-step title="Step 3" />
-  </el-steps>
+    <g-step title="Done" />
+    <g-step title="Processing" />
+    <g-step title="Step 3" />
+  </g-steps>
 </template>

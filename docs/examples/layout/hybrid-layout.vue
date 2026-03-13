@@ -1,29 +1,29 @@
 <template>
-  <el-row :gutter="20">
-    <el-col :span="16"><div class="grid-content ep-bg-purple" /></el-col>
-    <el-col :span="8"><div class="grid-content ep-bg-purple" /></el-col>
-  </el-row>
-  <el-row :gutter="20">
-    <el-col :span="8"><div class="grid-content ep-bg-purple" /></el-col>
-    <el-col :span="8"><div class="grid-content ep-bg-purple" /></el-col>
-    <el-col :span="4"><div class="grid-content ep-bg-purple" /></el-col>
-    <el-col :span="4"><div class="grid-content ep-bg-purple" /></el-col>
-  </el-row>
-  <el-row :gutter="20">
-    <el-col :span="4"><div class="grid-content ep-bg-purple" /></el-col>
-    <el-col :span="16"><div class="grid-content ep-bg-purple" /></el-col>
-    <el-col :span="4"><div class="grid-content ep-bg-purple" /></el-col>
-  </el-row>
+  <g-row :gutter="20">
+    <g-col :span="16"><div class="grid-content ep-bg-purple" /></g-col>
+    <g-col :span="8"><div class="grid-content ep-bg-purple" /></g-col>
+  </g-row>
+  <g-row :gutter="20">
+    <g-col :span="8"><div class="grid-content ep-bg-purple" /></g-col>
+    <g-col :span="8"><div class="grid-content ep-bg-purple" /></g-col>
+    <g-col :span="4"><div class="grid-content ep-bg-purple" /></g-col>
+    <g-col :span="4"><div class="grid-content ep-bg-purple" /></g-col>
+  </g-row>
+  <g-row :gutter="20">
+    <g-col :span="4"><div class="grid-content ep-bg-purple" /></g-col>
+    <g-col :span="16"><div class="grid-content ep-bg-purple" /></g-col>
+    <g-col :span="4"><div class="grid-content ep-bg-purple" /></g-col>
+  </g-row>
 </template>
 
 <style>
-.el-row {
+.g-row {
   margin-bottom: 20px;
 }
-.el-row:last-child {
+.g-row:last-child {
   margin-bottom: 0;
 }
-.el-col {
+.g-col {
   border-radius: 4px;
 }
 

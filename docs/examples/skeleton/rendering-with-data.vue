@@ -1,9 +1,9 @@
 <template>
-  <el-space style="width: 100%" fill>
+  <g-space style="width: 100%" fill>
     <div>
-      <el-button @click="setLoading">Click me to reload</el-button>
+      <g-button @click="setLoading">Click me to reload</g-button>
     </div>
-    <el-skeleton
+    <g-skeleton
       style="display: flex; gap: 8px"
       :loading="loading"
       animated
@@ -11,9 +11,9 @@
     >
       <template #template>
         <div style="flex: 1">
-          <el-skeleton-item variant="image" style="height: 240px" />
+          <g-skeleton-item variant="image" style="height: 240px" />
           <div style="padding: 14px">
-            <el-skeleton-item variant="h3" style="width: 50%" />
+            <g-skeleton-item variant="h3" style="width: 50%" />
             <div
               style="
                 display: flex;
@@ -23,14 +23,14 @@
                 height: 16px;
               "
             >
-              <el-skeleton-item variant="text" style="margin-right: 16px" />
-              <el-skeleton-item variant="text" style="width: 30%" />
+              <g-skeleton-item variant="text" style="margin-right: 16px" />
+              <g-skeleton-item variant="text" style="width: 30%" />
             </div>
           </div>
         </div>
       </template>
       <template #default>
-        <el-card
+        <g-card
           v-for="item in lists"
           :key="item.name"
           :body-style="{ padding: '0px', marginBottom: '1px' }"
@@ -44,13 +44,13 @@
             <span>{{ item.name }}</span>
             <div class="bottom card-header">
               <div class="time">{{ currentDate }}</div>
-              <el-button text class="button">Operation button</el-button>
+              <g-button text class="button">Operation button</g-button>
             </div>
           </div>
-        </el-card>
+        </g-card>
       </template>
-    </el-skeleton>
-  </el-space>
+    </g-skeleton>
+  </g-space>
 </template>
 
 <script lang="ts" setup>

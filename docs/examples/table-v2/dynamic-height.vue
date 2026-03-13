@@ -1,5 +1,5 @@
 <template>
-  <el-table-v2
+  <g-table-v2
     :columns="columns"
     :data="data"
     :sort-by="sort"
@@ -14,8 +14,8 @@
 <script lang="tsx" setup>
 import { ref } from 'vue'
 import {
-  ElButton,
-  ElTag,
+  GButton,
+  GTag,
   TableV2FixedDir,
   TableV2SortOrder,
 } from 'element-plus'
@@ -55,7 +55,7 @@ const columns: Column<any>[] = [
     dataKey: 'name',
     width: 150,
     align: 'center',
-    cellRenderer: ({ cellData: name }) => <ElTag>{name}</ElTag>,
+    cellRenderer: ({ cellData: name }) => <GTag>{name}</GTag>,
   },
   {
     key: 'description',
@@ -71,10 +71,10 @@ const columns: Column<any>[] = [
     title: 'Operations',
     cellRenderer: () => (
       <>
-        <ElButton size="small">Edit</ElButton>
-        <ElButton size="small" type="danger">
+        <GButton size="small">Edit</GButton>
+        <GButton size="small" type="danger">
           Delete
-        </ElButton>
+        </GButton>
       </>
     ),
     width: 150,

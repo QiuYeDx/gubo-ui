@@ -1,22 +1,22 @@
 <template>
-  <el-button plain @click="centerDialogVisible = true">
+  <g-button plain @click="centerDialogVisible = true">
     Click to open the Dialog
-  </el-button>
+  </g-button>
 
-  <el-dialog v-model="centerDialogVisible" title="Warning" width="500" center>
+  <g-dialog v-model="centerDialogVisible" title="Warning" width="500" center>
     <span>
       It should be noted that the content will not be aligned in center by
       default
     </span>
     <template #footer>
       <div class="dialog-footer">
-        <el-button @click="centerDialogVisible = false">Cancel</el-button>
-        <el-button type="primary" @click="centerDialogVisible = false">
+        <g-button @click="centerDialogVisible = false">Cancel</g-button>
+        <g-button type="primary" @click="centerDialogVisible = false">
           Confirm
-        </el-button>
+        </g-button>
       </div>
     </template>
-  </el-dialog>
+  </g-dialog>
 </template>
 
 <script lang="ts" setup>

@@ -1,9 +1,9 @@
 <template>
   <div>
-    <el-link :icon="Edit">Edit</el-link>
-    <el-link>
-      Check<el-icon class="el-icon--right"><icon-view /></el-icon>
-    </el-link>
+    <g-link :icon="Edit">Edit</g-link>
+    <g-link>
+      Check<g-icon class="g-icon--right"><icon-view /></g-icon>
+    </g-link>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import { Edit, View as IconView } from '@element-plus/icons-vue'
 </script>
 
 <style scoped>
-.el-link {
+.g-link {
   margin-right: 8px;
 }
 </style>

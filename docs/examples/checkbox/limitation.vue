@@ -1,9 +1,9 @@
 <template>
-  <el-checkbox-group v-model="checkedCities" :min="1" :max="2">
-    <el-checkbox v-for="city in cities" :key="city" :label="city" :value="city">
+  <g-checkbox-group v-model="checkedCities" :min="1" :max="2">
+    <g-checkbox v-for="city in cities" :key="city" :label="city" :value="city">
       {{ city }}
-    </el-checkbox>
-  </el-checkbox-group>
+    </g-checkbox>
+  </g-checkbox-group>
 </template>
 
 <script lang="ts" setup>

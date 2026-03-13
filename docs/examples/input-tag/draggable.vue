@@ -1,5 +1,5 @@
 <template>
-  <el-input-tag v-model="input" draggable placeholder="Please input" />
+  <g-input-tag v-model="input" draggable placeholder="Please input" />
 </template>
 
 <script lang="ts" setup>

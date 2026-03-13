@@ -1,93 +1,93 @@
 <template>
-  <el-container class="layout-container-demo" style="height: 500px">
-    <el-aside width="200px">
-      <el-scrollbar>
-        <el-menu :default-openeds="['1', '3']">
-          <el-sub-menu index="1">
+  <g-container class="layout-container-demo" style="height: 500px">
+    <g-aside width="200px">
+      <g-scrollbar>
+        <g-menu :default-openeds="['1', '3']">
+          <g-sub-menu index="1">
             <template #title>
-              <el-icon><message /></el-icon>Navigator One
+              <g-icon><message /></g-icon>Navigator One
             </template>
-            <el-menu-item-group>
+            <g-menu-item-group>
               <template #title>Group 1</template>
-              <el-menu-item index="1-1">Option 1</el-menu-item>
-              <el-menu-item index="1-2">Option 2</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group title="Group 2">
-              <el-menu-item index="1-3">Option 3</el-menu-item>
-            </el-menu-item-group>
-            <el-sub-menu index="1-4">
+              <g-menu-item index="1-1">Option 1</g-menu-item>
+              <g-menu-item index="1-2">Option 2</g-menu-item>
+            </g-menu-item-group>
+            <g-menu-item-group title="Group 2">
+              <g-menu-item index="1-3">Option 3</g-menu-item>
+            </g-menu-item-group>
+            <g-sub-menu index="1-4">
               <template #title>Option4</template>
-              <el-menu-item index="1-4-1">Option 4-1</el-menu-item>
-            </el-sub-menu>
-          </el-sub-menu>
-          <el-sub-menu index="2">
+              <g-menu-item index="1-4-1">Option 4-1</g-menu-item>
+            </g-sub-menu>
+          </g-sub-menu>
+          <g-sub-menu index="2">
             <template #title>
-              <el-icon><icon-menu /></el-icon>Navigator Two
+              <g-icon><icon-menu /></g-icon>Navigator Two
             </template>
-            <el-menu-item-group>
+            <g-menu-item-group>
               <template #title>Group 1</template>
-              <el-menu-item index="2-1">Option 1</el-menu-item>
-              <el-menu-item index="2-2">Option 2</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group title="Group 2">
-              <el-menu-item index="2-3">Option 3</el-menu-item>
-            </el-menu-item-group>
-            <el-sub-menu index="2-4">
+              <g-menu-item index="2-1">Option 1</g-menu-item>
+              <g-menu-item index="2-2">Option 2</g-menu-item>
+            </g-menu-item-group>
+            <g-menu-item-group title="Group 2">
+              <g-menu-item index="2-3">Option 3</g-menu-item>
+            </g-menu-item-group>
+            <g-sub-menu index="2-4">
               <template #title>Option 4</template>
-              <el-menu-item index="2-4-1">Option 4-1</el-menu-item>
-            </el-sub-menu>
-          </el-sub-menu>
-          <el-sub-menu index="3">
+              <g-menu-item index="2-4-1">Option 4-1</g-menu-item>
+            </g-sub-menu>
+          </g-sub-menu>
+          <g-sub-menu index="3">
             <template #title>
-              <el-icon><setting /></el-icon>Navigator Three
+              <g-icon><setting /></g-icon>Navigator Three
             </template>
-            <el-menu-item-group>
+            <g-menu-item-group>
               <template #title>Group 1</template>
-              <el-menu-item index="3-1">Option 1</el-menu-item>
-              <el-menu-item index="3-2">Option 2</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group title="Group 2">
-              <el-menu-item index="3-3">Option 3</el-menu-item>
-            </el-menu-item-group>
-            <el-sub-menu index="3-4">
+              <g-menu-item index="3-1">Option 1</g-menu-item>
+              <g-menu-item index="3-2">Option 2</g-menu-item>
+            </g-menu-item-group>
+            <g-menu-item-group title="Group 2">
+              <g-menu-item index="3-3">Option 3</g-menu-item>
+            </g-menu-item-group>
+            <g-sub-menu index="3-4">
               <template #title>Option 4</template>
-              <el-menu-item index="3-4-1">Option 4-1</el-menu-item>
-            </el-sub-menu>
-          </el-sub-menu>
-        </el-menu>
-      </el-scrollbar>
-    </el-aside>
+              <g-menu-item index="3-4-1">Option 4-1</g-menu-item>
+            </g-sub-menu>
+          </g-sub-menu>
+        </g-menu>
+      </g-scrollbar>
+    </g-aside>
 
-    <el-container>
-      <el-header style="text-align: right; font-size: 12px">
+    <g-container>
+      <g-header style="text-align: right; font-size: 12px">
         <div class="toolbar">
-          <el-dropdown>
-            <el-icon style="margin-right: 8px; margin-top: 1px">
+          <g-dropdown>
+            <g-icon style="margin-right: 8px; margin-top: 1px">
               <setting />
-            </el-icon>
+            </g-icon>
             <template #dropdown>
-              <el-dropdown-menu>
-                <el-dropdown-item>View</el-dropdown-item>
-                <el-dropdown-item>Add</el-dropdown-item>
-                <el-dropdown-item>Delete</el-dropdown-item>
-              </el-dropdown-menu>
+              <g-dropdown-menu>
+                <g-dropdown-item>View</g-dropdown-item>
+                <g-dropdown-item>Add</g-dropdown-item>
+                <g-dropdown-item>Delete</g-dropdown-item>
+              </g-dropdown-menu>
             </template>
-          </el-dropdown>
+          </g-dropdown>
           <span>Tom</span>
         </div>
-      </el-header>
+      </g-header>
 
-      <el-main>
-        <el-scrollbar>
-          <el-table :data="tableData">
-            <el-table-column prop="date" label="Date" width="140" />
-            <el-table-column prop="name" label="Name" width="120" />
-            <el-table-column prop="address" label="Address" />
-          </el-table>
-        </el-scrollbar>
-      </el-main>
-    </el-container>
-  </el-container>
+      <g-main>
+        <g-scrollbar>
+          <g-table :data="tableData">
+            <g-table-column prop="date" label="Date" width="140" />
+            <g-table-column prop="name" label="Name" width="120" />
+            <g-table-column prop="address" label="Address" />
+          </g-table>
+        </g-scrollbar>
+      </g-main>
+    </g-container>
+  </g-container>
 </template>
 
 <script lang="ts" setup>
@@ -103,19 +103,19 @@ const tableData = ref(Array.from({ length: 20 }).fill(item))
 </script>
 
 <style scoped>
-.layout-container-demo .el-header {
+.layout-container-demo .g-header {
   position: relative;
-  background-color: var(--el-color-primary-light-7);
-  color: var(--el-text-color-primary);
+  background-color: var(--g-color-primary-light-7);
+  color: var(--g-text-color-primary);
 }
-.layout-container-demo .el-aside {
-  color: var(--el-text-color-primary);
-  background: var(--el-color-primary-light-8);
+.layout-container-demo .g-aside {
+  color: var(--g-text-color-primary);
+  background: var(--g-color-primary-light-8);
 }
-.layout-container-demo .el-menu {
+.layout-container-demo .g-menu {
   border-right: none;
 }
-.layout-container-demo .el-main {
+.layout-container-demo .g-main {
   padding: 0;
 }
 .layout-container-demo .toolbar {

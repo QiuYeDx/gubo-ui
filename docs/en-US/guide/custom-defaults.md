@@ -24,9 +24,9 @@ Once the component is rendered for the first time, the defaults become immutable
 :::
 
 ```ts [main.ts]
-import { ElButton } from 'element-plus'
+import { GButton } from 'element-plus'
 
-ElButton.setPropsDefaults({
+GButton.setPropsDefaults({
   type: 'primary',
   size: 'small',
 })
@@ -36,8 +36,8 @@ After applying the customization, the following two usages are equivalent:
 
 ```vue [App.vue]
 <template>
-  <el-button>Hello</el-button>
-  <el-button type="primary" size="small">Hello</el-button>
+  <g-button>Hello</g-button>
+  <g-button type="primary" size="small">Hello</g-button>
 </template>
 ```
 
@@ -48,8 +48,8 @@ It is not recommended to set default values for components that are internally u
 For example:
 
 ```ts
-// This will cause the behavior of the el-autocomplete component to change.
-ElInput.setPropsDefaults({ maxlength: 1 })
+// This will cause the behavior of the g-autocomplete component to change.
+GInput.setPropsDefaults({ maxlength: 1 })
 ```
 
 :::

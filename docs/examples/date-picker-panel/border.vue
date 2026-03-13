@@ -4,18 +4,18 @@
     :class="['date-picker--example', { 'is-narrow': isNarrow }]"
   >
     <div class="text-center">No border:</div>
-    <el-divider />
+    <g-divider />
     <div class="date-picker--flex-container">
       <div class="p-[20px]">
-        <el-date-picker-panel v-model="value" :border="false" />
+        <g-date-picker-panel v-model="value" :border="false" />
       </div>
-      <el-divider
+      <g-divider
         class="divider"
         :direction="isNarrow ? 'horizontal' : 'vertical'"
       />
-      <el-card>
-        <el-date-picker-panel v-model="value" :border="false" />
-      </el-card>
+      <g-card>
+        <g-date-picker-panel v-model="value" :border="false" />
+      </g-card>
     </div>
   </div>
 </template>

@@ -1,30 +1,30 @@
 <template>
-  <el-form :inline="true" :model="formInline" class="demo-form-inline">
-    <el-form-item label="Approved by">
-      <el-input v-model="formInline.user" placeholder="Approved by" clearable />
-    </el-form-item>
-    <el-form-item label="Activity zone">
-      <el-select
+  <g-form :inline="true" :model="formInline" class="demo-form-inline">
+    <g-form-item label="Approved by">
+      <g-input v-model="formInline.user" placeholder="Approved by" clearable />
+    </g-form-item>
+    <g-form-item label="Activity zone">
+      <g-select
         v-model="formInline.region"
         placeholder="Activity zone"
         clearable
       >
-        <el-option label="Zone one" value="shanghai" />
-        <el-option label="Zone two" value="beijing" />
-      </el-select>
-    </el-form-item>
-    <el-form-item label="Activity time">
-      <el-date-picker
+        <g-option label="Zone one" value="shanghai" />
+        <g-option label="Zone two" value="beijing" />
+      </g-select>
+    </g-form-item>
+    <g-form-item label="Activity time">
+      <g-date-picker
         v-model="formInline.date"
         type="date"
         placeholder="Pick a date"
         clearable
       />
-    </el-form-item>
-    <el-form-item>
-      <el-button type="primary" @click="onSubmit">Query</el-button>
-    </el-form-item>
-  </el-form>
+    </g-form-item>
+    <g-form-item>
+      <g-button type="primary" @click="onSubmit">Query</g-button>
+    </g-form-item>
+  </g-form>
 </template>
 
 <script lang="ts" setup>
@@ -42,11 +42,11 @@ const onSubmit = () => {
 </script>
 
 <style>
-.demo-form-inline .el-input {
-  --el-input-width: 220px;
+.demo-form-inline .g-input {
+  --g-input-width: 220px;
 }
 
-.demo-form-inline .el-select {
-  --el-select-width: 220px;
+.demo-form-inline .g-select {
+  --g-select-width: 220px;
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <el-button type="primary" :icon="Edit" />
-    <el-button type="primary" :icon="Share" />
-    <el-button type="primary" :icon="Delete" />
-    <el-button type="primary" :icon="Search">Search</el-button>
-    <el-button type="primary">
-      Upload<el-icon class="el-icon--right"><Upload /></el-icon>
-    </el-button>
+    <g-button type="primary" :icon="Edit" />
+    <g-button type="primary" :icon="Share" />
+    <g-button type="primary" :icon="Delete" />
+    <g-button type="primary" :icon="Search">Search</g-button>
+    <g-button type="primary">
+      Upload<g-icon class="g-icon--right"><Upload /></g-icon>
+    </g-button>
   </div>
 </template>
 

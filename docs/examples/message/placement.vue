@@ -1,26 +1,26 @@
 <template>
   <div class="flex flex-wrap gap-1">
-    <el-button class="!ml-0" :plain="true" @click="openMsg()"> Top </el-button>
-    <el-button class="!ml-0" :plain="true" @click="openMsg('top-left')">
+    <g-button class="!ml-0" :plain="true" @click="openMsg()"> Top </g-button>
+    <g-button class="!ml-0" :plain="true" @click="openMsg('top-left')">
       Top Left
-    </el-button>
-    <el-button class="!ml-0" :plain="true" @click="openMsg('top-right')">
+    </g-button>
+    <g-button class="!ml-0" :plain="true" @click="openMsg('top-right')">
       Top Right
-    </el-button>
-    <el-button class="!ml-0" :plain="true" @click="openMsg('bottom')">
+    </g-button>
+    <g-button class="!ml-0" :plain="true" @click="openMsg('bottom')">
       Bottom
-    </el-button>
-    <el-button class="!ml-0" :plain="true" @click="openMsg('bottom-left')">
+    </g-button>
+    <g-button class="!ml-0" :plain="true" @click="openMsg('bottom-left')">
       Bottom Left
-    </el-button>
-    <el-button class="!ml-0" :plain="true" @click="openMsg('bottom-right')">
+    </g-button>
+    <g-button class="!ml-0" :plain="true" @click="openMsg('bottom-right')">
       Bottom Right
-    </el-button>
+    </g-button>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ElMessage } from 'element-plus'
+import { GMessage } from 'element-plus'
 
 import type { MessagePlacement, MessageType } from 'element-plus'
 
@@ -62,7 +62,7 @@ const openMsg = (placement: MessagePlacement = 'top') => {
       break
   }
 
-  ElMessage({
+  GMessage({
     message: `This is a message from the ${placement} ${count}`,
     type,
     placement,

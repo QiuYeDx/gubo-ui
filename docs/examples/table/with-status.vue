@@ -1,13 +1,13 @@
 <template>
-  <el-table
+  <g-table
     :data="tableData"
     style="width: 100%"
     :row-class-name="tableRowClassName"
   >
-    <el-table-column prop="date" label="Date" width="180" />
-    <el-table-column prop="name" label="Name" width="180" />
-    <el-table-column prop="address" label="Address" />
-  </el-table>
+    <g-table-column prop="date" label="Date" width="180" />
+    <g-table-column prop="name" label="Name" width="180" />
+    <g-table-column prop="address" label="Address" />
+  </g-table>
 </template>
 
 <script lang="ts" setup>
@@ -57,10 +57,10 @@ const tableData: User[] = [
 </script>
 
 <style>
-.el-table .warning-row {
-  --el-table-tr-bg-color: var(--el-color-warning-light-9);
+.g-table .warning-row {
+  --g-table-tr-bg-color: var(--g-color-warning-light-9);
 }
-.el-table .success-row {
-  --el-table-tr-bg-color: var(--el-color-success-light-9);
+.g-table .success-row {
+  --g-table-tr-bg-color: var(--g-color-success-light-9);
 }
 </style>

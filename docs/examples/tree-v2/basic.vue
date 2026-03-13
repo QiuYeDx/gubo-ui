@@ -1,5 +1,5 @@
 <template>
-  <el-tree-v2
+  <g-tree-v2
     style="max-width: 600px"
     :data="data"
     :props="props"

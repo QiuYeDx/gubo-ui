@@ -1,5 +1,5 @@
 <template>
-  <el-autocomplete
+  <g-autocomplete
     v-model="state"
     :fetch-suggestions="querySearch"
     popper-class="my-autocomplete"
@@ -7,15 +7,15 @@
     @select="handleSelect"
   >
     <template #suffix>
-      <el-icon class="el-input__icon" @click="handleIconClick">
+      <g-icon class="g-input__icon" @click="handleIconClick">
         <edit />
-      </el-icon>
+      </g-icon>
     </template>
     <template #default="{ item }">
       <div class="value">{{ item.value }}</div>
       <span class="link">{{ item.link }}</span>
     </template>
-  </el-autocomplete>
+  </g-autocomplete>
 </template>
 
 <script lang="ts" setup>

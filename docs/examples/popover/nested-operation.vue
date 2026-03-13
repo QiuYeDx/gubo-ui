@@ -1,16 +1,16 @@
 <template>
-  <el-popover :visible="visible" placement="top" :width="180">
+  <g-popover :visible="visible" placement="top" :width="180">
     <p>Are you sure to delete this?</p>
     <div style="text-align: right; margin: 0">
-      <el-button size="small" text @click="visible = false">cancel</el-button>
-      <el-button size="small" type="primary" @click="visible = false">
+      <g-button size="small" text @click="visible = false">cancel</g-button>
+      <g-button size="small" type="primary" @click="visible = false">
         confirm
-      </el-button>
+      </g-button>
     </div>
     <template #reference>
-      <el-button @click="visible = true">Delete</el-button>
+      <g-button @click="visible = true">Delete</g-button>
     </template>
-  </el-popover>
+  </g-popover>
 </template>
 
 <script lang="ts" setup>

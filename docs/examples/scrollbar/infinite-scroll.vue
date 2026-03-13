@@ -1,9 +1,9 @@
 <template>
-  <el-scrollbar height="400px" @end-reached="loadMore">
+  <g-scrollbar height="400px" @end-reached="loadMore">
     <p v-for="item in num" :key="item" class="scrollbar-demo-item">
       {{ item }}
     </p>
-  </el-scrollbar>
+  </g-scrollbar>
 </template>
 
 <script lang="ts" setup>
@@ -29,10 +29,10 @@ const loadMore = (direction: ScrollbarDirection) => {
   margin: 10px;
   text-align: center;
   border-radius: 4px;
-  background: var(--el-color-primary-light-9);
-  color: var(--el-color-primary);
+  background: var(--g-color-primary-light-9);
+  color: var(--g-color-primary);
 }
-.el-slider {
+.g-slider {
   margin-top: 20px;
 }
 </style>

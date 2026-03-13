@@ -1,18 +1,18 @@
 <template>
   <div style="max-width: 600px">
-    <el-alert title="Primary alert" type="primary" effect="dark" />
-    <el-alert title="Success alert" type="success" effect="dark" />
-    <el-alert title="Info alert" type="info" effect="dark" />
-    <el-alert title="Warning alert" type="warning" effect="dark" />
-    <el-alert title="Error alert" type="error" effect="dark" />
+    <g-alert title="Primary alert" type="primary" effect="dark" />
+    <g-alert title="Success alert" type="success" effect="dark" />
+    <g-alert title="Info alert" type="info" effect="dark" />
+    <g-alert title="Warning alert" type="warning" effect="dark" />
+    <g-alert title="Error alert" type="error" effect="dark" />
   </div>
 </template>
 
 <style scoped>
-.el-alert {
+.g-alert {
   margin: 20px 0 0;
 }
-.el-alert:first-child {
+.g-alert:first-child {
   margin: 0;
 }
 </style>

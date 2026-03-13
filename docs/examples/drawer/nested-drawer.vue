@@ -1,30 +1,30 @@
 <template>
-  <el-button type="primary" @click="drawer = true"> open </el-button>
+  <g-button type="primary" @click="drawer = true"> open </g-button>
 
-  <el-drawer v-model="drawer" title="I'm outer Drawer" size="50%">
+  <g-drawer v-model="drawer" title="I'm outer Drawer" size="50%">
     <div>
-      <el-button @click="innerDrawer = true">Click me!</el-button>
-      <el-drawer
+      <g-button @click="innerDrawer = true">Click me!</g-button>
+      <g-drawer
         v-model="innerDrawer"
         title="I'm inner Drawer"
         :append-to-body="true"
         :before-close="handleClose"
       >
         <p>_(:зゝ∠)_</p>
-      </el-drawer>
+      </g-drawer>
     </div>
-  </el-drawer>
+  </g-drawer>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { ElMessageBox } from 'element-plus'
+import { GMessageBox } from 'element-plus'
 
 const drawer = ref(false)
 const innerDrawer = ref(false)
 
 const handleClose = (done: () => void) => {
-  ElMessageBox.confirm('You still have unsaved data, proceed?')
+  GMessageBox.confirm('You still have unsaved data, proceed?')
     .then(() => {
       done()
     })

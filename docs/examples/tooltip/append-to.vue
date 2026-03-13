@@ -1,12 +1,12 @@
 <template>
-  <el-tooltip
+  <g-tooltip
     :append-to="targetElement"
     trigger="click"
     content="Append to .target"
     placement="top"
   >
-    <el-button class="target">Click to open tooltip</el-button>
-  </el-tooltip>
+    <g-button class="target">Click to open tooltip</g-button>
+  </g-tooltip>
 </template>
 
 <script lang="ts" setup>

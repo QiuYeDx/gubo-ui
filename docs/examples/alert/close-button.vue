@@ -1,8 +1,8 @@
 <template>
   <div style="max-width: 600px">
-    <el-alert title="Unclosable alert" type="success" :closable="false" />
-    <el-alert title="Customized close text" type="info" close-text="Gotcha" />
-    <el-alert title="Alert with callback" type="warning" @close="hello" />
+    <g-alert title="Unclosable alert" type="success" :closable="false" />
+    <g-alert title="Customized close text" type="info" close-text="Gotcha" />
+    <g-alert title="Alert with callback" type="warning" @close="hello" />
   </div>
 </template>
 
@@ -14,10 +14,10 @@ const hello = () => {
 </script>
 
 <style scoped>
-.el-alert {
+.g-alert {
   margin: 20px 0 0;
 }
-.el-alert:first-child {
+.g-alert:first-child {
   margin: 0;
 }
 </style>

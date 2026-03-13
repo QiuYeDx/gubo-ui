@@ -1,22 +1,22 @@
 <template>
-  <el-button-group class="mb-4">
-    <el-button type="primary" :icon="ArrowLeft">Previous Page</el-button>
-    <el-button type="primary">
-      Next Page<el-icon class="el-icon--right"><ArrowRight /></el-icon>
-    </el-button>
-  </el-button-group>
+  <g-button-group class="mb-4">
+    <g-button type="primary" :icon="ArrowLeft">Previous Page</g-button>
+    <g-button type="primary">
+      Next Page<g-icon class="g-icon--right"><ArrowRight /></g-icon>
+    </g-button>
+  </g-button-group>
   <br />
-  <el-radio-group v-model="direction" class="mb-2">
-    <el-radio value="horizontal">Horizontal</el-radio>
-    <el-radio value="vertical">Vertical</el-radio>
-  </el-radio-group>
+  <g-radio-group v-model="direction" class="mb-2">
+    <g-radio value="horizontal">Horizontal</g-radio>
+    <g-radio value="vertical">Vertical</g-radio>
+  </g-radio-group>
   <br />
 
-  <el-button-group :direction="direction">
-    <el-button type="primary" :icon="House" />
-    <el-button type="primary" :icon="Operation" />
-    <el-button type="primary" :icon="Notification" />
-  </el-button-group>
+  <g-button-group :direction="direction">
+    <g-button type="primary" :icon="House" />
+    <g-button type="primary" :icon="Operation" />
+    <g-button type="primary" :icon="Notification" />
+  </g-button-group>
 </template>
 
 <script setup lang="ts">

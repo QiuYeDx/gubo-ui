@@ -1,19 +1,19 @@
 <template>
-  <el-button plain @click="drawerVisible = true">
+  <g-button plain @click="drawerVisible = true">
     Open the modal Drawer
-  </el-button>
+  </g-button>
 
-  <el-drawer v-model="drawerVisible" :modal="false" modal-penetrable>
+  <g-drawer v-model="drawerVisible" :modal="false" modal-penetrable>
     <span>It's a modal Drawer</span>
     <template #footer>
       <div class="drawer-footer">
-        <el-button @click="drawerVisible = false">Cancel</el-button>
-        <el-button type="primary" @click="drawerVisible = false">
+        <g-button @click="drawerVisible = false">Cancel</g-button>
+        <g-button type="primary" @click="drawerVisible = false">
           Confirm
-        </el-button>
+        </g-button>
       </div>
     </template>
-  </el-drawer>
+  </g-drawer>
 </template>
 
 <script lang="ts" setup>

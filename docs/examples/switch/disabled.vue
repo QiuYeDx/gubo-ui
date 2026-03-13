@@ -1,6 +1,6 @@
 <template>
-  <el-switch v-model="value1" disabled />
-  <el-switch v-model="value2" class="ml-2" />
+  <g-switch v-model="value1" disabled />
+  <g-switch v-model="value2" class="ml-2" />
 </template>
 
 <script lang="ts" setup>

@@ -1,19 +1,19 @@
 <template>
-  <el-button plain @click="dialogVisible = true">
+  <g-button plain @click="dialogVisible = true">
     Open the fullscreen Dialog
-  </el-button>
+  </g-button>
 
-  <el-dialog v-model="dialogVisible" fullscreen>
+  <g-dialog v-model="dialogVisible" fullscreen>
     <span>It's a fullscreen Dialog</span>
     <template #footer>
       <div class="dialog-footer">
-        <el-button @click="dialogVisible = false">Cancel</el-button>
-        <el-button type="primary" @click="dialogVisible = false">
+        <g-button @click="dialogVisible = false">Cancel</g-button>
+        <g-button type="primary" @click="dialogVisible = false">
           Confirm
-        </el-button>
+        </g-button>
       </div>
     </template>
-  </el-dialog>
+  </g-dialog>
 </template>
 
 <script lang="ts" setup>

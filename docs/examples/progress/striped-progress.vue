@@ -1,14 +1,14 @@
 <template>
   <div class="demo-progress">
-    <el-progress :percentage="50" :stroke-width="15" striped />
-    <el-progress
+    <g-progress :percentage="50" :stroke-width="15" striped />
+    <g-progress
       :percentage="30"
       :stroke-width="15"
       status="warning"
       striped
       striped-flow
     />
-    <el-progress
+    <g-progress
       :percentage="100"
       :stroke-width="15"
       status="success"
@@ -16,7 +16,7 @@
       striped-flow
       :duration="10"
     />
-    <el-progress
+    <g-progress
       :percentage="percentage"
       :stroke-width="15"
       status="exception"
@@ -24,10 +24,10 @@
       striped-flow
       :duration="duration"
     />
-    <el-button-group>
-      <el-button :icon="Minus" @click="decrease" />
-      <el-button :icon="Plus" @click="increase" />
-    </el-button-group>
+    <g-button-group>
+      <g-button :icon="Minus" @click="decrease" />
+      <g-button :icon="Plus" @click="increase" />
+    </g-button-group>
   </div>
 </template>
 
@@ -53,7 +53,7 @@ const decrease = () => {
 </script>
 
 <style scoped>
-.demo-progress .el-progress--line {
+.demo-progress .g-progress--line {
   margin-bottom: 15px;
   max-width: 600px;
 }

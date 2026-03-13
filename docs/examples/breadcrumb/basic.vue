@@ -1,10 +1,10 @@
 <template>
-  <el-breadcrumb separator="/">
-    <el-breadcrumb-item :to="{ path: '/' }">homepage</el-breadcrumb-item>
-    <el-breadcrumb-item>
+  <g-breadcrumb separator="/">
+    <g-breadcrumb-item :to="{ path: '/' }">homepage</g-breadcrumb-item>
+    <g-breadcrumb-item>
       <a href="/">promotion management</a>
-    </el-breadcrumb-item>
-    <el-breadcrumb-item>promotion list</el-breadcrumb-item>
-    <el-breadcrumb-item>promotion detail</el-breadcrumb-item>
-  </el-breadcrumb>
+    </g-breadcrumb-item>
+    <g-breadcrumb-item>promotion list</g-breadcrumb-item>
+    <g-breadcrumb-item>promotion detail</g-breadcrumb-item>
+  </g-breadcrumb>
 </template>

@@ -1,19 +1,19 @@
 <template>
-  <el-tree-v2
+  <g-tree-v2
     style="max-width: 600px"
     :data="data"
     :props="props"
     :height="200"
   >
     <template #default="{ node }">
-      <el-icon class="node-icon" :class="{ 'is-leaf': node.isLeaf }">
+      <g-icon class="node-icon" :class="{ 'is-leaf': node.isLeaf }">
         <Document v-if="node.isLeaf" />
         <Folder v-else-if="!node.expanded" />
         <FolderOpened v-else />
-      </el-icon>
+      </g-icon>
       <span>{{ node.label }}</span>
     </template>
-  </el-tree-v2>
+  </g-tree-v2>
 </template>
 
 <script lang="ts" setup>
@@ -64,6 +64,6 @@ const data = createData(4, 30, 40)
 <style scoped>
 .node-icon {
   margin-right: 5px;
-  color: var(--el-color-warning);
+  color: var(--g-color-warning);
 }
 </style>

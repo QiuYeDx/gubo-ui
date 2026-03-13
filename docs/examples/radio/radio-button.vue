@@ -1,27 +1,27 @@
 <template>
   <div>
-    <el-radio-group v-model="radio" size="large" fill="#409eff">
-      <el-radio-button label="New York" value="New York" />
-      <el-radio-button label="Washington" value="Washington" />
-      <el-radio-button label="Los Angeles" value="Los Angeles" />
-      <el-radio-button label="Chicago" value="Chicago" />
-    </el-radio-group>
+    <g-radio-group v-model="radio" size="large" fill="#409eff">
+      <g-radio-button label="New York" value="New York" />
+      <g-radio-button label="Washington" value="Washington" />
+      <g-radio-button label="Los Angeles" value="Los Angeles" />
+      <g-radio-button label="Chicago" value="Chicago" />
+    </g-radio-group>
   </div>
   <div style="margin-top: 20px">
-    <el-radio-group v-model="radio" text-color="#fff" fill="#6c6cff">
-      <el-radio-button label="New York" value="New York" />
-      <el-radio-button label="Washington" value="Washington" />
-      <el-radio-button label="Los Angeles" value="Los Angeles" />
-      <el-radio-button label="Chicago" value="Chicago" />
-    </el-radio-group>
+    <g-radio-group v-model="radio" text-color="#fff" fill="#6c6cff">
+      <g-radio-button label="New York" value="New York" />
+      <g-radio-button label="Washington" value="Washington" />
+      <g-radio-button label="Los Angeles" value="Los Angeles" />
+      <g-radio-button label="Chicago" value="Chicago" />
+    </g-radio-group>
   </div>
   <div style="margin-top: 20px">
-    <el-radio-group v-model="radio" size="small">
-      <el-radio-button label="New York" value="New York" />
-      <el-radio-button label="Washington" value="Washington" disabled />
-      <el-radio-button label="Los Angeles" value="Los Angeles" />
-      <el-radio-button label="Chicago" value="Chicago" />
-    </el-radio-group>
+    <g-radio-group v-model="radio" size="small">
+      <g-radio-button label="New York" value="New York" />
+      <g-radio-button label="Washington" value="Washington" disabled />
+      <g-radio-button label="Los Angeles" value="Los Angeles" />
+      <g-radio-button label="Chicago" value="Chicago" />
+    </g-radio-group>
   </div>
 </template>
 

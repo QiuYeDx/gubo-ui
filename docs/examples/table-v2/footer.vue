@@ -1,5 +1,5 @@
 <template>
-  <el-table-v2
+  <g-table-v2
     :columns="columns"
     :data="data"
     :row-height="40"
@@ -14,13 +14,13 @@
         style="
           justify-content: center;
           height: 100%;
-          background-color: var(--el-color-primary-light-7);
+          background-color: var(--g-color-primary-light-7);
         "
       >
         Display a message in the footer
       </div>
     </template>
-  </el-table-v2>
+  </g-table-v2>
 </template>
 
 <script lang="ts" setup>

@@ -1,12 +1,12 @@
 <template>
-  <el-button plain @click="open">Click to open Message Box</el-button>
+  <g-button plain @click="open">Click to open Message Box</g-button>
 </template>
 
 <script lang="ts" setup>
-import { ElMessageBox } from 'element-plus'
+import { GMessageBox } from 'element-plus'
 
 const open = () => {
-  ElMessageBox.alert(
+  GMessageBox.alert(
     '<strong>proxy is <i>HTML</i> string</strong>',
     'HTML String',
     {

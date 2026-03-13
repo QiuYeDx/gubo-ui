@@ -1,5 +1,5 @@
 <template>
-  <el-mention
+  <g-mention
     v-model="value"
     :options="options"
     style="width: 320px"
@@ -7,11 +7,11 @@
   >
     <template #label="{ item }">
       <div style="display: flex; align-items: center">
-        <el-avatar :size="24" :src="item.avatar" />
+        <g-avatar :size="24" :src="item.avatar" />
         <span style="margin-left: 6px">{{ item.value }}</span>
       </div>
     </template>
-  </el-mention>
+  </g-mention>
 </template>
 
 <script setup lang="ts">

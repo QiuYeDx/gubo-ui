@@ -1,12 +1,12 @@
 <template>
-  <el-form
+  <g-form
     ref="formRef"
     style="max-width: 600px"
     :model="numberValidateForm"
     label-width="auto"
     class="demo-ruleForm"
   >
-    <el-form-item
+    <g-form-item
       label="age"
       prop="age"
       :rules="[
@@ -14,17 +14,17 @@
         { type: 'number', message: 'age must be a number' },
       ]"
     >
-      <el-input
+      <g-input
         v-model.number="numberValidateForm.age"
         type="text"
         autocomplete="off"
       />
-    </el-form-item>
-    <el-form-item>
-      <el-button type="primary" @click="submitForm(formRef)">Submit</el-button>
-      <el-button @click="resetForm(formRef)">Reset</el-button>
-    </el-form-item>
-  </el-form>
+    </g-form-item>
+    <g-form-item>
+      <g-button type="primary" @click="submitForm(formRef)">Submit</g-button>
+      <g-button @click="resetForm(formRef)">Reset</g-button>
+    </g-form-item>
+  </g-form>
 </template>
 
 <script lang="ts" setup>

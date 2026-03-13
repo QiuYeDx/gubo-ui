@@ -192,9 +192,9 @@ function initialize(userOptions: any) {
   --docsearch-muted-color: var(--text-color-lighter);
   --docsearch-text-color: var(--text-color-light);
   --docsearch-modal-background: var(--bg-color-soft);
-  --docsearch-modal-shadow: var(--el-box-shadow);
+  --docsearch-modal-shadow: var(--g-box-shadow);
 
-  transition: background-color var(--el-transition-duration-fast);
+  transition: background-color var(--g-transition-duration-fast);
   background-color: transparent;
 
   &.DocSearch-Container {

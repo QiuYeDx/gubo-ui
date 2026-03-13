@@ -1,6 +1,6 @@
 <template>
-  <el-timeline>
-    <el-timeline-item
+  <g-timeline>
+    <g-timeline-item
       v-for="(activity, index) in activities"
       :key="index"
       :icon="activity.icon"
@@ -11,8 +11,8 @@
       :timestamp="activity.timestamp"
     >
       {{ activity.content }}
-    </el-timeline-item>
-  </el-timeline>
+    </g-timeline-item>
+  </g-timeline>
 </template>
 
 <script lang="ts" setup>

@@ -1,22 +1,22 @@
 <template>
   <div class="flex flex-wrap gap-1">
-    <el-button class="!ml-0" plain @click="open">
+    <g-button class="!ml-0" plain @click="open">
       Open a draggable Message Box
-    </el-button>
-    <el-button class="!ml-0" plain @click="open2">
+    </g-button>
+    <g-button class="!ml-0" plain @click="open2">
       Open a overflow draggable Message Box
-    </el-button>
-    <el-button class="!ml-0" plain @click="open3">
+    </g-button>
+    <g-button class="!ml-0" plain @click="open3">
       Open a custom dragging style Message Box
-    </el-button>
+    </g-button>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ElMessage, ElMessageBox } from 'element-plus'
+import { GMessage, GMessageBox } from 'element-plus'
 
 const open = () => {
-  ElMessageBox.confirm(
+  GMessageBox.confirm(
     'proxy will permanently delete the file. Continue?',
     'Warning',
     {
@@ -27,13 +27,13 @@ const open = () => {
     }
   )
     .then(() => {
-      ElMessage({
+      GMessage({
         type: 'success',
         message: 'Delete completed',
       })
     })
     .catch(() => {
-      ElMessage({
+      GMessage({
         type: 'info',
         message: 'Delete canceled',
       })
@@ -41,7 +41,7 @@ const open = () => {
 }
 
 const open2 = () => {
-  ElMessageBox.confirm(
+  GMessageBox.confirm(
     'proxy will permanently delete the file. Continue?',
     'Warning',
     {
@@ -53,13 +53,13 @@ const open2 = () => {
     }
   )
     .then(() => {
-      ElMessage({
+      GMessage({
         type: 'success',
         message: 'Delete completed',
       })
     })
     .catch(() => {
-      ElMessage({
+      GMessage({
         type: 'info',
         message: 'Delete canceled',
       })
@@ -67,7 +67,7 @@ const open2 = () => {
 }
 
 const open3 = () => {
-  ElMessageBox.confirm(
+  GMessageBox.confirm(
     'This message box has custom dragging styles. Try dragging it to see the effects!',
     'Custom Dragging Style',
     {
@@ -79,13 +79,13 @@ const open3 = () => {
     }
   )
     .then(() => {
-      ElMessage({
+      GMessage({
         type: 'success',
         message: 'Action completed',
       })
     })
     .catch(() => {
-      ElMessage({
+      GMessage({
         type: 'info',
         message: 'Action canceled',
       })
@@ -95,7 +95,7 @@ const open3 = () => {
 
 <style>
 .custom-dragging-message-box.is-dragging {
-  border: 2px dashed var(--el-color-primary);
+  border: 2px dashed var(--g-color-primary);
   opacity: 0.65;
 }
 </style>

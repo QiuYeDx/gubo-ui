@@ -1,28 +1,28 @@
 <template>
-  <el-row class="demo-avatar demo-basic">
-    <el-col :lg="12" :md="12">
+  <g-row class="demo-avatar demo-basic">
+    <g-col :lg="12" :md="12">
       <div class="sub-title">circle</div>
       <div class="demo-basic--circle">
         <div class="block">
-          <el-avatar :size="50" :src="circleUrl" />
+          <g-avatar :size="50" :src="circleUrl" />
         </div>
         <div v-for="size in sizeList" :key="size" class="block">
-          <el-avatar :size="size" :src="circleUrl" />
+          <g-avatar :size="size" :src="circleUrl" />
         </div>
       </div>
-    </el-col>
-    <el-col :lg="12" :md="12">
+    </g-col>
+    <g-col :lg="12" :md="12">
       <div class="sub-title">square</div>
       <div class="demo-basic--circle">
         <div class="block">
-          <el-avatar shape="square" :size="50" :src="squareUrl" />
+          <g-avatar shape="square" :size="50" :src="squareUrl" />
         </div>
         <div v-for="size in sizeList" :key="size" class="block">
-          <el-avatar shape="square" :size="size" :src="squareUrl" />
+          <g-avatar shape="square" :size="size" :src="squareUrl" />
         </div>
       </div>
-    </el-col>
-  </el-row>
+    </g-col>
+  </g-row>
 </template>
 
 <script lang="ts" setup>
@@ -46,7 +46,7 @@ const { circleUrl, squareUrl, sizeList } = toRefs(state)
 .demo-basic .sub-title {
   margin-bottom: 10px;
   font-size: 14px;
-  color: var(--el-text-color-secondary);
+  color: var(--g-text-color-secondary);
 }
 .demo-basic .demo-basic--circle,
 .demo-basic .demo-basic--square {
@@ -55,16 +55,16 @@ const { circleUrl, squareUrl, sizeList } = toRefs(state)
   align-items: center;
 }
 .demo-basic .block:not(:last-child) {
-  border-right: 1px solid var(--el-border-color);
+  border-right: 1px solid var(--g-border-color);
 }
 .demo-basic .block {
   flex: 1;
 }
-.demo-basic .el-col:not(:last-child) {
-  border-right: 1px solid var(--el-border-color);
+.demo-basic .g-col:not(:last-child) {
+  border-right: 1px solid var(--g-border-color);
 }
 @media screen and (max-width: 992px) {
-  .demo-basic .el-col:not(:last-child) {
+  .demo-basic .g-col:not(:last-child) {
     border-right: none;
   }
 }

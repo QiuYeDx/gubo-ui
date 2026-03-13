@@ -98,12 +98,12 @@ so you need to use an alias in order to render the icon, if you register `Menu` 
 :::
 
 ```vue
-<!-- Use el-icon to provide attributes to SVG icon -->
+<!-- Use g-icon to provide attributes to SVG icon -->
 <template>
   <div>
-    <el-icon :size="size" :color="color">
+    <g-icon :size="size" :color="color">
       <Edit />
-    </el-icon>
+    </g-icon>
     <!-- Or use it independently without derive attributes from parent -->
     <Edit />
   </div>
@@ -114,18 +114,18 @@ so you need to use an alias in order to render the icon, if you register `Menu` 
 import { Edit, Share, Delete, Search, Loading } from '@element-plus/icons-vue'
 </vp-script>
 
-<ElRow>
+<GRow>
   <div>
-    <ElIcon :size="30">
+    <GIcon :size="30">
       <Edit />
-    </ElIcon>
+    </GIcon>
     <Edit />
   </div>
-</ElRow>
+</GRow>
 
-## Combined with el-icon
+## Combined with g-icon
 
-`el-icon` provides extra attributes for raw SVG icon, for more detail, please read to the end.
+`g-icon` provides extra attributes for raw SVG icon, for more detail, please read to the end.
 
 ```vue
 <template>
@@ -133,53 +133,53 @@ import { Edit, Share, Delete, Search, Loading } from '@element-plus/icons-vue'
     with extra class <b>is-loading</b>, your icon is able to rotate 360 deg in 2
     seconds, you can also override this
   </p>
-  <el-icon :size="20">
+  <g-icon :size="20">
     <Edit />
-  </el-icon>
-  <el-icon color="#409efc" class="no-inherit">
+  </g-icon>
+  <g-icon color="#409efc" class="no-inherit">
     <Share />
-  </el-icon>
-  <el-icon>
+  </g-icon>
+  <g-icon>
     <Delete />
-  </el-icon>
-  <el-icon class="is-loading">
+  </g-icon>
+  <g-icon class="is-loading">
     <Loading />
-  </el-icon>
-  <el-button type="primary">
-    <el-icon style="vertical-align: middle">
+  </g-icon>
+  <g-button type="primary">
+    <g-icon style="vertical-align: middle">
       <Search />
-    </el-icon>
+    </g-icon>
     <span style="vertical-align: middle"> Search </span>
-  </el-button>
+  </g-button>
 </template>
 ```
 
-<ElRow>
+<GRow>
   <p>
     with extra class <b>is-loading</b>, your icon is able to rotate 360 deg in 2
     seconds, you can also override this
   </p>
   <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
-    <ElIcon :size="20">
+    <GIcon :size="20">
       <Edit />
-    </ElIcon>
-    <ElIcon color="#409efc" class="no-inherit">
+    </GIcon>
+    <GIcon color="#409efc" class="no-inherit">
       <Share />
-    </ElIcon>
-    <ElIcon>
+    </GIcon>
+    <GIcon>
       <Delete />
-    </ElIcon>
-    <ElIcon class="is-loading">
+    </GIcon>
+    <GIcon class="is-loading">
       <Loading />
-    </ElIcon>
-    <ElButton type="primary">
-      <ElIcon style="vertical-align: middle; color: #fff;">
+    </GIcon>
+    <GButton type="primary">
+      <GIcon style="vertical-align: middle; color: #fff;">
         <Search />
-      </ElIcon>
+      </GIcon>
       <span style="vertical-align: middle;"> Search </span>
-    </ElButton>
+    </GButton>
   </div>
-</ElRow>
+</GRow>
 
 ## Using SVG icon directly
 
@@ -196,7 +196,7 @@ import { Edit, Share, Delete, Search, Loading } from '@element-plus/icons-vue'
 </template>
 ```
 
-<ElRow>
+<GRow>
   <div style="font-size: 20px;">
     <!-- Since svg icons do not carry any attributes by default -->
     <!-- You need to provide attributes directly -->
@@ -205,7 +205,7 @@ import { Edit, Share, Delete, Search, Loading } from '@element-plus/icons-vue'
     <Delete style="width: 1em; height: 1em; margin-right: 8px;" />
     <Search style="width: 1em; height: 1em; margin-right: 8px;" />
   </div>
-</ElRow>
+</GRow>
 
 ## Icon Collection{#icon-collection}
 

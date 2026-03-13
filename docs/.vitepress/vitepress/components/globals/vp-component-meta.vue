@@ -88,20 +88,20 @@ const openIssues = () => {
 <template>
   <ClientOnly>
     <div v-if="hasChangelog" class="vp-component-changelog">
-      <el-button-group class="component-meta-card" size="small">
-        <el-button :icon="Clock" @click="openDrawer">
+      <g-button-group class="component-meta-card" size="small">
+        <g-button :icon="Clock" @click="openDrawer">
           {{ locale['changelog'] }}
-        </el-button>
-        <el-button :icon="Warning" @click="openIssues">
+        </g-button>
+        <g-button :icon="Warning" @click="openIssues">
           {{ locale['open-issues'] }}
           <div class="issue-count">
             <span v-if="!issueLoading">{{ issueCount ?? 0 }}</span>
-            <el-icon v-else class="is-loading"><Loading /></el-icon>
+            <g-icon v-else class="is-loading"><Loading /></g-icon>
           </div>
-        </el-button>
-      </el-button-group>
+        </g-button>
+      </g-button-group>
 
-      <el-drawer
+      <g-drawer
         v-model="drawerVisible"
         class="changelog-drawer"
         :size="drawerSize"
@@ -113,19 +113,19 @@ const openIssues = () => {
             <span class="changelog-drawer-title">
               {{ locale['changelog'] }}
             </span>
-            <el-link
+            <g-link
               type="primary"
               href="https://github.com/element-plus/element-plus/releases"
               target="_blank"
               rel="noopener noreferrer"
             >
               {{ locale['view-full-changelog'] }}
-            </el-link>
+            </g-link>
           </div>
         </template>
 
-        <el-timeline class="changelog-timeline">
-          <el-timeline-item
+        <g-timeline class="changelog-timeline">
+          <g-timeline-item
             v-for="{ version, date, entries } in changelogs"
             :key="version"
             :type="getTimelineItemType(entries)"
@@ -133,17 +133,17 @@ const openIssues = () => {
             size="large"
           >
             <div class="changelog-version-header">
-              <el-link
+              <g-link
                 :href="`https://github.com/element-plus/element-plus/releases/tag/${version}`"
                 class="changelog-version"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {{ version }}
-              </el-link>
-              <el-tag size="small" round effect="plain">
+              </g-link>
+              <g-tag size="small" round effect="plain">
                 {{ date }}
-              </el-tag>
+              </g-tag>
             </div>
             <ul class="changelog-entries">
               <li
@@ -158,7 +158,7 @@ const openIssues = () => {
                   class="changelog-entry-desc"
                   v-html="renderDescription(description)"
                 />
-                <el-link
+                <g-link
                   v-if="pr"
                   type="primary"
                   :href="`https://github.com/element-plus/element-plus/pull/${pr}`"
@@ -167,8 +167,8 @@ const openIssues = () => {
                   rel="noopener noreferrer"
                 >
                   #{{ pr }}
-                </el-link>
-                <el-link
+                </g-link>
+                <g-link
                   v-if="author"
                   :href="`https://github.com/${author}`"
                   underline="always"
@@ -176,12 +176,12 @@ const openIssues = () => {
                   rel="noopener noreferrer"
                 >
                   @{{ author }}
-                </el-link>
+                </g-link>
               </li>
             </ul>
-          </el-timeline-item>
-        </el-timeline>
-      </el-drawer>
+          </g-timeline-item>
+        </g-timeline>
+      </g-drawer>
     </div>
   </ClientOnly>
 </template>
@@ -211,7 +211,7 @@ const openIssues = () => {
   .changelog-drawer-title {
     font-size: 18px;
     font-weight: 600;
-    color: var(--el-text-color-primary);
+    color: var(--g-text-color-primary);
   }
 
   .changelog-version-header {
@@ -237,7 +237,7 @@ const openIssues = () => {
     margin-bottom: 6px;
     font-size: 14px;
     line-height: 1.6;
-    color: var(--el-text-color-regular);
+    color: var(--g-text-color-regular);
 
     & > span,
     & > a {
@@ -256,13 +256,13 @@ const openIssues = () => {
 
     :deep(code) {
       padding: 2px 6px;
-      color: var(--el-color-primary);
-      background-color: var(--el-color-primary-light-9);
+      color: var(--g-color-primary);
+      background-color: var(--g-color-primary-light-9);
       border-radius: 4px;
     }
 
     :deep(a) {
-      color: var(--el-color-primary);
+      color: var(--g-color-primary);
       text-decoration: none;
 
       &:hover {

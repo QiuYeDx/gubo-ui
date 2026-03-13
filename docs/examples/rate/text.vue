@@ -1,5 +1,5 @@
 <template>
-  <el-rate
+  <g-rate
     v-model="value"
     :texts="['oops', 'disappointed', 'normal', 'good', 'great']"
     show-text

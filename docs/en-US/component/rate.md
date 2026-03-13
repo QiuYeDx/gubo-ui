@@ -72,16 +72,16 @@ rate/readonly
 ## Custom styles
 
 Now you can set custom style for rate component.
-Use `css/scss` language to change the global or local color. We set some global color variables: `--el-rate-void-color`, `--el-rate-fill-color`, `--el-rate-disabled-void-color`, `--el-rate-text-color`. You can use like: `:root { --el-rate-void-color: red; --el-rate-fill-color: blue; }`.
+Use `css/scss` language to change the global or local color. We set some global color variables: `--g-rate-void-color`, `--g-rate-fill-color`, `--g-rate-disabled-void-color`, `--g-rate-text-color`. You can use like: `:root { --g-rate-void-color: red; --g-rate-fill-color: blue; }`.
 
 ### Default Variables
 
 | Variable                      | Default Color                 |
 | ----------------------------- | ----------------------------- |
-| --el-rate-void-color          | var(--el-border-color-darker) |
-| --el-rate-fill-color          | #f7ba2a                       |
-| --el-rate-disabled-void-color | var(--el-fill-color)          |
-| --el-rate-text-color          | var(--el-text-color-primary)  |
+| --g-rate-void-color          | var(--g-border-color-darker) |
+| --g-rate-fill-color          | #f7ba2a                       |
+| --g-rate-disabled-void-color | var(--g-fill-color)          |
+| --g-rate-text-color          | var(--g-text-color-primary)  |
 
 ## API
 

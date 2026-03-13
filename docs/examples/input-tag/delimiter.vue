@@ -1,5 +1,5 @@
 <template>
-  <el-input-tag
+  <g-input-tag
     v-model="input"
     draggable
     placeholder="Try to separate words with ,"

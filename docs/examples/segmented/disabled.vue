@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-start gap-4">
-    <el-segmented v-model="value" :options="options" disabled />
-    <el-segmented v-model="value" :options="options" />
+    <g-segmented v-model="value" :options="options" disabled />
+    <g-segmented v-model="value" :options="options" />
   </div>
 </template>
 

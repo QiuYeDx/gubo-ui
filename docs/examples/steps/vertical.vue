@@ -1,9 +1,9 @@
 <template>
   <div style="height: 300px; max-width: 600px">
-    <el-steps direction="vertical" :active="1">
-      <el-step title="Step 1" />
-      <el-step title="Step 2" />
-      <el-step title="Step 3" />
-    </el-steps>
+    <g-steps direction="vertical" :active="1">
+      <g-step title="Step 1" />
+      <g-step title="Step 2" />
+      <g-step title="Step 3" />
+    </g-steps>
   </div>
 </template>

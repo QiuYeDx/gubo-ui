@@ -1,9 +1,9 @@
 <template>
-  <el-button type="primary" @click="drawer = true"> open </el-button>
+  <g-button type="primary" @click="drawer = true"> open </g-button>
 
-  <el-drawer v-model="drawer" title="I am the title" :with-header="false">
+  <g-drawer v-model="drawer" title="I am the title" :with-header="false">
     <span>Hi there!</span>
-  </el-drawer>
+  </g-drawer>
 </template>
 
 <script lang="ts" setup>

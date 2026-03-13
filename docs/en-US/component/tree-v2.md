@@ -3,7 +3,7 @@ title: Virtualized Tree
 lang: en-US
 ---
 
-# <ElBadge value="beta">Tree V2 virtualized tree</ElBadge>
+# <GBadge value="beta">Tree V2 virtualized tree</GBadge>
 
 Tree view with blazing fast scrolling performance for any amount of data
 

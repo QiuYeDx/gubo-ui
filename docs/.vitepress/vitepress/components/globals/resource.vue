@@ -89,7 +89,7 @@ const resourceCards = computed(() => [
     <p>{{ resourceLang.lineOne }}</p>
     <p v-html="resourceLang.lineTwo" />
     <div class="resource-content">
-      <el-card
+      <g-card
         v-for="card in resourceCards"
         :key="card.title"
         class="card"
@@ -103,9 +103,9 @@ const resourceCards = computed(() => [
           {{ card.intro }}
         </p>
         <a target="_blank" :href="card.url" @click="onClick(card.title)">
-          <el-button type="primary">{{ resourceLang.download }}</el-button>
+          <g-button type="primary">{{ resourceLang.download }}</g-button>
         </a>
-      </el-card>
+      </g-card>
     </div>
   </div>
 </template>

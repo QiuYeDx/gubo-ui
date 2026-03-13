@@ -1,27 +1,27 @@
 <template>
   <div class="demo-image__error" flex gap-2>
-    <el-image />
-    <el-image>
+    <g-image />
+    <g-image>
       <template #error>
         <div class="image-viewer-slot image-slot">
-          <el-icon><icon-picture /></el-icon>
+          <g-icon><icon-picture /></g-icon>
         </div>
       </template>
-    </el-image>
-    <el-image :src="url" :preview-src-list="srcList" show-progress>
+    </g-image>
+    <g-image :src="url" :preview-src-list="srcList" show-progress>
       <template #viewer-error="{ activeIndex, src }">
         <div class="image-slot viewer-error">
-          <el-icon><icon-picture /></el-icon>
+          <g-icon><icon-picture /></g-icon>
           <span>
             this is viewer-error slot. current index: {{ activeIndex }}. src:
             {{ src }}
           </span>
         </div>
       </template>
-    </el-image>
-    <el-button @click="showPreview = true"> preview controlled </el-button>
+    </g-image>
+    <g-button @click="showPreview = true"> preview controlled </g-button>
 
-    <el-image-viewer
+    <g-image-viewer
       v-if="showPreview"
       show-progress
       :url-list="srcList"
@@ -29,14 +29,14 @@
     >
       <template #viewer-error="{ activeIndex, src }">
         <div class="image-slot viewer-error">
-          <el-icon><icon-picture /></el-icon>
+          <g-icon><icon-picture /></g-icon>
           <span>
             this is viewer-error slot. current index: {{ activeIndex }}. src:
             {{ src }}
           </span>
         </div>
       </template>
-    </el-image-viewer>
+    </g-image-viewer>
   </div>
 </template>
 
@@ -55,7 +55,7 @@ const url =
 </script>
 
 <style scoped>
-.demo-image__error .el-image {
+.demo-image__error .g-image {
   max-width: 300px;
   max-height: 200px;
   width: 100%;
@@ -70,11 +70,11 @@ const url =
   height: 200px;
   background: #fff;
 }
-.demo-image__error .image-slot .el-icon {
+.demo-image__error .image-slot .g-icon {
   font-size: 30px;
 }
 .image-viewer-slot {
-  background: var(--el-fill-color-light);
+  background: var(--g-fill-color-light);
 }
 .viewer-error {
   color: #000;

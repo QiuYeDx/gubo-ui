@@ -1,6 +1,6 @@
 <template>
   <div class="custom-tree-node-container">
-    <el-tree
+    <g-tree
       style="max-width: 600px"
       :data="data"
       show-checkbox
@@ -81,17 +81,17 @@ const data: Tree[] = [
 </script>
 
 <style>
-.is-penultimate > .el-tree-node__content .el-tree-node__label {
+.is-penultimate > .g-tree-node__content .g-tree-node__label {
   color: #626aef;
 }
-.is-penultimate > .el-tree-node__children > div {
+.is-penultimate > .g-tree-node__children > div {
   display: inline-block;
   margin-right: 4px;
 
-  &:not(:first-child) .el-tree-node__content {
+  &:not(:first-child) .g-tree-node__content {
     padding-left: 0px !important;
   }
-  .el-tree-node__content {
+  .g-tree-node__content {
     padding-right: 16px;
   }
 }

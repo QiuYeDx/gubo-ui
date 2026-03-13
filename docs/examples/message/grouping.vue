@@ -1,12 +1,12 @@
 <template>
-  <el-button :plain="true" @click="open">Show message</el-button>
+  <g-button :plain="true" @click="open">Show message</g-button>
 </template>
 
 <script lang="ts" setup>
-import { ElMessage } from 'element-plus'
+import { GMessage } from 'element-plus'
 
 const open = () => {
-  ElMessage({
+  GMessage({
     message: 'This is a message.',
     grouping: true,
     type: 'success',

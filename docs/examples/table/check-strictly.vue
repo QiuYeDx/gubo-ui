@@ -1,19 +1,19 @@
 <template>
-  <el-radio-group v-model="treeProps.checkStrictly" class="mb-2">
-    <el-radio-button :value="true" label="true" />
-    <el-radio-button :value="false" label="false" />
-  </el-radio-group>
-  <el-table
+  <g-radio-group v-model="treeProps.checkStrictly" class="mb-2">
+    <g-radio-button :value="true" label="true" />
+    <g-radio-button :value="false" label="false" />
+  </g-radio-group>
+  <g-table
     :data="tableData"
     :tree-props="treeProps"
     row-key="id"
     default-expand-all
   >
-    <el-table-column type="selection" width="55" :selectable="selectable" />
-    <el-table-column prop="date" label="Date" />
-    <el-table-column prop="name" label="Name" />
-    <el-table-column prop="address" label="Address" />
-  </el-table>
+    <g-table-column type="selection" width="55" :selectable="selectable" />
+    <g-table-column prop="date" label="Date" />
+    <g-table-column prop="name" label="Name" />
+    <g-table-column prop="address" label="Address" />
+  </g-table>
 </template>
 
 <script lang="ts" setup>

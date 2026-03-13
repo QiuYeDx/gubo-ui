@@ -47,7 +47,7 @@ app.provide(ZINDEX_INJECTION_KEY, { current: 0 })
 
 ## Teleports
 
-[Teleport](https://vuejs.org/guide/scaling-up/ssr.html#teleports) is used internally by multiple components in Element Plus (eg. ElDialog, ElDrawer, ElTooltip, ElDropdown, ElSelect, ElDatePicker ...), so special handling is required during SSR.
+[Teleport](https://vuejs.org/guide/scaling-up/ssr.html#teleports) is used internally by multiple components in Element Plus (eg. GDialog, GDrawer, GTooltip, GDropdown, GSelect, GDatePicker ...), so special handling is required during SSR.
 
 ### Render the Teleport on the mount
 
@@ -57,9 +57,9 @@ For example, use the `ClientOnly` component in Nuxt.
 
 ```html
 <client-only>
-  <el-tooltip content="the tooltip content">
-    <el-button>tooltip</el-button>
-  </el-tooltip>
+  <g-tooltip content="the tooltip content">
+    <g-button>tooltip</g-button>
+  </g-tooltip>
 </client-only>
 ```
 
@@ -77,9 +77,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <el-tooltip v-if="isClient" content="the tooltip content">
-    <el-button>tooltip</el-button>
-  </el-tooltip>
+  <g-tooltip v-if="isClient" content="the tooltip content">
+    <g-button>tooltip</g-button>
+  </g-tooltip>
 </template>
 ```
 
@@ -106,7 +106,7 @@ You need to inject the teleport markup close to the `<body>` tag.
 
 :::tip
 
-If you modify the [Namespace](./namespace.md) or `append-to` attribute, you need to adjust the `#el-popper-container-` value.
+If you modify the [Namespace](./namespace.md) or `append-to` attribute, you need to adjust the `#g-popper-container-` value.
 
 :::
 
@@ -128,7 +128,7 @@ export async function render(url, manifest) {
 function renderTeleports(teleports) {
   if (!teleports) return ''
   return Object.entries(teleports).reduce((all, [key, value]) => {
-    if (key.startsWith('#el-popper-container-')) {
+    if (key.startsWith('#g-popper-container-')) {
       return `${all}<div id="${key.slice(1)}">${value}</div>`
     }
     return all

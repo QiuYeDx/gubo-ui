@@ -1,15 +1,15 @@
 <template>
-  <el-anchor :offset="70" direction="horizontal">
-    <el-anchor-link :href="`#${locale['basic-usage']}`">
+  <g-anchor :offset="70" direction="horizontal">
+    <g-anchor-link :href="`#${locale['basic-usage']}`">
       {{ locale['Basic Usage'] }}
-    </el-anchor-link>
-    <el-anchor-link :href="`#${locale['horizontal-mode']}`">
+    </g-anchor-link>
+    <g-anchor-link :href="`#${locale['horizontal-mode']}`">
       {{ locale['Horizontal Mode'] }}
-    </el-anchor-link>
-    <el-anchor-link :href="`#${locale['scroll-container']}`">
+    </g-anchor-link>
+    <g-anchor-link :href="`#${locale['scroll-container']}`">
       {{ locale['Scroll Container'] }}
-    </el-anchor-link>
-  </el-anchor>
+    </g-anchor-link>
+  </g-anchor>
 </template>
 
 <script lang="ts" setup>

@@ -49,6 +49,6 @@ const shadowGroup = ref([
 ])
 
 const getCssVarName = (type: string) => {
-  return `--el-box-shadow${type ? '-' : ''}${type}`
+  return `--g-box-shadow${type ? '-' : ''}${type}`
 }
 </script>

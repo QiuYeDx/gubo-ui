@@ -1,5 +1,5 @@
 <template>
-  <el-form
+  <g-form
     ref="ruleFormRef"
     style="max-width: 600px"
     :model="ruleForm"
@@ -8,26 +8,26 @@
     label-width="auto"
     class="demo-ruleForm"
   >
-    <el-form-item label="Password" prop="pass">
-      <el-input v-model="ruleForm.pass" type="password" autocomplete="off" />
-    </el-form-item>
-    <el-form-item label="Confirm" prop="checkPass">
-      <el-input
+    <g-form-item label="Password" prop="pass">
+      <g-input v-model="ruleForm.pass" type="password" autocomplete="off" />
+    </g-form-item>
+    <g-form-item label="Confirm" prop="checkPass">
+      <g-input
         v-model="ruleForm.checkPass"
         type="password"
         autocomplete="off"
       />
-    </el-form-item>
-    <el-form-item label="Age" prop="age">
-      <el-input v-model.number="ruleForm.age" />
-    </el-form-item>
-    <el-form-item>
-      <el-button type="primary" @click="submitForm(ruleFormRef)">
+    </g-form-item>
+    <g-form-item label="Age" prop="age">
+      <g-input v-model.number="ruleForm.age" />
+    </g-form-item>
+    <g-form-item>
+      <g-button type="primary" @click="submitForm(ruleFormRef)">
         Submit
-      </el-button>
-      <el-button @click="resetForm(ruleFormRef)">Reset</el-button>
-    </el-form-item>
-  </el-form>
+      </g-button>
+      <g-button @click="resetForm(ruleFormRef)">Reset</g-button>
+    </g-form-item>
+  </g-form>
 </template>
 
 <script lang="ts" setup>

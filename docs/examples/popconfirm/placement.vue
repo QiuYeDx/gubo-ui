@@ -1,118 +1,118 @@
 <template>
   <div class="popconfirm-base-box">
     <div class="row center">
-      <el-popconfirm
+      <g-popconfirm
         class="box-item"
         title="Top Left prompts info"
         placement="top-start"
       >
         <template #reference>
-          <el-button>top-start</el-button>
+          <g-button>top-start</g-button>
         </template>
-      </el-popconfirm>
-      <el-popconfirm
+      </g-popconfirm>
+      <g-popconfirm
         class="box-item"
         title="Top Center prompts info"
         placement="top"
       >
         <template #reference>
-          <el-button>top</el-button>
+          <g-button>top</g-button>
         </template>
-      </el-popconfirm>
-      <el-popconfirm
+      </g-popconfirm>
+      <g-popconfirm
         class="box-item"
         title="Top Right prompts info"
         placement="top-end"
       >
         <template #reference>
-          <el-button>top-end</el-button>
+          <g-button>top-end</g-button>
         </template>
-      </el-popconfirm>
+      </g-popconfirm>
     </div>
     <div class="row">
-      <el-popconfirm
+      <g-popconfirm
         class="box-item"
         title="Left Top prompts info"
         placement="left-start"
       >
         <template #reference>
-          <el-button>left-start</el-button>
+          <g-button>left-start</g-button>
         </template>
-      </el-popconfirm>
-      <el-popconfirm
+      </g-popconfirm>
+      <g-popconfirm
         class="box-item"
         title="Right Top prompts info"
         placement="right-start"
       >
         <template #reference>
-          <el-button>right-start</el-button>
+          <g-button>right-start</g-button>
         </template>
-      </el-popconfirm>
+      </g-popconfirm>
     </div>
     <div class="row">
-      <el-popconfirm
+      <g-popconfirm
         class="box-item"
         title="Left Center prompts info"
         placement="left"
       >
         <template #reference>
-          <el-button class="mt-3 mb-3">left</el-button>
+          <g-button class="mt-3 mb-3">left</g-button>
         </template>
-      </el-popconfirm>
-      <el-popconfirm
+      </g-popconfirm>
+      <g-popconfirm
         class="box-item"
         title="Right Center prompts info"
         placement="right"
       >
         <template #reference>
-          <el-button>right</el-button>
+          <g-button>right</g-button>
         </template>
-      </el-popconfirm>
+      </g-popconfirm>
     </div>
     <div class="row">
-      <el-popconfirm
+      <g-popconfirm
         class="box-item"
         title="Left Bottom prompts info"
         placement="left-end"
       >
         <template #reference>
-          <el-button>left-end</el-button>
+          <g-button>left-end</g-button>
         </template>
-      </el-popconfirm>
-      <el-popconfirm
+      </g-popconfirm>
+      <g-popconfirm
         class="box-item"
         title="Right Bottom prompts info"
         placement="right-end"
       >
         <template #reference>
-          <el-button>right-end</el-button>
+          <g-button>right-end</g-button>
         </template>
-      </el-popconfirm>
+      </g-popconfirm>
     </div>
     <div class="row center">
-      <el-popconfirm
+      <g-popconfirm
         class="box-item"
         title="Bottom Left prompts info"
         placement="bottom-start"
       >
-        <template #reference> <el-button>bottom-start</el-button></template>
-      </el-popconfirm>
-      <el-popconfirm
+        <template #reference> <g-button>bottom-start</g-button></template>
+      </g-popconfirm>
+      <g-popconfirm
         class="box-item"
         title="Bottom Center prompts info"
         placement="bottom"
       >
-        <template #reference> <el-button>bottom</el-button></template>
-      </el-popconfirm>
-      <el-popconfirm
+        <template #reference> <g-button>bottom</g-button></template>
+      </g-popconfirm>
+      <g-popconfirm
         class="box-item"
         title="Bottom Right prompts info"
         placement="bottom-end"
       >
         <template #reference>
-          <el-button>bottom-end</el-button>
+          <g-button>bottom-end</g-button>
         </template>
-      </el-popconfirm>
+      </g-popconfirm>
     </div>
   </div>
 </template>

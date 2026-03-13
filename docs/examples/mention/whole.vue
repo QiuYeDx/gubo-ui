@@ -1,13 +1,13 @@
 <template>
-  <el-mention
+  <g-mention
     v-model="value1"
     whole
     :options="options1"
     style="width: 320px"
     placeholder="Please input"
   />
-  <el-divider />
-  <el-mention
+  <g-divider />
+  <g-mention
     v-model="value2"
     :options="options2"
     :prefix="['@', '#']"

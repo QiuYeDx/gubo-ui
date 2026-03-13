@@ -1,15 +1,15 @@
 <template>
   <div
-    style="height: 250px; box-shadow: var(--el-border-color-light) 0px 0px 10px"
+    style="height: 250px; box-shadow: var(--g-border-color-light) 0px 0px 10px"
   >
-    <el-splitter layout="vertical">
-      <el-splitter-panel>
+    <g-splitter layout="vertical">
+      <g-splitter-panel>
         <div class="demo-panel">1</div>
-      </el-splitter-panel>
-      <el-splitter-panel>
+      </g-splitter-panel>
+      <g-splitter-panel>
         <div class="demo-panel">2</div>
-      </el-splitter-panel>
-    </el-splitter>
+      </g-splitter-panel>
+    </g-splitter>
   </div>
 </template>
 

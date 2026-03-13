@@ -1,10 +1,10 @@
 <template>
-  <el-badge :value="200" :max="99" class="item">
-    <el-button>comments</el-button>
-  </el-badge>
-  <el-badge :value="100" :max="10" class="item">
-    <el-button>replies</el-button>
-  </el-badge>
+  <g-badge :value="200" :max="99" class="item">
+    <g-button>comments</g-button>
+  </g-badge>
+  <g-badge :value="100" :max="10" class="item">
+    <g-button>replies</g-button>
+  </g-badge>
 </template>
 
 <style scoped>

@@ -1,12 +1,12 @@
 <template>
   <div class="demo-progress">
-    <el-progress type="dashboard" :percentage="percentage" :color="colors" />
-    <el-progress type="dashboard" :percentage="percentage2" :color="colors" />
+    <g-progress type="dashboard" :percentage="percentage" :color="colors" />
+    <g-progress type="dashboard" :percentage="percentage2" :color="colors" />
     <div>
-      <el-button-group>
-        <el-button :icon="Minus" @click="decrease" />
-        <el-button :icon="Plus" @click="increase" />
-      </el-button-group>
+      <g-button-group>
+        <g-button :icon="Minus" @click="decrease" />
+        <g-button :icon="Plus" @click="increase" />
+      </g-button-group>
     </div>
   </div>
 </template>
@@ -46,11 +46,11 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.demo-progress .el-progress--line {
+.demo-progress .g-progress--line {
   margin-bottom: 15px;
   max-width: 600px;
 }
-.demo-progress .el-progress--circle {
+.demo-progress .g-progress--circle {
   margin-right: 15px;
 }
 </style>

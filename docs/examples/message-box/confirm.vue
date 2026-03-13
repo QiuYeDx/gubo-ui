@@ -1,12 +1,12 @@
 <template>
-  <el-button plain @click="open">Click to open the Message Box</el-button>
+  <g-button plain @click="open">Click to open the Message Box</g-button>
 </template>
 
 <script lang="ts" setup>
-import { ElMessage, ElMessageBox } from 'element-plus'
+import { GMessage, GMessageBox } from 'element-plus'
 
 const open = () => {
-  ElMessageBox.confirm(
+  GMessageBox.confirm(
     'proxy will permanently delete the file. Continue?',
     'Warning',
     {
@@ -16,13 +16,13 @@ const open = () => {
     }
   )
     .then(() => {
-      ElMessage({
+      GMessage({
         type: 'success',
         message: 'Delete completed',
       })
     })
     .catch(() => {
-      ElMessage({
+      GMessage({
         type: 'info',
         message: 'Delete canceled',
       })

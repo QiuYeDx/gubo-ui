@@ -9,7 +9,7 @@ Switch is used for switching between two opposing states.
 
 ## Basic usage
 
-:::demo Bind `v-model` to a `Boolean` typed variable. The `--el-switch-on-color` and `--el-switch-off-color` CSS variables decides the background color in two states.
+:::demo Bind `v-model` to a `Boolean` typed variable. The `--g-switch-on-color` and `--g-switch-off-color` CSS variables decides the background color in two states.
 
 switch/basic
 
@@ -121,9 +121,9 @@ switch/custom-action-slot
 | id                            | id for input                                                                                                                                    | ^[string]                                      | —       |
 | tabindex                      | tabindex for input                                                                                                                              | ^[string] / ^[number]                          | —       |
 | aria-label ^(a11y) ^(2.7.2)   | same as `aria-label` in native input                                                                                                            | ^[string]                                      | —       |
-| active-color ^(deprecated)    | background color when in `on` state ( use CSS var `--el-switch-on-color` instead )                                                              | ^[string]                                      | ''      |
-| inactive-color ^(deprecated)  | background color when in `off` state ( use CSS var `--el-switch-off-color` instead )                                                            | ^[string]                                      | ''      |
-| border-color ^(deprecated)    | border color of the switch ( use CSS var `--el-switch-border-color` instead )                                                                   | ^[string]                                      | ''      |
+| active-color ^(deprecated)    | background color when in `on` state ( use CSS var `--g-switch-on-color` instead )                                                              | ^[string]                                      | ''      |
+| inactive-color ^(deprecated)  | background color when in `off` state ( use CSS var `--g-switch-off-color` instead )                                                            | ^[string]                                      | ''      |
+| border-color ^(deprecated)    | border color of the switch ( use CSS var `--g-switch-border-color` instead )                                                                   | ^[string]                                      | ''      |
 | label ^(a11y) ^(deprecated)   | same as `aria-label` in native input                                                                                                            | ^[string]                                      | —       |
 
 ### Events

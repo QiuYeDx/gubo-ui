@@ -1,39 +1,39 @@
 <template>
-  <el-upload action="#" list-type="picture-card" :auto-upload="false">
-    <el-icon><Plus /></el-icon>
+  <g-upload action="#" list-type="picture-card" :auto-upload="false">
+    <g-icon><Plus /></g-icon>
 
     <template #file="{ file }">
       <div>
-        <img class="el-upload-list__item-thumbnail" :src="file.url" alt="" />
-        <span class="el-upload-list__item-actions">
+        <img class="g-upload-list__item-thumbnail" :src="file.url" alt="" />
+        <span class="g-upload-list__item-actions">
           <span
-            class="el-upload-list__item-preview"
+            class="g-upload-list__item-preview"
             @click="handlePictureCardPreview(file)"
           >
-            <el-icon><zoom-in /></el-icon>
+            <g-icon><zoom-in /></g-icon>
           </span>
           <span
             v-if="!disabled"
-            class="el-upload-list__item-delete"
+            class="g-upload-list__item-delete"
             @click="handleDownload(file)"
           >
-            <el-icon><Download /></el-icon>
+            <g-icon><Download /></g-icon>
           </span>
           <span
             v-if="!disabled"
-            class="el-upload-list__item-delete"
+            class="g-upload-list__item-delete"
             @click="handleRemove(file)"
           >
-            <el-icon><Delete /></el-icon>
+            <g-icon><Delete /></g-icon>
           </span>
         </span>
       </div>
     </template>
-  </el-upload>
+  </g-upload>
 
-  <el-dialog v-model="dialogVisible">
+  <g-dialog v-model="dialogVisible">
     <img w-full :src="dialogImageUrl" alt="Preview Image" />
-  </el-dialog>
+  </g-dialog>
 </template>
 
 <script lang="ts" setup>

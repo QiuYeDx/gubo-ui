@@ -1,15 +1,15 @@
 <template>
   <div style="max-width: 600px">
-    <el-alert title="Primary alert" type="primary" show-icon />
-    <el-alert title="Success alert" type="success" show-icon />
-    <el-alert title="Info alert" type="info" show-icon />
-    <el-alert title="Warning alert" type="warning" show-icon />
-    <el-alert title="Error alert" type="error" show-icon />
-    <el-alert title="Error alert with custom icon" type="error" show-icon>
+    <g-alert title="Primary alert" type="primary" show-icon />
+    <g-alert title="Success alert" type="success" show-icon />
+    <g-alert title="Info alert" type="info" show-icon />
+    <g-alert title="Warning alert" type="warning" show-icon />
+    <g-alert title="Error alert" type="error" show-icon />
+    <g-alert title="Error alert with custom icon" type="error" show-icon>
       <template #icon>
         <Bell />
       </template>
-    </el-alert>
+    </g-alert>
   </div>
 </template>
 
@@ -18,10 +18,10 @@ import { Bell } from '@element-plus/icons-vue'
 </script>
 
 <style scoped>
-.el-alert {
+.g-alert {
   margin: 20px 0 0;
 }
-.el-alert:first-child {
+.g-alert:first-child {
   margin: 0;
 }
 </style>

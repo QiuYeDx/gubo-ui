@@ -1,30 +1,30 @@
 <template>
   <div style="max-width: 600px">
-    <el-alert
+    <g-alert
       title="Primary alert"
       type="primary"
       description="More text description"
       show-icon
     />
-    <el-alert
+    <g-alert
       title="Success alert"
       type="success"
       description="More text description"
       show-icon
     />
-    <el-alert
+    <g-alert
       title="Info alert"
       type="info"
       description="More text description"
       show-icon
     />
-    <el-alert
+    <g-alert
       title="Warning alert"
       type="warning"
       description="More text description"
       show-icon
     />
-    <el-alert
+    <g-alert
       title="Error alert"
       type="error"
       description="More text description"
@@ -36,10 +36,10 @@
 <script setup lang="ts"></script>
 
 <style scoped>
-.el-alert {
+.g-alert {
   margin: 20px 0 0;
 }
-.el-alert:first-child {
+.g-alert:first-child {
   margin: 0;
 }
 </style>

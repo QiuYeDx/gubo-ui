@@ -1,16 +1,16 @@
 <template>
   <div class="demo-progress">
-    <el-progress :percentage="percentage" :color="customColor" />
+    <g-progress :percentage="percentage" :color="customColor" />
 
-    <el-progress :percentage="percentage" :color="customColorMethod" />
+    <g-progress :percentage="percentage" :color="customColorMethod" />
 
-    <el-progress :percentage="percentage" :color="customColors" />
-    <el-progress :percentage="percentage" :color="customColors" />
+    <g-progress :percentage="percentage" :color="customColors" />
+    <g-progress :percentage="percentage" :color="customColors" />
     <div>
-      <el-button-group>
-        <el-button :icon="Minus" @click="decrease" />
-        <el-button :icon="Plus" @click="increase" />
-      </el-button-group>
+      <g-button-group>
+        <g-button :icon="Minus" @click="decrease" />
+        <g-button :icon="Plus" @click="increase" />
+      </g-button-group>
     </div>
   </div>
 </template>
@@ -54,7 +54,7 @@ const decrease = () => {
 </script>
 
 <style scoped>
-.demo-progress .el-progress--line {
+.demo-progress .g-progress--line {
   margin-bottom: 15px;
   max-width: 600px;
 }

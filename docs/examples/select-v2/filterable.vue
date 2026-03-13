@@ -1,5 +1,5 @@
 <template>
-  <el-select-v2
+  <g-select-v2
     v-model="value"
     filterable
     :options="options"

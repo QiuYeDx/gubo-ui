@@ -1,39 +1,39 @@
 <template>
   <div class="flex flex-wrap gap-4 items-center">
-    <el-select
+    <g-select
       v-model="value"
       placeholder="Select"
       size="large"
       style="width: 240px"
     >
-      <el-option
+      <g-option
         v-for="item in options"
         :key="item.value"
         :label="item.label"
         :value="item.value"
       />
-    </el-select>
-    <el-select v-model="value" placeholder="Select" style="width: 240px">
-      <el-option
+    </g-select>
+    <g-select v-model="value" placeholder="Select" style="width: 240px">
+      <g-option
         v-for="item in options"
         :key="item.value"
         :label="item.label"
         :value="item.value"
       />
-    </el-select>
-    <el-select
+    </g-select>
+    <g-select
       v-model="value"
       placeholder="Select"
       size="small"
       style="width: 240px"
     >
-      <el-option
+      <g-option
         v-for="item in options"
         :key="item.value"
         :label="item.label"
         :value="item.value"
       />
-    </el-select>
+    </g-select>
   </div>
 </template>
 

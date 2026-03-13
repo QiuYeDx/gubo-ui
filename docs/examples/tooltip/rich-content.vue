@@ -1,6 +1,6 @@
 <template>
-  <el-tooltip placement="top">
+  <g-tooltip placement="top">
     <template #content> multiple lines<br />second line </template>
-    <el-button>Top center</el-button>
-  </el-tooltip>
+    <g-button>Top center</g-button>
+  </g-tooltip>
 </template>

@@ -4,12 +4,12 @@ import { isDark } from '~/composables/dark'
 
 <template>
   <div>
-    <el-button color="#626aef" :dark="isDark">Default</el-button>
-    <el-button color="#626aef" :dark="isDark" plain>Plain</el-button>
+    <g-button color="#626aef" :dark="isDark">Default</g-button>
+    <g-button color="#626aef" :dark="isDark" plain>Plain</g-button>
 
-    <el-button color="#626aef" :dark="isDark" disabled>Disabled</el-button>
-    <el-button color="#626aef" :dark="isDark" disabled plain>
+    <g-button color="#626aef" :dark="isDark" disabled>Disabled</g-button>
+    <g-button color="#626aef" :dark="isDark" disabled plain>
       Disabled Plain
-    </el-button>
+    </g-button>
   </div>
 </template>

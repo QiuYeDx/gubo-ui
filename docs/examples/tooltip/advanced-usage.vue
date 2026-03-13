@@ -1,14 +1,14 @@
 <template>
-  <el-tooltip
+  <g-tooltip
     :disabled="disabled"
     content="click to close tooltip function"
     placement="bottom"
     effect="light"
   >
-    <el-button @click="disabled = !disabled">
+    <g-button @click="disabled = !disabled">
       click to {{ disabled ? 'active' : 'close' }} tooltip function
-    </el-button>
-  </el-tooltip>
+    </g-button>
+  </g-tooltip>
 </template>
 
 <script lang="ts" setup>

@@ -1,20 +1,20 @@
 <template>
-  <el-upload
+  <g-upload
     class="upload-demo"
     drag
     action="https://run.mocky.io/v3/9d059bf9-4660-45f2-925d-ce80ad6c4d15"
     multiple
   >
-    <el-icon class="el-icon--upload"><upload-filled /></el-icon>
-    <div class="el-upload__text">
+    <g-icon class="g-icon--upload"><upload-filled /></g-icon>
+    <div class="g-upload__text">
       Drop file here or <em>click to upload</em>
     </div>
     <template #tip>
-      <div class="el-upload__tip">
+      <div class="g-upload__tip">
         jpg/png files with a size less than 500kb
       </div>
     </template>
-  </el-upload>
+  </g-upload>
 </template>
 
 <script setup lang="ts">

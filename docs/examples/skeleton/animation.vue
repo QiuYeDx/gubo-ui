@@ -1,3 +1,3 @@
 <template>
-  <el-skeleton :rows="5" animated />
+  <g-skeleton :rows="5" animated />
 </template>

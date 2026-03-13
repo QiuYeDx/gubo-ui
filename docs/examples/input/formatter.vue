@@ -1,5 +1,5 @@
 <template>
-  <el-input
+  <g-input
     v-model="input"
     style="width: 240px"
     placeholder="Please input"

@@ -1,6 +1,6 @@
 <template>
   <div class="custom-style">
-    <el-segmented v-model="value" :options="options" />
+    <g-segmented v-model="value" :options="options" />
   </div>
 </template>
 
@@ -13,9 +13,9 @@ const options = ['Delicacy', 'Desserts&Drinks', 'Fresh foods', 'Supermarket']
 </script>
 
 <style scoped>
-.custom-style .el-segmented {
-  --el-segmented-item-selected-color: var(--el-text-color-primary);
-  --el-segmented-item-selected-bg-color: #ffd100;
-  --el-border-radius-base: 16px;
+.custom-style .g-segmented {
+  --g-segmented-item-selected-color: var(--g-text-color-primary);
+  --g-segmented-item-selected-bg-color: #ffd100;
+  --g-border-radius-base: 16px;
 }
 </style>

@@ -1,25 +1,25 @@
 <template>
   <div class="m-4">
     <p>Using slots allows for more flexible control over the display.</p>
-    <el-cascader :options="options" :props="props" clearable>
+    <g-cascader :options="options" :props="props" clearable>
       <template #tag="{ data }">
-        <el-tag
+        <g-tag
           v-for="(item, index) in getTags(data)"
           :key="item"
           :color="index % 2 === 0 ? '#FFDE0A' : ''"
         >
           {{ item }}
-        </el-tag>
+        </g-tag>
       </template>
-    </el-cascader>
+    </g-cascader>
     <p>Display top-level tags only</p>
-    <el-cascader :options="options" :props="props" clearable>
+    <g-cascader :options="options" :props="props" clearable>
       <template #tag="{ data }">
-        <el-tag v-for="item in getTopLevelTags(data)" :key="item">
+        <g-tag v-for="item in getTopLevelTags(data)" :key="item">
           {{ item }}
-        </el-tag>
+        </g-tag>
       </template>
-    </el-cascader>
+    </g-cascader>
   </div>
 </template>
 

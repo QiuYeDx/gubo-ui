@@ -1,5 +1,5 @@
 <template>
-  <el-table-v2
+  <g-table-v2
     fixed
     :columns="fixedColumns"
     :data="data"
@@ -11,10 +11,10 @@
 <script lang="tsx" setup>
 import { computed, ref } from 'vue'
 import {
-  ElButton,
-  ElCheckbox,
-  ElIcon,
-  ElPopover,
+  GButton,
+  GCheckbox,
+  GIcon,
+  GPopover,
   TableV2FixedDir,
   useLocale,
 } from 'element-plus'
@@ -74,7 +74,7 @@ const onReset = () => {
 }
 
 const handleShowPopover = () => {
-  const button = document.querySelector('.el-table-v2__demo-filter button')
+  const button = document.querySelector('.g-table-v2__demo-filter button')
   ;(button as HTMLElement)?.focus()
 }
 
@@ -82,7 +82,7 @@ columns[0].headerCellRenderer = (props: HeaderCellSlotProps) => {
   return (
     <div class="flex items-center justify-center">
       <span class="mr-2 text-xs">{props.column.title}</span>
-      <ElPopover
+      <GPopover
         ref={popoverRef}
         trigger="click"
         width={200}
@@ -92,17 +92,17 @@ columns[0].headerCellRenderer = (props: HeaderCellSlotProps) => {
           default: () => (
             <div class="filter-wrapper">
               <div class="filter-group">
-                <ElCheckbox v-model={shouldFilter.value}>
+                <GCheckbox v-model={shouldFilter.value}>
                   Filter Text
-                </ElCheckbox>
+                </GCheckbox>
               </div>
-              <div class="el-table-v2__demo-filter">
-                <ElButton text onClick={onFilter}>
+              <div class="g-table-v2__demo-filter">
+                <GButton text onClick={onFilter}>
                   Confirm
-                </ElButton>
-                <ElButton text onClick={onReset}>
+                </GButton>
+                <GButton text onClick={onReset}>
                   Reset
-                </ElButton>
+                </GButton>
               </div>
             </div>
           ),
@@ -110,15 +110,15 @@ columns[0].headerCellRenderer = (props: HeaderCellSlotProps) => {
             <button
               type="button"
               aria-label={ariaLabel.value}
-              class="el-table-v2__demo-filter-btn"
+              class="g-table-v2__demo-filter-btn"
             >
-              <ElIcon size={14}>
+              <GIcon size={14}>
                 <Filter />
-              </ElIcon>
+              </GIcon>
             </button>
           ),
         }}
-      </ElPopover>
+      </GPopover>
     </div>
   )
 }
@@ -132,14 +132,14 @@ const fixedColumns = columns.map((column, columnIndex) => {
 </script>
 
 <style>
-.el-table-v2__demo-filter {
-  border-top: var(--el-border);
+.g-table-v2__demo-filter {
+  border-top: var(--g-border);
   margin: 12px -12px -12px;
   padding: 0 12px;
   display: flex;
   justify-content: space-between;
 }
-.el-table-v2__demo-filter-btn {
+.g-table-v2__demo-filter-btn {
   display: flex;
   cursor: pointer;
   padding: 0;

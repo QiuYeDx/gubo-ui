@@ -1,9 +1,9 @@
 <template>
   <div class="common-layout">
-    <el-container>
-      <el-aside width="200px">Aside</el-aside>
-      <el-main>Main</el-main>
-      <el-aside width="200px">Aside</el-aside>
-    </el-container>
+    <g-container>
+      <g-aside width="200px">Aside</g-aside>
+      <g-main>Main</g-main>
+      <g-aside width="200px">Aside</g-aside>
+    </g-container>
   </div>
 </template>

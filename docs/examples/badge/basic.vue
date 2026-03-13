@@ -1,37 +1,37 @@
 <template>
-  <el-badge :value="12" class="item">
-    <el-button>comments</el-button>
-  </el-badge>
-  <el-badge :value="3" class="item">
-    <el-button>replies</el-button>
-  </el-badge>
-  <el-badge :value="1" class="item" type="primary">
-    <el-button>comments</el-button>
-  </el-badge>
-  <el-badge :value="2" class="item" type="warning">
-    <el-button>replies</el-button>
-  </el-badge>
-  <el-badge :value="1" class="item" color="green">
-    <el-button>custom background</el-button>
-  </el-badge>
-  <el-dropdown trigger="click">
-    <span class="el-dropdown-link">
+  <g-badge :value="12" class="item">
+    <g-button>comments</g-button>
+  </g-badge>
+  <g-badge :value="3" class="item">
+    <g-button>replies</g-button>
+  </g-badge>
+  <g-badge :value="1" class="item" type="primary">
+    <g-button>comments</g-button>
+  </g-badge>
+  <g-badge :value="2" class="item" type="warning">
+    <g-button>replies</g-button>
+  </g-badge>
+  <g-badge :value="1" class="item" color="green">
+    <g-button>custom background</g-button>
+  </g-badge>
+  <g-dropdown trigger="click">
+    <span class="g-dropdown-link">
       Click Me
-      <el-icon class="el-icon--right"><caret-bottom /></el-icon>
+      <g-icon class="g-icon--right"><caret-bottom /></g-icon>
     </span>
     <template #dropdown>
-      <el-dropdown-menu>
-        <el-dropdown-item class="clearfix">
+      <g-dropdown-menu>
+        <g-dropdown-item class="clearfix">
           comments
-          <el-badge class="mark" :value="12" />
-        </el-dropdown-item>
-        <el-dropdown-item class="clearfix">
+          <g-badge class="mark" :value="12" />
+        </g-dropdown-item>
+        <g-dropdown-item class="clearfix">
           replies
-          <el-badge class="mark" :value="3" />
-        </el-dropdown-item>
-      </el-dropdown-menu>
+          <g-badge class="mark" :value="3" />
+        </g-dropdown-item>
+      </g-dropdown-menu>
     </template>
-  </el-dropdown>
+  </g-dropdown>
 </template>
 
 <script lang="ts" setup>
@@ -44,7 +44,7 @@ import { CaretBottom } from '@element-plus/icons-vue'
   margin-right: 30px;
 }
 
-.el-dropdown {
+.g-dropdown {
   margin-top: 1.1rem;
 }
 </style>

@@ -1,11 +1,11 @@
 <template>
-  <el-radio-group v-model="size">
-    <el-radio value="large">Large</el-radio>
-    <el-radio value="default">Default</el-radio>
-    <el-radio value="small">Small</el-radio>
-  </el-radio-group>
+  <g-radio-group v-model="size">
+    <g-radio value="large">Large</g-radio>
+    <g-radio value="default">Default</g-radio>
+    <g-radio value="small">Small</g-radio>
+  </g-radio-group>
 
-  <el-descriptions
+  <g-descriptions
     class="margin-top"
     title="With border"
     :column="3"
@@ -13,66 +13,66 @@
     border
   >
     <template #extra>
-      <el-button type="primary">Operation</el-button>
+      <g-button type="primary">Operation</g-button>
     </template>
-    <el-descriptions-item>
+    <g-descriptions-item>
       <template #label>
         <div class="cell-item">
-          <el-icon :style="iconStyle">
+          <g-icon :style="iconStyle">
             <user />
-          </el-icon>
+          </g-icon>
           Username
         </div>
       </template>
       kooriookami
-    </el-descriptions-item>
-    <el-descriptions-item>
+    </g-descriptions-item>
+    <g-descriptions-item>
       <template #label>
         <div class="cell-item">
-          <el-icon :style="iconStyle">
+          <g-icon :style="iconStyle">
             <iphone />
-          </el-icon>
+          </g-icon>
           Telephone
         </div>
       </template>
       18100000000
-    </el-descriptions-item>
-    <el-descriptions-item>
+    </g-descriptions-item>
+    <g-descriptions-item>
       <template #label>
         <div class="cell-item">
-          <el-icon :style="iconStyle">
+          <g-icon :style="iconStyle">
             <location />
-          </el-icon>
+          </g-icon>
           Place
         </div>
       </template>
       Suzhou
-    </el-descriptions-item>
-    <el-descriptions-item>
+    </g-descriptions-item>
+    <g-descriptions-item>
       <template #label>
         <div class="cell-item">
-          <el-icon :style="iconStyle">
+          <g-icon :style="iconStyle">
             <tickets />
-          </el-icon>
+          </g-icon>
           Remarks
         </div>
       </template>
-      <el-tag size="small">School</el-tag>
-    </el-descriptions-item>
-    <el-descriptions-item>
+      <g-tag size="small">School</g-tag>
+    </g-descriptions-item>
+    <g-descriptions-item>
       <template #label>
         <div class="cell-item">
-          <el-icon :style="iconStyle">
+          <g-icon :style="iconStyle">
             <office-building />
-          </el-icon>
+          </g-icon>
           Address
         </div>
       </template>
       No.1188, Wuzhong Avenue, Wuzhong District, Suzhou, Jiangsu Province
-    </el-descriptions-item>
-  </el-descriptions>
+    </g-descriptions-item>
+  </g-descriptions>
 
-  <el-descriptions
+  <g-descriptions
     class="margin-top"
     title="Without border"
     :column="3"
@@ -80,18 +80,18 @@
     :style="blockMargin"
   >
     <template #extra>
-      <el-button type="primary">Operation</el-button>
+      <g-button type="primary">Operation</g-button>
     </template>
-    <el-descriptions-item label="Username">kooriookami</el-descriptions-item>
-    <el-descriptions-item label="Telephone">18100000000</el-descriptions-item>
-    <el-descriptions-item label="Place">Suzhou</el-descriptions-item>
-    <el-descriptions-item label="Remarks">
-      <el-tag size="small">School</el-tag>
-    </el-descriptions-item>
-    <el-descriptions-item label="Address">
+    <g-descriptions-item label="Username">kooriookami</g-descriptions-item>
+    <g-descriptions-item label="Telephone">18100000000</g-descriptions-item>
+    <g-descriptions-item label="Place">Suzhou</g-descriptions-item>
+    <g-descriptions-item label="Remarks">
+      <g-tag size="small">School</g-tag>
+    </g-descriptions-item>
+    <g-descriptions-item label="Address">
       No.1188, Wuzhong Avenue, Wuzhong District, Suzhou, Jiangsu Province
-    </el-descriptions-item>
-  </el-descriptions>
+    </g-descriptions-item>
+  </g-descriptions>
 </template>
 
 <script setup lang="ts">
@@ -131,7 +131,7 @@ const blockMargin = computed(() => {
 </script>
 
 <style scoped>
-.el-descriptions {
+.g-descriptions {
   margin-top: 20px;
 }
 .cell-item {

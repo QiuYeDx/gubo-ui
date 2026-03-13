@@ -1,5 +1,5 @@
 <template>
-  <el-affix position="bottom" :offset="20">
-    <el-button type="primary">Offset bottom 20px</el-button>
-  </el-affix>
+  <g-affix position="bottom" :offset="20">
+    <g-button type="primary">Offset bottom 20px</g-button>
+  </g-affix>
 </template>

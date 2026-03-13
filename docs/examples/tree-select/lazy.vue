@@ -1,14 +1,14 @@
 <template>
-  <el-tree-select
+  <g-tree-select
     v-model="value"
     lazy
     :load="load"
     :props="props"
     style="width: 240px"
   />
-  <el-divider />
+  <g-divider />
   <VersionTag version="2.2.26" /> show lazy load label:
-  <el-tree-select
+  <g-tree-select
     v-model="value2"
     lazy
     :load="load"

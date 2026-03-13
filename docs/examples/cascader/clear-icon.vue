@@ -1,5 +1,5 @@
 <template>
-  <el-cascader
+  <g-cascader
     :options="options"
     clearable
     :clear-icon="CloseBold"

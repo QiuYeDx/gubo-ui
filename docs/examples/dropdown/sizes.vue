@@ -1,43 +1,43 @@
 <template>
-  <el-dropdown size="large" split-button type="primary">
+  <g-dropdown size="large" split-button type="primary">
     Large
     <template #dropdown>
-      <el-dropdown-menu>
-        <el-dropdown-item>Action 1</el-dropdown-item>
-        <el-dropdown-item>Action 2</el-dropdown-item>
-        <el-dropdown-item>Action 3</el-dropdown-item>
-        <el-dropdown-item>Action 4</el-dropdown-item>
-      </el-dropdown-menu>
+      <g-dropdown-menu>
+        <g-dropdown-item>Action 1</g-dropdown-item>
+        <g-dropdown-item>Action 2</g-dropdown-item>
+        <g-dropdown-item>Action 3</g-dropdown-item>
+        <g-dropdown-item>Action 4</g-dropdown-item>
+      </g-dropdown-menu>
     </template>
-  </el-dropdown>
+  </g-dropdown>
 
-  <el-dropdown split-button type="primary">
+  <g-dropdown split-button type="primary">
     Default
     <template #dropdown>
-      <el-dropdown-menu>
-        <el-dropdown-item>Action 1</el-dropdown-item>
-        <el-dropdown-item>Action 2</el-dropdown-item>
-        <el-dropdown-item>Action 3</el-dropdown-item>
-        <el-dropdown-item>Action 4</el-dropdown-item>
-      </el-dropdown-menu>
+      <g-dropdown-menu>
+        <g-dropdown-item>Action 1</g-dropdown-item>
+        <g-dropdown-item>Action 2</g-dropdown-item>
+        <g-dropdown-item>Action 3</g-dropdown-item>
+        <g-dropdown-item>Action 4</g-dropdown-item>
+      </g-dropdown-menu>
     </template>
-  </el-dropdown>
+  </g-dropdown>
 
-  <el-dropdown size="small" split-button type="primary">
+  <g-dropdown size="small" split-button type="primary">
     Small
     <template #dropdown>
-      <el-dropdown-menu>
-        <el-dropdown-item>Action 1</el-dropdown-item>
-        <el-dropdown-item>Action 2</el-dropdown-item>
-        <el-dropdown-item>Action 3</el-dropdown-item>
-        <el-dropdown-item>Action 4</el-dropdown-item>
-      </el-dropdown-menu>
+      <g-dropdown-menu>
+        <g-dropdown-item>Action 1</g-dropdown-item>
+        <g-dropdown-item>Action 2</g-dropdown-item>
+        <g-dropdown-item>Action 3</g-dropdown-item>
+        <g-dropdown-item>Action 4</g-dropdown-item>
+      </g-dropdown-menu>
     </template>
-  </el-dropdown>
+  </g-dropdown>
 </template>
 
 <style scoped>
-.example-showcase .el-dropdown + .el-dropdown {
+.example-showcase .g-dropdown + .g-dropdown {
   margin-left: 15px;
 }
 </style>

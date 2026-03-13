@@ -61,7 +61,7 @@ steps/with-icon
 
 Vertical step bars.
 
-:::demo You only need to set the `direction` attribute to `vertical` in the `el-steps` element.
+:::demo You only need to set the `direction` attribute to `vertical` in the `g-steps` element.
 
 steps/vertical
 

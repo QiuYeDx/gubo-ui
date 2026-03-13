@@ -1,15 +1,15 @@
 <template>
-  <el-switch v-model="reverse" active-text="reverse" />
+  <g-switch v-model="reverse" active-text="reverse" />
 
-  <el-timeline class="mt-2" :reverse="reverse">
-    <el-timeline-item
+  <g-timeline class="mt-2" :reverse="reverse">
+    <g-timeline-item
       v-for="(activity, index) in activities"
       :key="index"
       :timestamp="activity.timestamp"
     >
       {{ activity.content }}
-    </el-timeline-item>
-  </el-timeline>
+    </g-timeline-item>
+  </g-timeline>
 </template>
 
 <script lang="ts" setup>

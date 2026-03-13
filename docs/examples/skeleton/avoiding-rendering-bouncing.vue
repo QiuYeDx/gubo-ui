@@ -1,19 +1,19 @@
 <template>
-  <el-space direction="vertical" alignment="flex-start">
+  <g-space direction="vertical" alignment="flex-start">
     <div>
       <label style="margin-right: 16px">Switch Loading</label>
-      <el-switch v-model="loading" />
+      <g-switch v-model="loading" />
     </div>
-    <el-skeleton
+    <g-skeleton
       style="width: 240px"
       :loading="loading"
       animated
       :throttle="500"
     >
       <template #template>
-        <el-skeleton-item variant="image" style="width: 240px; height: 265px" />
+        <g-skeleton-item variant="image" style="width: 240px; height: 265px" />
         <div style="padding: 14px">
-          <el-skeleton-item variant="h3" style="width: 50%" />
+          <g-skeleton-item variant="h3" style="width: 50%" />
           <div
             style="
               display: flex;
@@ -23,13 +23,13 @@
               height: 16px;
             "
           >
-            <el-skeleton-item variant="text" style="margin-right: 16px" />
-            <el-skeleton-item variant="text" style="width: 30%" />
+            <g-skeleton-item variant="text" style="margin-right: 16px" />
+            <g-skeleton-item variant="text" style="width: 30%" />
           </div>
         </div>
       </template>
       <template #default>
-        <el-card :body-style="{ padding: '0px', marginBottom: '1px' }">
+        <g-card :body-style="{ padding: '0px', marginBottom: '1px' }">
           <img
             src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
             class="image"
@@ -38,13 +38,13 @@
             <span>Delicious hamburger</span>
             <div class="bottom card-header">
               <div class="time">{{ currentDate }}</div>
-              <el-button text class="button">operation button</el-button>
+              <g-button text class="button">operation button</g-button>
             </div>
           </div>
-        </el-card>
+        </g-card>
       </template>
-    </el-skeleton>
-  </el-space>
+    </g-skeleton>
+  </g-space>
 </template>
 
 <script lang="ts" setup>

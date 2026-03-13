@@ -1,6 +1,6 @@
 <template>
-  <el-select v-model="value" placeholder="Select" style="width: 240px">
-    <el-option
+  <g-select v-model="value" placeholder="Select" style="width: 240px">
+    <g-option
       v-for="item in cities"
       :key="item.value"
       :label="item.label"
@@ -10,14 +10,14 @@
       <span
         style="
           float: right;
-          color: var(--el-text-color-secondary);
+          color: var(--g-text-color-secondary);
           font-size: 13px;
         "
       >
         {{ item.value }}
       </span>
-    </el-option>
-  </el-select>
+    </g-option>
+  </g-select>
 </template>
 
 <script lang="ts" setup>

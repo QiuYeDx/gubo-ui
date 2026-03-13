@@ -1,3 +1,3 @@
 <template>
-  <el-empty description="description" />
+  <g-empty description="description" />
 </template>

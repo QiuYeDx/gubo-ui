@@ -2,7 +2,7 @@
   <div class="demo-autocomplete">
     <div class="demo-block">
       <div class="demo-title">loading icon1</div>
-      <el-autocomplete
+      <g-autocomplete
         v-model="state"
         :fetch-suggestions="querySearchAsync"
         class="w-50"
@@ -14,11 +14,11 @@
             <circle class="path" cx="25" cy="25" r="20" fill="none" />
           </svg>
         </template>
-      </el-autocomplete>
+      </g-autocomplete>
     </div>
     <div class="demo-block">
       <div class="demo-title">loading icon2</div>
-      <el-autocomplete
+      <g-autocomplete
         v-model="state"
         :fetch-suggestions="querySearchAsync"
         class="w-50"
@@ -26,7 +26,7 @@
         @select="handleSelect"
       >
         <template #loading>
-          <el-icon class="is-loading">
+          <g-icon class="is-loading">
             <svg class="circular" viewBox="0 0 20 20">
               <g
                 class="path2 loading-path"
@@ -39,9 +39,9 @@
                 <circle r="3.375" class="dot3" rx="0" ry="0" />
               </g>
             </svg>
-          </el-icon>
+          </g-icon>
         </template>
-      </el-autocomplete>
+      </g-autocomplete>
     </div>
   </div>
 </template>
@@ -113,7 +113,7 @@ onMounted(() => {
 
 .demo-title {
   font-size: 0.875rem;
-  color: var(--el-text-color-secondary);
+  color: var(--g-text-color-secondary);
   min-height: 2.5em;
   display: flex;
   align-items: center;
@@ -141,32 +141,32 @@ onMounted(() => {
   stroke-dasharray: 90, 150;
   stroke-dashoffset: 0;
   stroke-width: 2;
-  stroke: var(--el-color-primary);
+  stroke: var(--g-color-primary);
   stroke-linecap: round;
 }
 .loading-path .dot1 {
   transform: translate(3.75px, 3.75px);
-  fill: var(--el-color-primary);
+  fill: var(--g-color-primary);
   animation: custom-spin-move 1s infinite linear alternate;
   opacity: 0.3;
 }
 .loading-path .dot2 {
   transform: translate(calc(100% - 3.75px), 3.75px);
-  fill: var(--el-color-primary);
+  fill: var(--g-color-primary);
   animation: custom-spin-move 1s infinite linear alternate;
   opacity: 0.3;
   animation-delay: 0.4s;
 }
 .loading-path .dot3 {
   transform: translate(3.75px, calc(100% - 3.75px));
-  fill: var(--el-color-primary);
+  fill: var(--g-color-primary);
   animation: custom-spin-move 1s infinite linear alternate;
   opacity: 0.3;
   animation-delay: 1.2s;
 }
 .loading-path .dot4 {
   transform: translate(calc(100% - 3.75px), calc(100% - 3.75px));
-  fill: var(--el-color-primary);
+  fill: var(--g-color-primary);
   animation: custom-spin-move 1s infinite linear alternate;
   opacity: 0.3;
   animation-delay: 0.8s;

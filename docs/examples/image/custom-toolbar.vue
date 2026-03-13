@@ -1,6 +1,6 @@
 <template>
   <div class="demo-image__custom-toolbar">
-    <el-image
+    <g-image
       style="width: 100px; height: 100px"
       :src="url"
       :preview-src-list="srcList"
@@ -10,34 +10,34 @@
       <template
         #toolbar="{ actions, prev, next, reset, activeIndex, setActiveItem }"
       >
-        <el-icon @click="prev"><Back /></el-icon>
-        <el-icon @click="next"><Right /></el-icon>
-        <el-icon @click="setActiveItem(srcList.length - 1)">
+        <g-icon @click="prev"><Back /></g-icon>
+        <g-icon @click="next"><Right /></g-icon>
+        <g-icon @click="setActiveItem(srcList.length - 1)">
           <DArrowRight />
-        </el-icon>
-        <el-icon @click="actions('zoomOut')"><ZoomOut /></el-icon>
-        <el-icon
+        </g-icon>
+        <g-icon @click="actions('zoomOut')"><ZoomOut /></g-icon>
+        <g-icon
           @click="actions('zoomIn', { enableTransition: false, zoomRate: 2 })"
         >
           <ZoomIn />
-        </el-icon>
-        <el-icon
+        </g-icon>
+        <g-icon
           @click="
             actions('clockwise', { rotateDeg: 180, enableTransition: false })
           "
         >
           <RefreshRight />
-        </el-icon>
-        <el-icon @click="actions('anticlockwise')"><RefreshLeft /></el-icon>
-        <el-icon @click="reset"><Refresh /></el-icon>
-        <el-icon @click="download(activeIndex)"><Download /></el-icon>
+        </g-icon>
+        <g-icon @click="actions('anticlockwise')"><RefreshLeft /></g-icon>
+        <g-icon @click="reset"><Refresh /></g-icon>
+        <g-icon @click="download(activeIndex)"><Download /></g-icon>
       </template>
-    </el-image>
+    </g-image>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ElIcon } from 'element-plus'
+import { GIcon } from 'element-plus'
 import {
   Back,
   DArrowRight,

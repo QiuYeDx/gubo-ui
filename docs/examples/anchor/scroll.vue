@@ -1,7 +1,7 @@
 <template>
   <div>
-    <el-row>
-      <el-col :span="18">
+    <g-row>
+      <g-col :span="18">
         <div
           style="
             height: 30px;
@@ -47,23 +47,23 @@
             part3
           </div>
         </div>
-      </el-col>
-      <el-col :span="6">
+      </g-col>
+      <g-col :span="6">
         <div class="vp-raw">
-          <el-anchor
+          <g-anchor
             :container="containerRef"
             direction="vertical"
             type="default"
             :offset="30"
             @click="handleClick"
           >
-            <el-anchor-link href="#part1" title="part1" />
-            <el-anchor-link href="#part2" title="part2" />
-            <el-anchor-link href="#part3" title="part3" />
-          </el-anchor>
+            <g-anchor-link href="#part1" title="part1" />
+            <g-anchor-link href="#part2" title="part2" />
+            <g-anchor-link href="#part3" title="part3" />
+          </g-anchor>
         </div>
-      </el-col>
-    </el-row>
+      </g-col>
+    </g-row>
   </div>
 </template>
 

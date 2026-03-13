@@ -1,24 +1,24 @@
 <template>
-  <el-space direction="vertical">
-    <el-text>
-      <el-icon>
+  <g-space direction="vertical">
+    <g-text>
+      <g-icon>
         <ElementPlus />
-      </el-icon>
+      </g-icon>
       Element-Plus
-    </el-text>
-    <el-row>
-      <el-text>Rate</el-text>
-      <el-rate class="ml-1" />
-    </el-row>
-    <el-text>
+    </g-text>
+    <g-row>
+      <g-text>Rate</g-text>
+      <g-rate class="ml-1" />
+    </g-row>
+    <g-text>
       This is text mixed icon
-      <el-icon>
+      <g-icon>
         <Bell />
-      </el-icon>
+      </g-icon>
       and component
-      <el-button>Button</el-button>
-    </el-text>
-  </el-space>
+      <g-button>Button</g-button>
+    </g-text>
+  </g-space>
 </template>
 
 <script lang="ts" setup>

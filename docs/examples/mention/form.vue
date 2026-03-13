@@ -1,23 +1,23 @@
 <template>
-  <el-form
+  <g-form
     ref="ruleFormRef"
     style="max-width: 600px"
     :model="ruleForm"
     :rules="rules"
   >
-    <el-form-item label="name" prop="name">
-      <el-mention v-model="ruleForm.name" :options="options" />
-    </el-form-item>
-    <el-form-item label="desc" prop="desc">
-      <el-mention v-model="ruleForm.desc" type="textarea" :options="options" />
-    </el-form-item>
-    <el-form-item>
-      <el-button type="primary" @click="submitForm(ruleFormRef)">
+    <g-form-item label="name" prop="name">
+      <g-mention v-model="ruleForm.name" :options="options" />
+    </g-form-item>
+    <g-form-item label="desc" prop="desc">
+      <g-mention v-model="ruleForm.desc" type="textarea" :options="options" />
+    </g-form-item>
+    <g-form-item>
+      <g-button type="primary" @click="submitForm(ruleFormRef)">
         Submit
-      </el-button>
-      <el-button @click="resetForm(ruleFormRef)">Reset</el-button>
-    </el-form-item>
-  </el-form>
+      </g-button>
+      <g-button @click="resetForm(ruleFormRef)">Reset</g-button>
+    </g-form-item>
+  </g-form>
 </template>
 
 <script lang="ts" setup>

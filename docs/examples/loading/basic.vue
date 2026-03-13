@@ -1,9 +1,9 @@
 <template>
-  <el-table v-loading="loading" :data="tableData" style="width: 100%">
-    <el-table-column prop="date" label="Date" width="180" />
-    <el-table-column prop="name" label="Name" width="180" />
-    <el-table-column prop="address" label="Address" />
-  </el-table>
+  <g-table v-loading="loading" :data="tableData" style="width: 100%">
+    <g-table-column prop="date" label="Date" width="180" />
+    <g-table-column prop="name" label="Name" width="180" />
+    <g-table-column prop="address" label="Address" />
+  </g-table>
 </template>
 
 <script lang="ts" setup>
@@ -34,7 +34,7 @@ const tableData = [
 body {
   margin: 0;
 }
-.example-showcase .el-loading-mask {
+.example-showcase .g-loading-mask {
   z-index: 9;
 }
 </style>

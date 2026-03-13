@@ -1,6 +1,6 @@
 <template>
   <div class="example-basic">
-    <el-time-picker
+    <g-time-picker
       v-model="value1"
       :disabled-hours="disabledHours"
       :disabled-minutes="disabledMinutes"
@@ -41,7 +41,7 @@ const disabledSeconds = (hour: number, minute: number) => {
 </script>
 
 <style>
-.example-basic .el-date-editor {
+.example-basic .g-date-editor {
   margin: 8px;
 }
 </style>

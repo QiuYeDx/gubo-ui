@@ -1,16 +1,16 @@
 <template>
-  <el-table :data="tableData" style="width: 100%">
-    <el-table-column prop="date" label="Date" width="150" />
-    <el-table-column label="Delivery Info">
-      <el-table-column prop="name" label="Name" width="120" />
-      <el-table-column label="Address Info">
-        <el-table-column prop="state" label="State" width="120" />
-        <el-table-column prop="city" label="City" width="120" />
-        <el-table-column prop="address" label="Address" />
-        <el-table-column prop="zip" label="Zip" width="120" />
-      </el-table-column>
-    </el-table-column>
-  </el-table>
+  <g-table :data="tableData" style="width: 100%">
+    <g-table-column prop="date" label="Date" width="150" />
+    <g-table-column label="Delivery Info">
+      <g-table-column prop="name" label="Name" width="120" />
+      <g-table-column label="Address Info">
+        <g-table-column prop="state" label="State" width="120" />
+        <g-table-column prop="city" label="City" width="120" />
+        <g-table-column prop="address" label="Address" />
+        <g-table-column prop="zip" label="Zip" width="120" />
+      </g-table-column>
+    </g-table-column>
+  </g-table>
 </template>
 
 <script lang="ts" setup>

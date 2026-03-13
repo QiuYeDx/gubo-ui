@@ -1,19 +1,19 @@
 <template>
-  <el-checkbox
+  <g-checkbox
     v-model="checkAll"
     :indeterminate="isIndeterminate"
     @change="handleCheckAllChange"
   >
     Check all
-  </el-checkbox>
-  <el-checkbox-group
+  </g-checkbox>
+  <g-checkbox-group
     v-model="checkedCities"
     @change="handleCheckedCitiesChange"
   >
-    <el-checkbox v-for="city in cities" :key="city" :label="city" :value="city">
+    <g-checkbox v-for="city in cities" :key="city" :label="city" :value="city">
       {{ city }}
-    </el-checkbox>
-  </el-checkbox-group>
+    </g-checkbox>
+  </g-checkbox-group>
 </template>
 
 <script lang="ts" setup>

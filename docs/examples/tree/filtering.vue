@@ -1,11 +1,11 @@
 <template>
-  <el-input
+  <g-input
     v-model="filterText"
     class="w-60 mb-2"
     placeholder="Filter keyword"
   />
 
-  <el-tree
+  <g-tree
     ref="treeRef"
     style="max-width: 600px"
     class="filter-tree"

@@ -1,12 +1,12 @@
 <template>
-  <el-form
+  <g-form
     ref="formRef"
     style="max-width: 600px"
     :model="dynamicValidateForm"
     label-width="auto"
     class="demo-dynamic"
   >
-    <el-form-item
+    <g-form-item
       prop="email"
       label="Email"
       :rules="[
@@ -22,9 +22,9 @@
         },
       ]"
     >
-      <el-input v-model="dynamicValidateForm.email" />
-    </el-form-item>
-    <el-form-item
+      <g-input v-model="dynamicValidateForm.email" />
+    </g-form-item>
+    <g-form-item
       v-for="(domain, index) in dynamicValidateForm.domains"
       :key="domain.key"
       :label="'Domain' + index"
@@ -35,17 +35,17 @@
         trigger: 'blur',
       }"
     >
-      <el-input v-model="domain.value" />
-      <el-button class="mt-2" @click.prevent="removeDomain(domain)">
+      <g-input v-model="domain.value" />
+      <g-button class="mt-2" @click.prevent="removeDomain(domain)">
         Delete
-      </el-button>
-    </el-form-item>
-    <el-form-item>
-      <el-button type="primary" @click="submitForm(formRef)">Submit</el-button>
-      <el-button @click="addDomain">New domain</el-button>
-      <el-button @click="resetForm(formRef)">Reset</el-button>
-    </el-form-item>
-  </el-form>
+      </g-button>
+    </g-form-item>
+    <g-form-item>
+      <g-button type="primary" @click="submitForm(formRef)">Submit</g-button>
+      <g-button @click="addDomain">New domain</g-button>
+      <g-button @click="resetForm(formRef)">Reset</g-button>
+    </g-form-item>
+  </g-form>
 </template>
 
 <script lang="ts" setup>

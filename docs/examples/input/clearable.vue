@@ -1,12 +1,12 @@
 <template>
   <div class="input-group">
-    <el-input
+    <g-input
       v-model="input"
       style="width: 240px"
       placeholder="Please input"
       clearable
     />
-    <el-input
+    <g-input
       v-model="textareaInput"
       style="width: 240px"
       placeholder="Please input"

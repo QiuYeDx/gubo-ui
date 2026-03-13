@@ -1,7 +1,7 @@
 <template>
-  <el-button>button</el-button>
-  <el-button tag="div" role="button" tabindex="0">div</el-button>
-  <el-button
+  <g-button>button</g-button>
+  <g-button tag="div" role="button" tabindex="0">div</g-button>
+  <g-button
     type="primary"
     tag="a"
     href="https://github.com/element-plus/element-plus"
@@ -9,5 +9,5 @@
     rel="noopener noreferrer"
   >
     a
-  </el-button>
+  </g-button>
 </template>

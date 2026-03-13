@@ -1,19 +1,19 @@
 <template>
-  <el-button plain @click="dialogVisible = true">
+  <g-button plain @click="dialogVisible = true">
     Open the modal Dialog
-  </el-button>
+  </g-button>
 
-  <el-dialog v-model="dialogVisible" :modal="false" modal-penetrable>
+  <g-dialog v-model="dialogVisible" :modal="false" modal-penetrable>
     <span>It's a modal Dialog</span>
     <template #footer>
       <div class="dialog-footer">
-        <el-button @click="dialogVisible = false">Cancel</el-button>
-        <el-button type="primary" @click="dialogVisible = false">
+        <g-button @click="dialogVisible = false">Cancel</g-button>
+        <g-button type="primary" @click="dialogVisible = false">
           Confirm
-        </el-button>
+        </g-button>
       </div>
     </template>
-  </el-dialog>
+  </g-dialog>
 </template>
 
 <script lang="ts" setup>

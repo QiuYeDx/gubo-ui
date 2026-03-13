@@ -1,20 +1,20 @@
 <template>
-  <el-tabs
+  <g-tabs
     v-model="editableTabsValue"
     type="card"
     editable
     class="demo-tabs"
     @edit="handleTabsEdit"
   >
-    <el-tab-pane
+    <g-tab-pane
       v-for="item in editableTabs"
       :key="item.name"
       :label="item.title"
       :name="item.name"
     >
       {{ item.content }}
-    </el-tab-pane>
-  </el-tabs>
+    </g-tab-pane>
+  </g-tabs>
 </template>
 
 <script lang="ts" setup>
@@ -70,7 +70,7 @@ const handleTabsEdit = (
 </script>
 
 <style>
-.demo-tabs > .el-tabs__content {
+.demo-tabs > .g-tabs__content {
   padding: 32px;
   color: #6b778c;
   font-size: 32px;

@@ -25,9 +25,9 @@ const load = () => {
   align-items: center;
   justify-content: center;
   height: 50px;
-  background: var(--el-color-primary-light-9);
+  background: var(--g-color-primary-light-9);
   margin: 10px;
-  color: var(--el-color-primary);
+  color: var(--g-color-primary);
 }
 .infinite-list .infinite-list-item + .list-item {
   margin-top: 10px;

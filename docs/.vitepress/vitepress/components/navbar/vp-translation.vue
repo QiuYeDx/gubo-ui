@@ -14,31 +14,31 @@ const toTranslation = () => {
 <template>
   <div class="translation-container">
     <ClientOnly>
-      <ElDropdown popper-class="translation-popup" role="navigation">
-        <ElIcon :size="24" :aria-label="locale.language">
+      <GDropdown popper-class="translation-popup" role="navigation">
+        <GIcon :size="24" :aria-label="locale.language">
           <i-ri-translate-2 />
-        </ElIcon>
+        </GIcon>
         <template #dropdown>
-          <ElDropdownMenu>
+          <GDropdownMenu>
             <a v-for="l in langs" :key="l" :href="getTargetUrl(l)">
-              <ElDropdownItem
+              <GDropdownItem
                 :class="{ language: true, selected: l === lang }"
                 @click.stop="switchLang(l)"
               >
                 {{ languageMap[l] }}
-              </ElDropdownItem>
+              </GDropdownItem>
             </a>
             <a :href="`/${lang}/guide/translation`">
-              <ElDropdownItem
+              <GDropdownItem
                 class="language selected"
                 @click.stop="toTranslation"
               >
                 {{ locale.help }}
-              </ElDropdownItem>
+              </GDropdownItem>
             </a>
-          </ElDropdownMenu>
+          </GDropdownMenu>
         </template>
-      </ElDropdown>
+      </GDropdown>
     </ClientOnly>
   </div>
 </template>
@@ -59,16 +59,16 @@ const toTranslation = () => {
 </style>
 
 <style lang="scss">
-.el-dropdown__popper.translation-popup {
-  --el-bg-color-overlay: var(--bg-color);
-  --el-popper-border-radius: 8px;
-  --el-border-color-light: transparent;
+.g-dropdown__popper.translation-popup {
+  --g-bg-color-overlay: var(--bg-color);
+  --g-popper-border-radius: 8px;
+  --g-border-color-light: transparent;
 
   padding: 7px 0;
   min-width: 192px;
   transition: background-color 0.5s;
 
-  .el-popper__arrow {
+  .g-popper__arrow {
     display: none;
   }
 
@@ -77,7 +77,7 @@ const toTranslation = () => {
     line-height: 28px;
 
     &.selected {
-      --el-text-color-regular: var(--brand-color);
+      --g-text-color-regular: var(--brand-color);
     }
   }
 }

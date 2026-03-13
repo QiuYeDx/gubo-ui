@@ -1,36 +1,36 @@
 <template>
-  <el-space direction="vertical">
-    <el-space>
-      <el-input-number v-model="num" />
-      <el-input-number v-model="num">
+  <g-space direction="vertical">
+    <g-space>
+      <g-input-number v-model="num" />
+      <g-input-number v-model="num">
         <template #decrease-icon>
-          <el-icon>
+          <g-icon>
             <ArrowDown />
-          </el-icon>
+          </g-icon>
         </template>
         <template #increase-icon>
-          <el-icon>
+          <g-icon>
             <ArrowUp />
-          </el-icon>
+          </g-icon>
         </template>
-      </el-input-number>
-    </el-space>
-    <el-space>
-      <el-input-number v-model="num" controls-position="right" />
-      <el-input-number v-model="num" controls-position="right">
+      </g-input-number>
+    </g-space>
+    <g-space>
+      <g-input-number v-model="num" controls-position="right" />
+      <g-input-number v-model="num" controls-position="right">
         <template #decrease-icon>
-          <el-icon>
+          <g-icon>
             <Minus />
-          </el-icon>
+          </g-icon>
         </template>
         <template #increase-icon>
-          <el-icon>
+          <g-icon>
             <Plus />
-          </el-icon>
+          </g-icon>
         </template>
-      </el-input-number>
-    </el-space>
-  </el-space>
+      </g-input-number>
+    </g-space>
+  </g-space>
 </template>
 
 <script lang="ts" setup>

@@ -1,18 +1,18 @@
 <template>
   <div class="m-4">
-    <el-select
+    <g-select
       v-model="value"
       value-key="id"
       placeholder="Select"
       style="width: 240px"
     >
-      <el-option
+      <g-option
         v-for="item in options"
         :key="item.id"
         :label="item.label"
         :value="item"
       />
-    </el-select>
+    </g-select>
     <p>
       selected option's description:
       {{ value ? value.desc : 'no select' }}

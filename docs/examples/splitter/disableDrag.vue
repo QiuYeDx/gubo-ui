@@ -1,5 +1,5 @@
 <template>
-  <el-switch
+  <g-switch
     v-model="resizable"
     active-text="enable"
     inactive-text="disable"
@@ -7,21 +7,21 @@
     class="mb-2"
   />
   <div
-    style="height: 250px; box-shadow: var(--el-border-color-light) 0px 0px 10px"
+    style="height: 250px; box-shadow: var(--g-border-color-light) 0px 0px 10px"
   >
-    <el-splitter>
-      <el-splitter-panel>
+    <g-splitter>
+      <g-splitter-panel>
         <div class="demo-panel">1</div>
-      </el-splitter-panel>
-      <el-splitter-panel :resizable="resizable">
+      </g-splitter-panel>
+      <g-splitter-panel :resizable="resizable">
         <div class="demo-panel">
           drag {{ resizable ? 'enable' : 'disable' }}
         </div>
-      </el-splitter-panel>
-      <el-splitter-panel>
+      </g-splitter-panel>
+      <g-splitter-panel>
         <div class="demo-panel">3</div>
-      </el-splitter-panel>
-    </el-splitter>
+      </g-splitter-panel>
+    </g-splitter>
   </div>
 </template>
 

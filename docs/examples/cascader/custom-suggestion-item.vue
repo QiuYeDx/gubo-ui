@@ -1,9 +1,9 @@
 <template>
-  <el-cascader :options="options" filterable placeholder="Try searching: Guide">
+  <g-cascader :options="options" filterable placeholder="Try searching: Guide">
     <template #suggestion-item="{ item }">
       <span>🔍 {{ item.pathLabels.join(' > ') }}</span>
     </template>
-  </el-cascader>
+  </g-cascader>
 </template>
 
 <script lang="ts" setup>

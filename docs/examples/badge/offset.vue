@@ -1,7 +1,7 @@
 <template>
-  <el-badge class="item" :value="1" :offset="[10, 5]">
-    <el-button> offset</el-button>
-  </el-badge>
+  <g-badge class="item" :value="1" :offset="[10, 5]">
+    <g-button> offset</g-button>
+  </g-badge>
 </template>
 
 <style scoped>

@@ -1,12 +1,12 @@
 <template>
-  <el-button plain @click="open">Click to open Message Box</el-button>
+  <g-button plain @click="open">Click to open Message Box</g-button>
 </template>
 
 <script lang="ts" setup>
-import { ElMessage, ElMessageBox } from 'element-plus'
+import { GMessage, GMessageBox } from 'element-plus'
 
 const open = () => {
-  ElMessageBox.prompt('Please input your e-mail', 'Tip', {
+  GMessageBox.prompt('Please input your e-mail', 'Tip', {
     confirmButtonText: 'OK',
     cancelButtonText: 'Cancel',
     inputPattern:
@@ -14,13 +14,13 @@ const open = () => {
     inputErrorMessage: 'Invalid Email',
   })
     .then(({ value }) => {
-      ElMessage({
+      GMessage({
         type: 'success',
         message: `Your email is:${value}`,
       })
     })
     .catch(() => {
-      ElMessage({
+      GMessage({
         type: 'info',
         message: 'Input canceled',
       })

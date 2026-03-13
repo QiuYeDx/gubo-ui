@@ -1,18 +1,18 @@
 <template>
   <div class="flex flex-wrap gap-1">
-    <el-button class="!ml-0" plain @click="open5">Primary</el-button>
-    <el-button class="!ml-0" plain @click="open1">Success</el-button>
-    <el-button class="!ml-0" plain @click="open2">Warning</el-button>
-    <el-button class="!ml-0" plain @click="open3">Info</el-button>
-    <el-button class="!ml-0" plain @click="open4">Error</el-button>
+    <g-button class="!ml-0" plain @click="open5">Primary</g-button>
+    <g-button class="!ml-0" plain @click="open1">Success</g-button>
+    <g-button class="!ml-0" plain @click="open2">Warning</g-button>
+    <g-button class="!ml-0" plain @click="open3">Info</g-button>
+    <g-button class="!ml-0" plain @click="open4">Error</g-button>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ElNotification } from 'element-plus'
+import { GNotification } from 'element-plus'
 
 const open1 = () => {
-  ElNotification({
+  GNotification({
     title: 'Success',
     message: 'This is a success message',
     type: 'success',
@@ -20,7 +20,7 @@ const open1 = () => {
 }
 
 const open2 = () => {
-  ElNotification({
+  GNotification({
     title: 'Warning',
     message: 'This is a warning message',
     type: 'warning',
@@ -28,7 +28,7 @@ const open2 = () => {
 }
 
 const open3 = () => {
-  ElNotification({
+  GNotification({
     title: 'Info',
     message: 'This is an info message',
     type: 'info',
@@ -36,7 +36,7 @@ const open3 = () => {
 }
 
 const open4 = () => {
-  ElNotification({
+  GNotification({
     title: 'Error',
     message: 'This is an error message',
     type: 'error',
@@ -44,7 +44,7 @@ const open4 = () => {
 }
 
 const open5 = () => {
-  ElNotification({
+  GNotification({
     title: 'Primary',
     message: 'This is a primary message',
     type: 'primary',

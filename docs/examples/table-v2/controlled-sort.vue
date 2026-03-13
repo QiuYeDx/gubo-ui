@@ -1,5 +1,5 @@
 <template>
-  <el-table-v2
+  <g-table-v2
     v-model:sort-state="sortState"
     :columns="columns"
     :data="data"

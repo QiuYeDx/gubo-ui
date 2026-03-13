@@ -3,7 +3,7 @@
     <div class="container">
       <div class="block">
         <span class="demonstration">Week</span>
-        <el-date-picker
+        <g-date-picker
           v-model="value1"
           type="week"
           format="[Week] ww"
@@ -12,7 +12,7 @@
       </div>
       <div class="block">
         <span class="demonstration">Dates</span>
-        <el-date-picker
+        <g-date-picker
           v-model="value2"
           type="dates"
           placeholder="Pick one or more dates"
@@ -22,7 +22,7 @@
     <div class="container">
       <div class="block">
         <span class="demonstration">Year</span>
-        <el-date-picker
+        <g-date-picker
           v-model="value3"
           type="year"
           placeholder="Pick a year"
@@ -30,7 +30,7 @@
       </div>
       <div class="block">
         <span class="demonstration">Years</span>
-        <el-date-picker
+        <g-date-picker
           v-model="value4"
           type="years"
           placeholder="Pick one or more years"
@@ -40,7 +40,7 @@
     <div class="container">
       <div class="block">
         <span class="demonstration">Month</span>
-        <el-date-picker
+        <g-date-picker
           v-model="value5"
           type="month"
           placeholder="Pick a month"
@@ -48,7 +48,7 @@
       </div>
       <div class="block">
         <span class="demonstration">Months</span>
-        <el-date-picker
+        <g-date-picker
           v-model="value6"
           type="months"
           placeholder="Pick one or more months"
@@ -80,7 +80,7 @@ const value6 = ref('')
 .demo-date-picker .container {
   flex: 1;
   min-width: 300px;
-  border-right: solid 1px var(--el-border-color);
+  border-right: solid 1px var(--g-border-color);
 }
 
 .demo-date-picker .container:last-child {
@@ -93,12 +93,12 @@ const value6 = ref('')
 }
 
 .demo-date-picker .container .block:last-child {
-  border-top: solid 1px var(--el-border-color);
+  border-top: solid 1px var(--g-border-color);
 }
 
 .demo-date-picker .demonstration {
   display: block;
-  color: var(--el-text-color-secondary);
+  color: var(--g-text-color-secondary);
   font-size: 14px;
   margin-bottom: 1rem;
 }
@@ -108,7 +108,7 @@ const value6 = ref('')
     flex: 0 0 100%;
     min-width: auto;
     border-right: none;
-    border-bottom: solid 1px var(--el-border-color);
+    border-bottom: solid 1px var(--g-border-color);
   }
 
   .demo-date-picker .container:last-child {
@@ -120,7 +120,7 @@ const value6 = ref('')
   }
 
   .demo-date-picker .container .block:last-child {
-    border-top: solid 1px var(--el-border-color);
+    border-top: solid 1px var(--g-border-color);
   }
 }
 </style>

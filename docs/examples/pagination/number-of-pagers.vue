@@ -1,5 +1,5 @@
 <template>
-  <el-pagination
+  <g-pagination
     :page-size="20"
     :pager-count="11"
     layout="prev, pager, next"

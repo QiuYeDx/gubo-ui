@@ -1,9 +1,9 @@
 <template>
   <div>
-    <el-segmented v-model="trigger" :options="options" />
+    <g-segmented v-model="trigger" :options="options" />
   </div>
   <br />
-  <el-input-tag v-model="input" :trigger="trigger" placeholder="Please input" />
+  <g-input-tag v-model="input" :trigger="trigger" placeholder="Please input" />
 </template>
 
 <script lang="ts" setup>

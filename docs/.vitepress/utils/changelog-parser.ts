@@ -118,7 +118,7 @@ function normalizeComponentNames(raw: string): string[] {
   for (let i = 0; i < parts.length; i++) {
     let name = parts[i]
 
-    // Strip 'el-' / 'El' prefix
+    // Strip 'g-' / 'El' prefix
     name = name.replace(/^[Ee]l-?/, '')
 
     // Convert camelCase / PascalCase → kebab-case:

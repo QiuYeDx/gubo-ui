@@ -1,13 +1,13 @@
 <template>
   <div>
-    <el-button @click="show = !show">Click Me</el-button>
+    <g-button @click="show = !show">Click Me</g-button>
 
     <div class="fade-container">
-      <transition name="el-fade-in-linear">
-        <div v-show="show" class="transition-box">.el-fade-in-linear</div>
+      <transition name="g-fade-in-linear">
+        <div v-show="show" class="transition-box">.g-fade-in-linear</div>
       </transition>
-      <transition name="el-fade-in">
-        <div v-show="show" class="transition-box">.el-fade-in</div>
+      <transition name="g-fade-in">
+        <div v-show="show" class="transition-box">.g-fade-in</div>
       </transition>
     </div>
   </div>
@@ -31,8 +31,8 @@ const show = ref(true)
 .transition-box {
   width: 200px;
   height: 100px;
-  border-radius: var(--el-border-radius-base);
-  background-color: var(--el-color-primary);
+  border-radius: var(--g-border-radius-base);
+  background-color: var(--g-color-primary);
   text-align: center;
   color: #fff;
   padding: 40px 20px;

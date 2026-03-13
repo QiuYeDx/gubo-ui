@@ -1,10 +1,10 @@
 <template>
   <div class="flex gap-12">
     <div class="grid gap-3">
-      <el-button @click="handleClick">
+      <g-button @click="handleClick">
         openPreview with showPreview method
-      </el-button>
-      <el-image
+      </g-button>
+      <g-image
         ref="imageRef"
         style="width: 100px; height: 100px"
         :src="url"
@@ -14,8 +14,8 @@
       />
     </div>
     <div>
-      <el-button @click="showPreview = true"> preview controlled </el-button>
-      <el-image-viewer
+      <g-button @click="showPreview = true"> preview controlled </g-button>
+      <g-image-viewer
         v-if="showPreview"
         :url-list="srcList"
         show-progress

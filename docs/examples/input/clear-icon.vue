@@ -1,12 +1,12 @@
 <template>
   <div class="input-group">
-    <el-input
+    <g-input
       v-model="input"
       clearable
       :clear-icon="CloseBold"
       placeholder="Custom clear icon"
     />
-    <el-input
+    <g-input
       v-model="textareaInput"
       clearable
       :clear-icon="CloseBold"

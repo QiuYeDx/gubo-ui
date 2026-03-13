@@ -1,18 +1,18 @@
 <template>
   <div>
-    <el-segmented
+    <g-segmented
       v-model="size"
       :options="sizeOptions"
       style="margin-bottom: 1rem"
     />
     <br />
-    <el-segmented
+    <g-segmented
       v-model="direction"
       :options="directionOptions"
       style="margin-bottom: 1rem"
     />
     <br />
-    <el-segmented
+    <g-segmented
       v-model="value"
       :options="options"
       :direction="direction"
@@ -28,13 +28,13 @@
             direction === 'horizontal' && 'p-2',
           ]"
         >
-          <el-icon size="20">
+          <g-icon size="20">
             <component :is="scope.item.icon" />
-          </el-icon>
+          </g-icon>
           <div>{{ scope.item.label }}</div>
         </div>
       </template>
-    </el-segmented>
+    </g-segmented>
   </div>
 </template>
 

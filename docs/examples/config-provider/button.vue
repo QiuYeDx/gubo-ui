@@ -1,25 +1,25 @@
 <template>
   <div>
     <div>
-      <el-checkbox v-model="config.autoInsertSpace">
+      <g-checkbox v-model="config.autoInsertSpace">
         autoInsertSpace
-      </el-checkbox>
-      <el-checkbox v-model="config.plain"> plain </el-checkbox>
-      <el-checkbox v-model="config.round"> round </el-checkbox>
-      <el-checkbox v-model="config.dashed"> dashed </el-checkbox>
-      <el-checkbox v-model="config.text"> text </el-checkbox>
-      <el-select v-model="config.type" class="ml-5" style="max-width: 150px">
-        <el-option
+      </g-checkbox>
+      <g-checkbox v-model="config.plain"> plain </g-checkbox>
+      <g-checkbox v-model="config.round"> round </g-checkbox>
+      <g-checkbox v-model="config.dashed"> dashed </g-checkbox>
+      <g-checkbox v-model="config.text"> text </g-checkbox>
+      <g-select v-model="config.type" class="ml-5" style="max-width: 150px">
+        <g-option
           v-for="type in buttonTypes.filter(Boolean)"
           :key="type"
           :value="type"
         />
-      </el-select>
+      </g-select>
     </div>
-    <el-divider />
-    <el-config-provider :button="config">
-      <el-button>中文</el-button>
-    </el-config-provider>
+    <g-divider />
+    <g-config-provider :button="config">
+      <g-button>中文</g-button>
+    </g-config-provider>
   </div>
 </template>
 

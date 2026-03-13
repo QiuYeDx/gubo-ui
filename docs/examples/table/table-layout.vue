@@ -1,13 +1,13 @@
 <template>
-  <el-radio-group v-model="tableLayout" class="mb-2">
-    <el-radio-button value="fixed">fixed</el-radio-button>
-    <el-radio-button value="auto">auto</el-radio-button>
-  </el-radio-group>
-  <el-table :data="tableData" :table-layout="tableLayout">
-    <el-table-column prop="date" label="Date" />
-    <el-table-column prop="name" label="Name" />
-    <el-table-column prop="address" label="Address" />
-  </el-table>
+  <g-radio-group v-model="tableLayout" class="mb-2">
+    <g-radio-button value="fixed">fixed</g-radio-button>
+    <g-radio-button value="auto">auto</g-radio-button>
+  </g-radio-group>
+  <g-table :data="tableData" :table-layout="tableLayout">
+    <g-table-column prop="date" label="Date" />
+    <g-table-column prop="name" label="Name" />
+    <g-table-column prop="address" label="Address" />
+  </g-table>
 </template>
 
 <script lang="ts" setup>

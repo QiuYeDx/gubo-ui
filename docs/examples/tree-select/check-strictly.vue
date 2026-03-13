@@ -1,14 +1,14 @@
 <template>
-  <el-tree-select
+  <g-tree-select
     v-model="value"
     :data="data"
     check-strictly
     :render-after-expand="false"
     style="width: 240px"
   />
-  <el-divider />
+  <g-divider />
   show checkbox:
-  <el-tree-select
+  <g-tree-select
     v-model="value"
     :data="data"
     check-strictly
@@ -16,9 +16,9 @@
     show-checkbox
     style="width: 240px"
   />
-  <el-divider />
+  <g-divider />
   show checkbox with `check-on-click-node`:
-  <el-tree-select
+  <g-tree-select
     v-model="value"
     :data="data"
     check-strictly

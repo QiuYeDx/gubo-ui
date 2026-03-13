@@ -1,15 +1,15 @@
 <template>
   <div class="m-4">
     <p>Display all tags (default)</p>
-    <el-cascader :options="options" :props="props" clearable />
+    <g-cascader :options="options" :props="props" clearable />
   </div>
   <div class="m-4">
     <p>Collapse tags</p>
-    <el-cascader :options="options" :props="props" collapse-tags clearable />
+    <g-cascader :options="options" :props="props" collapse-tags clearable />
   </div>
   <div class="m-4">
     <p>Collapse tags tooltip</p>
-    <el-cascader
+    <g-cascader
       :options="options"
       :props="props"
       collapse-tags
@@ -19,7 +19,7 @@
   </div>
   <div class="m-4">
     <p>Max Collapse Tags</p>
-    <el-cascader
+    <g-cascader
       :options="options"
       :props="props"
       collapse-tags

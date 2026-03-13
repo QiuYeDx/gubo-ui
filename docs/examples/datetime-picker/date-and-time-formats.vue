@@ -3,7 +3,7 @@
     <div class="block">
       <span class="demonstration">Emits Date object</span>
       <div class="demonstration">Value: {{ value1 }}</div>
-      <el-date-picker
+      <g-date-picker
         v-model="value1"
         type="datetime"
         placeholder="Pick a Date"
@@ -13,7 +13,7 @@
     <div class="block">
       <span class="demonstration">Use value-format</span>
       <div class="demonstration">Value：{{ value2 }}</div>
-      <el-date-picker
+      <g-date-picker
         v-model="value2"
         type="datetime"
         placeholder="Pick a Date"
@@ -24,7 +24,7 @@
     <div class="block">
       <span class="demonstration">Timestamp</span>
       <div class="demonstration">Value：{{ value3 }}</div>
-      <el-date-picker
+      <g-date-picker
         v-model="value3"
         type="datetime"
         placeholder="Pick a Date"
@@ -53,7 +53,7 @@ const value3 = ref('')
 .demo-datetime-picker .block {
   padding: 30px 0;
   text-align: center;
-  border-right: solid 1px var(--el-border-color);
+  border-right: solid 1px var(--g-border-color);
   flex: 1;
   min-width: 300px;
 }
@@ -62,7 +62,7 @@ const value3 = ref('')
 }
 .demo-datetime-picker .demonstration {
   display: block;
-  color: var(--el-text-color-secondary);
+  color: var(--g-text-color-secondary);
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -71,18 +71,18 @@ const value3 = ref('')
   .demo-datetime-picker .block {
     flex: 100%;
     border-right: none;
-    border-bottom: solid 1px var(--el-border-color);
+    border-bottom: solid 1px var(--g-border-color);
   }
 
   .demo-datetime-picker .block:last-child {
     border-bottom: none;
   }
 
-  :deep(.el-date-editor.el-input) {
+  :deep(.g-date-editor.g-input) {
     width: 100%;
   }
 
-  :deep(.el-date-editor.el-input__wrapper) {
+  :deep(.g-date-editor.g-input__wrapper) {
     width: 100%;
     max-width: 300px;
   }

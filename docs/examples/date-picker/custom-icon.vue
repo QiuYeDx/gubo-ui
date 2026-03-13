@@ -3,7 +3,7 @@
     <div class="container">
       <div class="block">
         <div class="demonstration">date</div>
-        <el-date-picker
+        <g-date-picker
           v-model="value1"
           type="date"
           placeholder="Pick a day"
@@ -11,13 +11,13 @@
           value-format="YYYY-MM-DD"
         >
           <template #prev-month>
-            <el-icon><CaretLeft /></el-icon>
+            <g-icon><CaretLeft /></g-icon>
           </template>
           <template #next-month>
-            <el-icon><CaretRight /></el-icon>
+            <g-icon><CaretRight /></g-icon>
           </template>
           <template #prev-year>
-            <el-icon>
+            <g-icon>
               <svg
                 viewBox="0 0 20 20"
                 version="1.1"
@@ -31,10 +31,10 @@
                   </g>
                 </g>
               </svg>
-            </el-icon>
+            </g-icon>
           </template>
           <template #next-year>
-            <el-icon>
+            <g-icon>
               <svg
                 viewBox="0 0 20 20"
                 version="1.1"
@@ -48,14 +48,14 @@
                   </g>
                 </g>
               </svg>
-            </el-icon>
+            </g-icon>
           </template>
-        </el-date-picker>
+        </g-date-picker>
       </div>
       <div class="line" />
       <div class="block">
         <div class="demonstration">date range</div>
-        <el-date-picker
+        <g-date-picker
           v-model="value2"
           type="daterange"
           start-placeholder="Start date"
@@ -65,13 +65,13 @@
           unlink-panels
         >
           <template #prev-month>
-            <el-icon><CaretLeft /></el-icon>
+            <g-icon><CaretLeft /></g-icon>
           </template>
           <template #next-month>
-            <el-icon><CaretRight /></el-icon>
+            <g-icon><CaretRight /></g-icon>
           </template>
           <template #prev-year>
-            <el-icon>
+            <g-icon>
               <svg
                 viewBox="0 0 20 20"
                 version="1.1"
@@ -85,10 +85,10 @@
                   </g>
                 </g>
               </svg>
-            </el-icon>
+            </g-icon>
           </template>
           <template #next-year>
-            <el-icon>
+            <g-icon>
               <svg
                 viewBox="0 0 20 20"
                 version="1.1"
@@ -102,16 +102,16 @@
                   </g>
                 </g>
               </svg>
-            </el-icon>
+            </g-icon>
           </template>
-        </el-date-picker>
+        </g-date-picker>
       </div>
     </div>
     <div class="container">
       <div class="line" />
       <div class="block">
         <div class="demonstration">month range</div>
-        <el-date-picker
+        <g-date-picker
           v-model="value3"
           type="monthrange"
           start-placeholder="Start date"
@@ -121,13 +121,13 @@
           unlink-panels
         >
           <template #prev-month>
-            <el-icon><CaretLeft /></el-icon>
+            <g-icon><CaretLeft /></g-icon>
           </template>
           <template #next-month>
-            <el-icon><CaretRight /></el-icon>
+            <g-icon><CaretRight /></g-icon>
           </template>
           <template #prev-year>
-            <el-icon>
+            <g-icon>
               <svg
                 viewBox="0 0 20 20"
                 version="1.1"
@@ -141,10 +141,10 @@
                   </g>
                 </g>
               </svg>
-            </el-icon>
+            </g-icon>
           </template>
           <template #next-year>
-            <el-icon>
+            <g-icon>
               <svg
                 viewBox="0 0 20 20"
                 version="1.1"
@@ -158,14 +158,14 @@
                   </g>
                 </g>
               </svg>
-            </el-icon>
+            </g-icon>
           </template>
-        </el-date-picker>
+        </g-date-picker>
       </div>
       <div class="line" />
       <div class="block">
         <div class="demonstration">year range</div>
-        <el-date-picker
+        <g-date-picker
           v-model="value4"
           type="yearrange"
           range-separator="To"
@@ -173,7 +173,7 @@
           end-placeholder="End Year"
         >
           <template #prev-year>
-            <el-icon>
+            <g-icon>
               <svg
                 viewBox="0 0 20 20"
                 version="1.1"
@@ -187,10 +187,10 @@
                   </g>
                 </g>
               </svg>
-            </el-icon>
+            </g-icon>
           </template>
           <template #next-year>
-            <el-icon>
+            <g-icon>
               <svg
                 viewBox="0 0 20 20"
                 version="1.1"
@@ -204,9 +204,9 @@
                   </g>
                 </g>
               </svg>
-            </el-icon>
+            </g-icon>
           </template>
-        </el-date-picker>
+        </g-date-picker>
       </div>
     </div>
   </div>
@@ -234,7 +234,7 @@ const value4 = ref('')
 .demo-date-picker-icon .container {
   flex: 1;
   min-width: 400px;
-  border-right: solid 1px var(--el-border-color);
+  border-right: solid 1px var(--g-border-color);
   display: flex;
   flex-direction: column;
 }
@@ -252,12 +252,12 @@ const value4 = ref('')
 }
 
 .demo-date-picker-icon .block:not(:first-child) {
-  border-top: solid 1px var(--el-border-color);
+  border-top: solid 1px var(--g-border-color);
 }
 
 .demo-date-picker-icon .demonstration {
   display: block;
-  color: var(--el-text-color-secondary);
+  color: var(--g-text-color-secondary);
   font-size: 14px;
   margin-bottom: 1rem;
   width: 100%;
@@ -275,7 +275,7 @@ const value4 = ref('')
   }
 
   .demo-date-picker-icon .container:not(:last-child) {
-    border-bottom: solid 1px var(--el-border-color);
+    border-bottom: solid 1px var(--g-border-color);
   }
 
   .demo-date-picker-icon .block {

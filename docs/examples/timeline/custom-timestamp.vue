@@ -1,22 +1,22 @@
 <template>
-  <el-timeline>
-    <el-timeline-item timestamp="2018/4/12" placement="top">
-      <el-card>
+  <g-timeline>
+    <g-timeline-item timestamp="2018/4/12" placement="top">
+      <g-card>
         <h4>Update Github template</h4>
         <p>Tom committed 2018/4/12 20:46</p>
-      </el-card>
-    </el-timeline-item>
-    <el-timeline-item timestamp="2018/4/3" placement="top">
-      <el-card>
+      </g-card>
+    </g-timeline-item>
+    <g-timeline-item timestamp="2018/4/3" placement="top">
+      <g-card>
         <h4>Update Github template</h4>
         <p>Tom committed 2018/4/3 20:46</p>
-      </el-card>
-    </el-timeline-item>
-    <el-timeline-item timestamp="2018/4/2" placement="top">
-      <el-card>
+      </g-card>
+    </g-timeline-item>
+    <g-timeline-item timestamp="2018/4/2" placement="top">
+      <g-card>
         <h4>Update Github template</h4>
         <p>Tom committed 2018/4/2 20:46</p>
-      </el-card>
-    </el-timeline-item>
-  </el-timeline>
+      </g-card>
+    </g-timeline-item>
+  </g-timeline>
 </template>

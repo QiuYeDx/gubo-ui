@@ -1,22 +1,22 @@
 <template>
   <div
-    style="height: 250px; box-shadow: var(--el-border-color-light) 0px 0px 10px"
+    style="height: 250px; box-shadow: var(--g-border-color-light) 0px 0px 10px"
   >
-    <el-splitter
+    <g-splitter
       @resize-start="handleResizeStart"
       @resize-end="handleResizeEnd"
       @resize="handleResize"
     >
-      <el-splitter-panel>
+      <g-splitter-panel>
         <div class="demo-panel">1</div>
-      </el-splitter-panel>
-      <el-splitter-panel v-model:size="size" :max="200" :min="50">
+      </g-splitter-panel>
+      <g-splitter-panel v-model:size="size" :max="200" :min="50">
         <div class="demo-panel">{{ size }}px</div>
-      </el-splitter-panel>
-      <el-splitter-panel>
+      </g-splitter-panel>
+      <g-splitter-panel>
         <div class="demo-panel">3</div>
-      </el-splitter-panel>
-    </el-splitter>
+      </g-splitter-panel>
+    </g-splitter>
   </div>
 </template>
 

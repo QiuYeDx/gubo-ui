@@ -1,5 +1,5 @@
 <template>
-  <el-switch
+  <g-switch
     v-model="isCollapsible"
     active-text="enable"
     inactive-text="disable"
@@ -7,29 +7,29 @@
     class="mb-2"
   />
   <div
-    style="height: 250px; box-shadow: var(--el-border-color-light) 0px 0px 10px"
+    style="height: 250px; box-shadow: var(--g-border-color-light) 0px 0px 10px"
   >
-    <el-splitter>
-      <el-splitter-panel :collapsible="isCollapsible" min="50">
+    <g-splitter>
+      <g-splitter-panel :collapsible="isCollapsible" min="50">
         <div class="demo-panel">1</div>
-      </el-splitter-panel>
-      <el-splitter-panel :collapsible="isCollapsible">
+      </g-splitter-panel>
+      <g-splitter-panel :collapsible="isCollapsible">
         <div class="demo-panel">2</div>
-      </el-splitter-panel>
-      <el-splitter-panel>
+      </g-splitter-panel>
+      <g-splitter-panel>
         <div class="demo-panel">3</div>
-      </el-splitter-panel>
-      <el-splitter-panel :collapsible="isCollapsible">
-        <el-splitter layout="vertical">
-          <el-splitter-panel :collapsible="isCollapsible">
+      </g-splitter-panel>
+      <g-splitter-panel :collapsible="isCollapsible">
+        <g-splitter layout="vertical">
+          <g-splitter-panel :collapsible="isCollapsible">
             <div class="demo-panel">4</div>
-          </el-splitter-panel>
-          <el-splitter-panel :collapsible="isCollapsible">
+          </g-splitter-panel>
+          <g-splitter-panel :collapsible="isCollapsible">
             <div class="demo-panel">5</div>
-          </el-splitter-panel>
-        </el-splitter>
-      </el-splitter-panel>
-    </el-splitter>
+          </g-splitter-panel>
+        </g-splitter>
+      </g-splitter-panel>
+    </g-splitter>
   </div>
 </template>
 

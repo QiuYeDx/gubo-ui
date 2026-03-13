@@ -1,12 +1,12 @@
 <template>
-  <el-button plain @click="open"> Notification with offset </el-button>
+  <g-button plain @click="open"> Notification with offset </g-button>
 </template>
 
 <script lang="ts" setup>
-import { ElNotification } from 'element-plus'
+import { GNotification } from 'element-plus'
 
 const open = () => {
-  ElNotification.success({
+  GNotification.success({
     title: 'Success',
     message: 'This is a success message',
     offset: 100,

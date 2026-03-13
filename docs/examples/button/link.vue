@@ -1,19 +1,19 @@
 <template>
   <p>Basic link button</p>
   <div class="mb-4">
-    <el-button
+    <g-button
       v-for="button in buttons"
       :key="button.text"
       :type="button.type"
       link
     >
       {{ button.text }}
-    </el-button>
+    </g-button>
   </div>
 
   <p>Disabled link button</p>
   <div>
-    <el-button
+    <g-button
       v-for="button in buttons"
       :key="button.text"
       :type="button.type"
@@ -21,7 +21,7 @@
       disabled
     >
       {{ button.text }}
-    </el-button>
+    </g-button>
   </div>
 </template>
 

@@ -2,7 +2,7 @@
   <div class="demo-datetime-picker">
     <div class="block">
       <span class="demonstration">Start and end date time 12:00:00</span>
-      <el-date-picker
+      <g-date-picker
         v-model="value1"
         type="datetimerange"
         start-placeholder="Start Date"
@@ -14,7 +14,7 @@
       <span class="demonstration">
         Start date time 12:00:00, end date time 08:00:00
       </span>
-      <el-date-picker
+      <g-date-picker
         v-model="value2"
         type="datetimerange"
         start-placeholder="Start Date"
@@ -49,7 +49,7 @@ const defaultTime2: [Date, Date] = [
 .block {
   padding: 30px 0;
   text-align: center;
-  border-right: solid 1px var(--el-border-color);
+  border-right: solid 1px var(--g-border-color);
   flex: 1;
   min-width: 300px;
 }
@@ -60,7 +60,7 @@ const defaultTime2: [Date, Date] = [
 
 .block .demonstration {
   display: block;
-  color: var(--el-text-color-secondary);
+  color: var(--g-text-color-secondary);
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -69,18 +69,18 @@ const defaultTime2: [Date, Date] = [
   .block {
     flex: 100%;
     border-right: none;
-    border-bottom: solid 1px var(--el-border-color);
+    border-bottom: solid 1px var(--g-border-color);
   }
 
   .block:last-child {
     border-bottom: none;
   }
 
-  :deep(.el-date-editor.el-input) {
+  :deep(.g-date-editor.g-input) {
     width: 100%;
   }
 
-  :deep(.el-date-editor.el-input__wrapper) {
+  :deep(.g-date-editor.g-input__wrapper) {
     width: 100%;
     max-width: 300px;
   }

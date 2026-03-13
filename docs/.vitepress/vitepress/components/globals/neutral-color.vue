@@ -1,13 +1,13 @@
 <template>
-  <el-row :gutter="12">
-    <el-col :span="6" :xs="{ span: 12 }">
+  <g-row :gutter="12">
+    <g-col :span="6" :xs="{ span: 12 }">
       <div class="demo-color-box-group">
         <div
           v-for="(text, i) in textColors"
           :key="i"
           class="demo-color-box demo-color-box-other"
           :style="{
-            color: 'var(--el-bg-color)',
+            color: 'var(--g-bg-color)',
             background: text.var.value,
           }"
         >
@@ -17,9 +17,9 @@
           </div>
         </div>
       </div>
-    </el-col>
+    </g-col>
 
-    <el-col :span="6" :xs="{ span: 12 }">
+    <g-col :span="6" :xs="{ span: 12 }">
       <div class="demo-color-box-group">
         <div
           v-for="(border, i) in borderColors"
@@ -33,9 +33,9 @@
           </div>
         </div>
       </div>
-    </el-col>
+    </g-col>
 
-    <el-col :span="6" :xs="{ span: 12 }">
+    <g-col :span="6" :xs="{ span: 12 }">
       <div class="demo-color-box-group">
         <div
           v-for="(fill, i) in fillColors"
@@ -45,7 +45,7 @@
             background: fill.var.value,
             border: `1px solid ${
               fill.name === 'Blank Fill'
-                ? 'var(--el-border-color-light)'
+                ? 'var(--g-border-color-light)'
                 : 'transparent'
             }`,
           }"
@@ -56,9 +56,9 @@
           </div>
         </div>
       </div>
-    </el-col>
+    </g-col>
 
-    <el-col :span="6" :xs="{ span: 12 }">
+    <g-col :span="6" :xs="{ span: 12 }">
       <div class="demo-color-box-group">
         <div
           class="demo-color-box demo-color-box-other"
@@ -94,7 +94,7 @@
             border:
               '1px solid ' +
               (!isDark || bg.name === 'Base Background'
-                ? 'var(--el-border-color-light)'
+                ? 'var(--g-border-color-light)'
                 : 'transparent'),
           }"
         >
@@ -104,8 +104,8 @@
           </div>
         </div>
       </div>
-    </el-col>
-  </el-row>
+    </g-col>
+  </g-row>
 </template>
 
 <script lang="ts" setup>

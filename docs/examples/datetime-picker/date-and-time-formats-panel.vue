@@ -1,7 +1,7 @@
 <template>
   <div class="demo-datetime-picker">
     <div class="block">
-      <el-date-picker
+      <g-date-picker
         v-model="value1"
         type="datetime"
         placeholder="Pick a Date"
@@ -12,7 +12,7 @@
     </div>
     <div class="line" />
     <div class="block">
-      <el-date-picker
+      <g-date-picker
         v-model="value2"
         type="datetimerange"
         start-placeholder="Start date"
@@ -49,13 +49,13 @@ const value2 = ref('')
 }
 .line {
   width: 1px;
-  background-color: var(--el-border-color);
+  background-color: var(--g-border-color);
 }
 
 @media (max-width: 768px) {
   .demo-datetime-picker .block {
     flex: 100%;
-    border-bottom: solid 1px var(--el-border-color);
+    border-bottom: solid 1px var(--g-border-color);
   }
 
   .demo-datetime-picker .block:last-child {
@@ -66,11 +66,11 @@ const value2 = ref('')
     display: none;
   }
 
-  :deep(.el-date-editor.el-input) {
+  :deep(.g-date-editor.g-input) {
     width: 100%;
   }
 
-  :deep(.el-date-editor.el-input__wrapper) {
+  :deep(.g-date-editor.g-input__wrapper) {
     width: 100%;
     max-width: 300px;
   }

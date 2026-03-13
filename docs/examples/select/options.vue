@@ -1,5 +1,5 @@
 <template>
-  <el-select
+  <g-select
     v-model="value"
     :options="options"
     :props="props"

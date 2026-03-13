@@ -1,7 +1,7 @@
 <template>
   <div class="overview-container">
     <div class="search-content">
-      <el-input
+      <g-input
         ref="searchRef"
         v-model="query"
         :prefix-icon="Search"
@@ -19,9 +19,9 @@
       >
         <p class="component-title">
           {{ group.text }}
-          <el-tag effect="dark" round size="small">
+          <g-tag effect="dark" round size="small">
             {{ group.children.length }}
-          </el-tag>
+          </g-tag>
         </p>
         <div class="card-content">
           <a
@@ -30,13 +30,13 @@
             tabindex="0"
             :href="withBase(item.link)"
           >
-            <el-card
+            <g-card
               shadow="hover"
               @click.stop="toPage(item.link)"
               @keydown.enter="toPage(item.link)"
             >
               <template #header>
-                <el-text truncated>{{ item.text }}</el-text>
+                <g-text truncated>{{ item.text }}</g-text>
                 <span v-if="item.promotion" class="vp-tag">
                   {{ item.promotion }}
                 </span>
@@ -46,34 +46,34 @@
                 <component :is="getIcon(item.link)" v-if="getIcon(item.link)" />
                 <span v-else>Todo</span>
               </template>
-            </el-card>
+            </g-card>
           </a>
         </div>
       </div>
 
-      <el-empty
+      <g-empty
         v-if="!filteredSidebars.length"
         :description="locale['empty-description']"
       />
 
       <p class="designed-by">
         Icons designed by
-        <el-link
+        <g-link
           type="primary"
           underline="never"
           href="https://github.com/daodaozz08"
           target="_blank"
         >
           @叨叨
-        </el-link>
-        <el-link
+        </g-link>
+        <g-link
           type="primary"
           underline="never"
           href="https://github.com/zhiwendesign"
           target="_blank"
         >
           @卡卡
-        </el-link>
+        </g-link>
       </p>
     </div>
   </div>
@@ -140,7 +140,7 @@ onMounted(() => {
     top: 60px;
     z-index: 10;
 
-    .el-input {
+    .g-input {
       background: var(--bg-color);
     }
   }
@@ -154,7 +154,7 @@ onMounted(() => {
         align-items: center;
         font-size: 20px;
         font-weight: 600;
-        color: var(--el-text-color-primary);
+        color: var(--g-text-color-primary);
         gap: 8px;
       }
 
@@ -166,32 +166,32 @@ onMounted(() => {
         a {
           border-radius: 4px;
           &:focus-visible {
-            outline: 2px solid var(--el-color-primary);
+            outline: 2px solid var(--g-color-primary);
             outline-offset: 1px;
           }
         }
 
-        :deep(.el-card) {
+        :deep(.g-card) {
           width: 100%;
           cursor: pointer;
           transition: none;
 
-          .el-card__header {
+          .g-card__header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 8px;
             padding: 8px 12px;
 
-            .el-text {
+            .g-text {
               font-size: 14px;
               font-weight: 500;
-              color: var(--el-text-color-regular);
+              color: var(--g-text-color-regular);
               line-height: 24px;
             }
           }
 
-          .el-card__body {
+          .g-card__body {
             padding: 0;
             display: flex;
             justify-content: center;

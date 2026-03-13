@@ -1,13 +1,13 @@
 <template>
-  <el-select v-model="value" placeholder="Select" style="width: 240px">
-    <el-option
+  <g-select v-model="value" placeholder="Select" style="width: 240px">
+    <g-option
       v-for="item in options"
       :key="item.value"
       :label="item.label"
       :value="item.value"
       :disabled="item.disabled"
     />
-  </el-select>
+  </g-select>
 </template>
 
 <script lang="ts" setup>

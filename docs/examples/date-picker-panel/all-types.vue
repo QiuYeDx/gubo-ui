@@ -3,18 +3,18 @@
     <div class="flex gap-4">
       <div class="flex flex-col basis-150px gap-1">
         <span>Type:</span>
-        <el-select v-model="type">
-          <el-option
+        <g-select v-model="type">
+          <g-option
             v-for="optionType in types"
             :key="optionType"
             :value="optionType"
           />
-        </el-select>
+        </g-select>
       </div>
     </div>
-    <el-divider />
+    <g-divider />
     <div class="flex justify-center">
-      <el-date-picker-panel v-model="date" :type="type" />
+      <g-date-picker-panel v-model="date" :type="type" />
     </div>
   </div>
 </template>

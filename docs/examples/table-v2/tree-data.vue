@@ -1,5 +1,5 @@
 <template>
-  <el-table-v2
+  <g-table-v2
     v-model:expanded-row-keys="expandedRowKeys"
     :columns="columns"
     :data="treeData"

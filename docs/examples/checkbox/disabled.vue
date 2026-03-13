@@ -1,6 +1,6 @@
 <template>
-  <el-checkbox v-model="checked1" disabled>Disabled</el-checkbox>
-  <el-checkbox v-model="checked2">Not disabled</el-checkbox>
+  <g-checkbox v-model="checked1" disabled>Disabled</g-checkbox>
+  <g-checkbox v-model="checked2">Not disabled</g-checkbox>
 </template>
 
 <script lang="ts" setup>

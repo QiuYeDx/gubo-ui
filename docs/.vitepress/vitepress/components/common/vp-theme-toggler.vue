@@ -83,7 +83,7 @@ const beforeChange = () => {
 
 <template>
   <ClientOnly>
-    <el-switch
+    <g-switch
       ref="switchRef"
       v-model="darkMode"
       v-bind="$attrs"
@@ -95,12 +95,12 @@ const beforeChange = () => {
 </template>
 
 <style lang="scss" scoped>
-:deep(.el-switch__core) {
-  --el-switch-on-color: var(--bg-color-mute);
-  --el-switch-off-color: var(--bg-color-mute);
-  --el-switch-border-color: var(--border-color);
+:deep(.g-switch__core) {
+  --g-switch-on-color: var(--bg-color-mute);
+  --g-switch-off-color: var(--bg-color-mute);
+  --g-switch-border-color: var(--border-color);
 
-  .el-switch__action {
+  .g-switch__action {
     width: 14px;
     height: 14px;
   }

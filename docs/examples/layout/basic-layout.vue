@@ -1,74 +1,74 @@
 <template>
-  <el-row>
-    <el-col :span="24">
+  <g-row>
+    <g-col :span="24">
       <div class="grid-content ep-bg-purple-dark" />
-    </el-col>
-  </el-row>
-  <el-row>
-    <el-col :span="12">
+    </g-col>
+  </g-row>
+  <g-row>
+    <g-col :span="12">
       <div class="grid-content ep-bg-purple" />
-    </el-col>
-    <el-col :span="12">
+    </g-col>
+    <g-col :span="12">
       <div class="grid-content ep-bg-purple-light" />
-    </el-col>
-  </el-row>
-  <el-row>
-    <el-col :span="8">
+    </g-col>
+  </g-row>
+  <g-row>
+    <g-col :span="8">
       <div class="grid-content ep-bg-purple" />
-    </el-col>
-    <el-col :span="8">
+    </g-col>
+    <g-col :span="8">
       <div class="grid-content ep-bg-purple-light" />
-    </el-col>
-    <el-col :span="8">
+    </g-col>
+    <g-col :span="8">
       <div class="grid-content ep-bg-purple" />
-    </el-col>
-  </el-row>
-  <el-row>
-    <el-col :span="6">
+    </g-col>
+  </g-row>
+  <g-row>
+    <g-col :span="6">
       <div class="grid-content ep-bg-purple" />
-    </el-col>
-    <el-col :span="6">
+    </g-col>
+    <g-col :span="6">
       <div class="grid-content ep-bg-purple-light" />
-    </el-col>
-    <el-col :span="6">
+    </g-col>
+    <g-col :span="6">
       <div class="grid-content ep-bg-purple" />
-    </el-col>
-    <el-col :span="6">
+    </g-col>
+    <g-col :span="6">
       <div class="grid-content ep-bg-purple-light" />
-    </el-col>
-  </el-row>
-  <el-row>
-    <el-col :span="4">
+    </g-col>
+  </g-row>
+  <g-row>
+    <g-col :span="4">
       <div class="grid-content ep-bg-purple" />
-    </el-col>
-    <el-col :span="4">
+    </g-col>
+    <g-col :span="4">
       <div class="grid-content ep-bg-purple-light" />
-    </el-col>
-    <el-col :span="4">
+    </g-col>
+    <g-col :span="4">
       <div class="grid-content ep-bg-purple" />
-    </el-col>
-    <el-col :span="4">
+    </g-col>
+    <g-col :span="4">
       <div class="grid-content ep-bg-purple-light" />
-    </el-col>
-    <el-col :span="4">
+    </g-col>
+    <g-col :span="4">
       <div class="grid-content ep-bg-purple" />
-    </el-col>
-    <el-col :span="4">
+    </g-col>
+    <g-col :span="4">
       <div class="grid-content ep-bg-purple-light" />
-    </el-col>
-  </el-row>
+    </g-col>
+  </g-row>
 </template>
 
 <style>
-.el-row {
+.g-row {
   margin-bottom: 20px;
 }
 
-.el-row:last-child {
+.g-row:last-child {
   margin-bottom: 0;
 }
 
-.el-col {
+.g-col {
   border-radius: 4px;
 }
 

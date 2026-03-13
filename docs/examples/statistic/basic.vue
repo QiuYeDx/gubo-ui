@@ -1,34 +1,34 @@
 <template>
-  <el-row :gutter="16">
-    <el-col :xs="24" :sm="12" :md="6" class="text-center mb-4">
-      <el-statistic title="Daily active users" :value="268500" />
-    </el-col>
-    <el-col :xs="24" :sm="12" :md="6" class="text-center mb-4">
-      <el-statistic :value="138">
+  <g-row :gutter="16">
+    <g-col :xs="24" :sm="12" :md="6" class="text-center mb-4">
+      <g-statistic title="Daily active users" :value="268500" />
+    </g-col>
+    <g-col :xs="24" :sm="12" :md="6" class="text-center mb-4">
+      <g-statistic :value="138">
         <template #title>
           <div style="display: inline-flex; align-items: center">
             Ratio of men to women
-            <el-icon style="margin-left: 4px" :size="12">
+            <g-icon style="margin-left: 4px" :size="12">
               <Male />
-            </el-icon>
+            </g-icon>
           </div>
         </template>
         <template #suffix>/100</template>
-      </el-statistic>
-    </el-col>
-    <el-col :xs="24" :sm="12" :md="6" class="text-center mb-4">
-      <el-statistic title="Total Transactions" :value="outputValue" />
-    </el-col>
-    <el-col :xs="24" :sm="12" :md="6" class="text-center mb-4">
-      <el-statistic title="Feedback number" :value="562">
+      </g-statistic>
+    </g-col>
+    <g-col :xs="24" :sm="12" :md="6" class="text-center mb-4">
+      <g-statistic title="Total Transactions" :value="outputValue" />
+    </g-col>
+    <g-col :xs="24" :sm="12" :md="6" class="text-center mb-4">
+      <g-statistic title="Feedback number" :value="562">
         <template #suffix>
-          <el-icon style="vertical-align: -0.125em">
+          <g-icon style="vertical-align: -0.125em">
             <ChatLineRound />
-          </el-icon>
+          </g-icon>
         </template>
-      </el-statistic>
-    </el-col>
-  </el-row>
+      </g-statistic>
+    </g-col>
+  </g-row>
 </template>
 
 <script lang="ts" setup>

@@ -1,14 +1,14 @@
 <template>
   <div>
-    <el-link>default</el-link>
-    <el-link underline="always">always</el-link>
-    <el-link underline="hover">hover</el-link>
-    <el-link underline="never">never</el-link>
+    <g-link>default</g-link>
+    <g-link underline="always">always</g-link>
+    <g-link underline="hover">hover</g-link>
+    <g-link underline="never">never</g-link>
   </div>
 </template>
 
 <style scoped>
-.el-link {
+.g-link {
   margin-right: 8px;
 }
 </style>

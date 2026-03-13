@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, shallowRef } from 'vue'
 import clipboardCopy from 'clipboard-copy'
-import { ElMessage } from 'element-plus'
+import { GMessage } from 'element-plus'
 import * as Icons from '@element-plus/icons-vue'
 import { useLang } from '../../composables/lang'
 import localeData from '../../../i18n/component/icons.json'
@@ -23,13 +23,13 @@ const copyContent = async (content) => {
   try {
     await clipboardCopy(content)
 
-    ElMessage({
+    GMessage({
       showClose: true,
       message: locale.value['copy-success'],
       type: 'success',
     })
   } catch {
-    ElMessage({
+    GMessage({
       showClose: true,
       message: locale.value['copy-error'],
       type: 'error',
@@ -39,7 +39,7 @@ const copyContent = async (content) => {
 
 const copySvgIcon = async (name, refs) => {
   if (copyIcon.value) {
-    await copyContent(`<el-icon><${name} /></el-icon>`)
+    await copyContent(`<g-icon><${name} /></g-icon>`)
   } else {
     let content = refs[name]?.[0].querySelector('svg')?.outerHTML ?? ''
     if (content) {
@@ -83,14 +83,14 @@ const filterCategories = computed(() => {
 
 <template>
   <div style="text-align: right">
-    <el-switch
+    <g-switch
       v-model="copyIcon"
       active-text="Copy icon code"
       inactive-text="Copy SVG content"
     />
   </div>
   <div class="icon-search-content">
-    <el-input
+    <g-input
       v-model="query"
       :prefix-icon="Icons.Search"
       size="large"
@@ -108,9 +108,9 @@ const filterCategories = computed(() => {
         @click="copySvgIcon(component.name, $refs)"
       >
         <span class="demo-svg-icon">
-          <ElIcon :size="20">
+          <GIcon :size="20">
             <component :is="component" />
-          </ElIcon>
+          </GIcon>
           <span class="icon-name">{{ component.name }}</span>
         </span>
       </li>
@@ -150,7 +150,7 @@ const filterCategories = computed(() => {
       top: 0;
       width: 100%;
       height: 1px;
-      background-color: var(--el-border-color);
+      background-color: var(--g-border-color);
       z-index: 2;
     }
 
@@ -161,17 +161,17 @@ const filterCategories = computed(() => {
       top: 0;
       width: 1px;
       height: 100%;
-      background-color: var(--el-border-color);
+      background-color: var(--g-border-color);
       z-index: 2;
     }
 
     .icon-item {
       text-align: center;
-      color: var(--el-text-color-regular);
+      color: var(--g-text-color-regular);
       height: 90px;
       font-size: 13px;
       position: relative;
-      transition: background-color var(--el-transition-duration);
+      transition: background-color var(--g-transition-duration);
 
       &::before {
         content: '';
@@ -180,7 +180,7 @@ const filterCategories = computed(() => {
         top: 0;
         width: 1px;
         height: 100%;
-        background-color: var(--el-border-color);
+        background-color: var(--g-border-color);
         z-index: 2;
       }
 
@@ -191,15 +191,15 @@ const filterCategories = computed(() => {
         bottom: 0;
         width: 100%;
         height: 1px;
-        background-color: var(--el-border-color);
+        background-color: var(--g-border-color);
         z-index: 2;
       }
 
       &:hover {
-        background-color: var(--el-border-color-extra-light);
+        background-color: var(--g-border-color-extra-light);
         color: var(--brand-color-light);
 
-        .el-icon {
+        .g-icon {
           color: var(--brand-color-light);
         }
       }
@@ -231,7 +231,7 @@ const filterCategories = computed(() => {
   z-index: 10;
   margin-bottom: 1.5rem;
 
-  .el-input {
+  .g-input {
     background: var(--bg-color);
   }
 }

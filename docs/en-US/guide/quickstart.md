@@ -42,7 +42,7 @@ If you use volar, please add the global component type definition to `compilerOp
 
 You need to use an additional plugin to import components you used.
 
-#### Auto import <el-tag type="primary" style="vertical-align: middle;" effect="dark" size="small">Recommend</el-tag>
+#### Auto import <g-tag type="primary" style="vertical-align: middle;" effect="dark" size="small">Recommend</g-tag>
 
 First you need to install `unplugin-vue-components` and `unplugin-auto-import`.
 
@@ -148,14 +148,14 @@ And refer to the [docs](https://github.com/element-plus/unplugin-element-plus#re
 
 ```vue [App.vue]
 <template>
-  <el-button>I am ElButton</el-button>
+  <g-button>I am GButton</g-button>
 </template>
 
 <script>
-import { ElButton } from 'element-plus'
+import { GButton } from 'element-plus'
 
 export default {
-  components: { ElButton },
+  components: { GButton },
 }
 </script>
 ```
@@ -199,18 +199,18 @@ On-demand:
 
 ```vue [App.vue]
 <template>
-  <el-config-provider :size="size" :z-index="zIndex">
+  <g-config-provider :size="size" :z-index="zIndex">
     <app />
-  </el-config-provider>
+  </g-config-provider>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-import { ElConfigProvider } from 'element-plus'
+import { GConfigProvider } from 'element-plus'
 
 export default defineComponent({
   components: {
-    ElConfigProvider,
+    GConfigProvider,
   },
   setup() {
     return {

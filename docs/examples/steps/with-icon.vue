@@ -1,9 +1,9 @@
 <template>
-  <el-steps style="max-width: 600px" :active="1">
-    <el-step title="Step 1" :icon="Edit" />
-    <el-step title="Step 2" :icon="Upload" />
-    <el-step title="Step 3" :icon="Picture" />
-  </el-steps>
+  <g-steps style="max-width: 600px" :active="1">
+    <g-step title="Step 1" :icon="Edit" />
+    <g-step title="Step 2" :icon="Upload" />
+    <g-step title="Step 3" :icon="Picture" />
+  </g-steps>
 </template>
 
 <script lang="ts" setup>

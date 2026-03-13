@@ -3,7 +3,7 @@
     <div class="block">
       <span class="demonstration">Emits Date object</span>
       <div class="demonstration">Value: {{ value1 }}</div>
-      <el-date-picker
+      <g-date-picker
         v-model="value1"
         type="date"
         placeholder="Pick a Date"
@@ -13,7 +13,7 @@
     <div class="block">
       <span class="demonstration">Use value-format</span>
       <div class="demonstration">Value：{{ value2 }}</div>
-      <el-date-picker
+      <g-date-picker
         v-model="value2"
         type="date"
         placeholder="Pick a Date"
@@ -24,7 +24,7 @@
     <div class="block">
       <span class="demonstration">Timestamp</span>
       <div class="demonstration">Value：{{ value3 }}</div>
-      <el-date-picker
+      <g-date-picker
         v-model="value3"
         type="date"
         placeholder="Pick a Date"
@@ -54,7 +54,7 @@ const value3 = ref('')
 .demo-date-picker .block {
   padding: 1.5rem 0;
   text-align: center;
-  border-right: solid 1px var(--el-border-color);
+  border-right: solid 1px var(--g-border-color);
   flex: 1;
   min-width: 300px;
   display: flex;
@@ -68,7 +68,7 @@ const value3 = ref('')
 
 .demo-date-picker .demonstration {
   display: block;
-  color: var(--el-text-color-secondary);
+  color: var(--g-text-color-secondary);
   font-size: 14px;
   margin-bottom: 1rem;
   width: 100%;
@@ -77,7 +77,7 @@ const value3 = ref('')
 @media screen and (max-width: 1200px) {
   .demo-date-picker .block {
     flex: 0 0 50%;
-    border-bottom: solid 1px var(--el-border-color);
+    border-bottom: solid 1px var(--g-border-color);
   }
 
   .demo-date-picker .block:nth-child(2n) {
@@ -96,7 +96,7 @@ const value3 = ref('')
     padding: 1rem 0;
     min-width: auto;
     border-right: none;
-    border-bottom: solid 1px var(--el-border-color);
+    border-bottom: solid 1px var(--g-border-color);
   }
 
   .demo-date-picker .block:last-child {

@@ -3,33 +3,33 @@
     <p>open(close) the Dropdown list2 will close(open) the Dropdown List1.</p>
   </div>
   <div style="margin: 15px">
-    <el-button @click="showClick">show</el-button>
+    <g-button @click="showClick">show</g-button>
   </div>
-  <el-dropdown ref="dropdown1" trigger="contextmenu" style="margin-right: 30px">
-    <span class="el-dropdown-link"> Dropdown List1 </span>
+  <g-dropdown ref="dropdown1" trigger="contextmenu" style="margin-right: 30px">
+    <span class="g-dropdown-link"> Dropdown List1 </span>
     <template #dropdown>
-      <el-dropdown-menu>
-        <el-dropdown-item>Action 1</el-dropdown-item>
-        <el-dropdown-item>Action 2</el-dropdown-item>
-        <el-dropdown-item>Action 3</el-dropdown-item>
-        <el-dropdown-item disabled>Action 4</el-dropdown-item>
-        <el-dropdown-item divided>Action 5</el-dropdown-item>
-      </el-dropdown-menu>
+      <g-dropdown-menu>
+        <g-dropdown-item>Action 1</g-dropdown-item>
+        <g-dropdown-item>Action 2</g-dropdown-item>
+        <g-dropdown-item>Action 3</g-dropdown-item>
+        <g-dropdown-item disabled>Action 4</g-dropdown-item>
+        <g-dropdown-item divided>Action 5</g-dropdown-item>
+      </g-dropdown-menu>
     </template>
-  </el-dropdown>
+  </g-dropdown>
 
-  <el-dropdown trigger="contextmenu" @visible-change="handleVisible2">
-    <span class="el-dropdown-link"> Dropdown List2 </span>
+  <g-dropdown trigger="contextmenu" @visible-change="handleVisible2">
+    <span class="g-dropdown-link"> Dropdown List2 </span>
     <template #dropdown>
-      <el-dropdown-menu>
-        <el-dropdown-item>Action 1</el-dropdown-item>
-        <el-dropdown-item>Action 2</el-dropdown-item>
-        <el-dropdown-item>Action 3</el-dropdown-item>
-        <el-dropdown-item disabled>Action 4</el-dropdown-item>
-        <el-dropdown-item divided>Action 5</el-dropdown-item>
-      </el-dropdown-menu>
+      <g-dropdown-menu>
+        <g-dropdown-item>Action 1</g-dropdown-item>
+        <g-dropdown-item>Action 2</g-dropdown-item>
+        <g-dropdown-item>Action 3</g-dropdown-item>
+        <g-dropdown-item disabled>Action 4</g-dropdown-item>
+        <g-dropdown-item divided>Action 5</g-dropdown-item>
+      </g-dropdown-menu>
     </template>
-  </el-dropdown>
+  </g-dropdown>
 </template>
 
 <script setup lang="ts">
@@ -53,9 +53,9 @@ function showClick() {
 </script>
 
 <style scoped>
-.example-showcase .el-dropdown-link {
+.example-showcase .g-dropdown-link {
   cursor: pointer;
-  color: var(--el-color-primary);
+  color: var(--g-color-primary);
   display: flex;
   align-items: center;
 }

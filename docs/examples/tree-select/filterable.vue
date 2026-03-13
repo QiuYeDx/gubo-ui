@@ -1,22 +1,22 @@
 <template>
-  <el-tree-select
+  <g-tree-select
     v-model="value"
     :data="data"
     filterable
     style="width: 240px"
   />
-  <el-divider />
+  <g-divider />
   filter method:
-  <el-tree-select
+  <g-tree-select
     v-model="value"
     :data="data"
     :filter-method="filterMethod"
     filterable
     style="width: 240px"
   />
-  <el-divider />
+  <g-divider />
   filter node method:
-  <el-tree-select
+  <g-tree-select
     v-model="value"
     :data="data"
     :filter-node-method="filterNodeMethod"

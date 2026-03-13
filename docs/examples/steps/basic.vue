@@ -1,11 +1,11 @@
 <template>
-  <el-steps style="max-width: 600px" :active="active" finish-status="success">
-    <el-step title="Step 1" />
-    <el-step title="Step 2" />
-    <el-step title="Step 3" />
-  </el-steps>
+  <g-steps style="max-width: 600px" :active="active" finish-status="success">
+    <g-step title="Step 1" />
+    <g-step title="Step 2" />
+    <g-step title="Step 3" />
+  </g-steps>
 
-  <el-button style="margin-top: 12px" @click="next">Next step</el-button>
+  <g-button style="margin-top: 12px" @click="next">Next step</g-button>
 </template>
 
 <script lang="ts" setup>

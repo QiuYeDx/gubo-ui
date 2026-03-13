@@ -11,14 +11,14 @@ const config = reactive<CardConfigContext>({
 <template>
   Shadow:
   <div class="flex flex-col justify-center">
-    <el-radio-group v-model="config.shadow">
-      <el-radio value="always">always</el-radio>
-      <el-radio value="hover">hover</el-radio>
-      <el-radio value="never">never</el-radio>
-    </el-radio-group>
-    <el-divider />
-    <el-config-provider :card="config">
-      <el-card>Card desu!</el-card>
-    </el-config-provider>
+    <g-radio-group v-model="config.shadow">
+      <g-radio value="always">always</g-radio>
+      <g-radio value="hover">hover</g-radio>
+      <g-radio value="never">never</g-radio>
+    </g-radio-group>
+    <g-divider />
+    <g-config-provider :card="config">
+      <g-card>Card desu!</g-card>
+    </g-config-provider>
   </div>
 </template>

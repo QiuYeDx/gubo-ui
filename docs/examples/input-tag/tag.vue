@@ -1,10 +1,10 @@
 <template>
   <div>
-    <el-segmented v-model="tagType" :options="type" class="mr-5" />
-    <el-segmented v-model="tagEffect" :options="effect" />
+    <g-segmented v-model="tagType" :options="type" class="mr-5" />
+    <g-segmented v-model="tagEffect" :options="effect" />
   </div>
   <br />
-  <el-input-tag
+  <g-input-tag
     v-model="input"
     :tag-type="tagType"
     :tag-effect="tagEffect"
@@ -12,13 +12,13 @@
   >
     <template #tag="{ value }">
       <div class="flex items-center">
-        <el-icon class="mr-1">
+        <g-icon class="mr-1">
           <ElementPlus />
-        </el-icon>
+        </g-icon>
         <span>{{ value }}</span>
       </div>
     </template>
-  </el-input-tag>
+  </g-input-tag>
 </template>
 
 <script lang="ts" setup>

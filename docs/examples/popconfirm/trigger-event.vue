@@ -1,5 +1,5 @@
 <template>
-  <el-popconfirm
+  <g-popconfirm
     confirm-button-text="Yes"
     cancel-button-text="No"
     :icon="InfoFilled"
@@ -9,9 +9,9 @@
     @cancel="cancelEvent"
   >
     <template #reference>
-      <el-button>Delete</el-button>
+      <g-button>Delete</g-button>
     </template>
-  </el-popconfirm>
+  </g-popconfirm>
 </template>
 
 <script setup lang="ts">

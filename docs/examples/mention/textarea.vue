@@ -1,5 +1,5 @@
 <template>
-  <el-mention
+  <g-mention
     v-model="value"
     type="textarea"
     :options="options"

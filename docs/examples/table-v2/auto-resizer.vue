@@ -1,8 +1,8 @@
 <template>
   <div style="height: 400px">
-    <el-auto-resizer>
+    <g-auto-resizer>
       <template #default="{ height, width }">
-        <el-table-v2
+        <g-table-v2
           :columns="columns"
           :data="data"
           :width="width"
@@ -10,7 +10,7 @@
           fixed
         />
       </template>
-    </el-auto-resizer>
+    </g-auto-resizer>
   </div>
 </template>
 

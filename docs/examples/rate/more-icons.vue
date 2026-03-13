@@ -1,5 +1,5 @@
 <template>
-  <el-rate
+  <g-rate
     v-model="value"
     :icons="icons"
     :void-icon="ChatRound"

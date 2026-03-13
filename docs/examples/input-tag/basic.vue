@@ -1,5 +1,5 @@
 <template>
-  <el-input-tag
+  <g-input-tag
     v-model="input"
     placeholder="Please input"
     aria-label="Please click the Enter key after input"

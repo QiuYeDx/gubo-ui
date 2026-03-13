@@ -1,64 +1,64 @@
 <template>
   <div class="flex flex-wrap items-center gap-4">
-    <el-dropdown placement="top-start">
-      <el-button> topStart </el-button>
+    <g-dropdown placement="top-start">
+      <g-button> topStart </g-button>
       <template #dropdown>
-        <el-dropdown-menu>
-          <el-dropdown-item>The Action 1st</el-dropdown-item>
-          <el-dropdown-item>The Action 2nd</el-dropdown-item>
-          <el-dropdown-item>The Action 3rd</el-dropdown-item>
-        </el-dropdown-menu>
+        <g-dropdown-menu>
+          <g-dropdown-item>The Action 1st</g-dropdown-item>
+          <g-dropdown-item>The Action 2nd</g-dropdown-item>
+          <g-dropdown-item>The Action 3rd</g-dropdown-item>
+        </g-dropdown-menu>
       </template>
-    </el-dropdown>
-    <el-dropdown placement="top">
-      <el-button> top </el-button>
+    </g-dropdown>
+    <g-dropdown placement="top">
+      <g-button> top </g-button>
       <template #dropdown>
-        <el-dropdown-menu>
-          <el-dropdown-item>The Action 1st</el-dropdown-item>
-          <el-dropdown-item>The Action 2nd</el-dropdown-item>
-          <el-dropdown-item>The Action 3rd</el-dropdown-item>
-        </el-dropdown-menu>
+        <g-dropdown-menu>
+          <g-dropdown-item>The Action 1st</g-dropdown-item>
+          <g-dropdown-item>The Action 2nd</g-dropdown-item>
+          <g-dropdown-item>The Action 3rd</g-dropdown-item>
+        </g-dropdown-menu>
       </template>
-    </el-dropdown>
-    <el-dropdown placement="top-end">
-      <el-button> topEnd </el-button>
+    </g-dropdown>
+    <g-dropdown placement="top-end">
+      <g-button> topEnd </g-button>
       <template #dropdown>
-        <el-dropdown-menu>
-          <el-dropdown-item>The Action 1st</el-dropdown-item>
-          <el-dropdown-item>The Action 2nd</el-dropdown-item>
-          <el-dropdown-item>The Action 3rd</el-dropdown-item>
-        </el-dropdown-menu>
+        <g-dropdown-menu>
+          <g-dropdown-item>The Action 1st</g-dropdown-item>
+          <g-dropdown-item>The Action 2nd</g-dropdown-item>
+          <g-dropdown-item>The Action 3rd</g-dropdown-item>
+        </g-dropdown-menu>
       </template>
-    </el-dropdown>
-    <el-dropdown placement="bottom-start">
-      <el-button> bottomStart </el-button>
+    </g-dropdown>
+    <g-dropdown placement="bottom-start">
+      <g-button> bottomStart </g-button>
       <template #dropdown>
-        <el-dropdown-menu>
-          <el-dropdown-item>The Action 1st</el-dropdown-item>
-          <el-dropdown-item>The Action 2nd</el-dropdown-item>
-          <el-dropdown-item>The Action 3rd</el-dropdown-item>
-        </el-dropdown-menu>
+        <g-dropdown-menu>
+          <g-dropdown-item>The Action 1st</g-dropdown-item>
+          <g-dropdown-item>The Action 2nd</g-dropdown-item>
+          <g-dropdown-item>The Action 3rd</g-dropdown-item>
+        </g-dropdown-menu>
       </template>
-    </el-dropdown>
-    <el-dropdown placement="bottom">
-      <el-button> bottom </el-button>
+    </g-dropdown>
+    <g-dropdown placement="bottom">
+      <g-button> bottom </g-button>
       <template #dropdown>
-        <el-dropdown-menu>
-          <el-dropdown-item>The Action 1st</el-dropdown-item>
-          <el-dropdown-item>The Action 2nd</el-dropdown-item>
-          <el-dropdown-item>The Action 3rd</el-dropdown-item>
-        </el-dropdown-menu>
+        <g-dropdown-menu>
+          <g-dropdown-item>The Action 1st</g-dropdown-item>
+          <g-dropdown-item>The Action 2nd</g-dropdown-item>
+          <g-dropdown-item>The Action 3rd</g-dropdown-item>
+        </g-dropdown-menu>
       </template>
-    </el-dropdown>
-    <el-dropdown placement="bottom-end">
-      <el-button> bottomEnd </el-button>
+    </g-dropdown>
+    <g-dropdown placement="bottom-end">
+      <g-button> bottomEnd </g-button>
       <template #dropdown>
-        <el-dropdown-menu>
-          <el-dropdown-item>The Action 1st</el-dropdown-item>
-          <el-dropdown-item>The Action 2nd</el-dropdown-item>
-          <el-dropdown-item>The Action 3rd</el-dropdown-item>
-        </el-dropdown-menu>
+        <g-dropdown-menu>
+          <g-dropdown-item>The Action 1st</g-dropdown-item>
+          <g-dropdown-item>The Action 2nd</g-dropdown-item>
+          <g-dropdown-item>The Action 3rd</g-dropdown-item>
+        </g-dropdown-menu>
       </template>
-    </el-dropdown>
+    </g-dropdown>
   </div>
 </template>

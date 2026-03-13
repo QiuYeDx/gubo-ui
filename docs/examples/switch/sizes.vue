@@ -1,14 +1,14 @@
 <template>
-  <el-switch
+  <g-switch
     v-model="value"
     size="large"
     active-text="Open"
     inactive-text="Close"
   />
   <br />
-  <el-switch v-model="value" active-text="Open" inactive-text="Close" />
+  <g-switch v-model="value" active-text="Open" inactive-text="Close" />
   <br />
-  <el-switch
+  <g-switch
     v-model="value"
     size="small"
     active-text="Open"

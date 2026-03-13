@@ -1,6 +1,6 @@
 <template>
   <div class="slider-demo-block">
-    <el-slider v-model="value" range :marks="marks" />
+    <g-slider v-model="value" range :marks="marks" />
   </div>
 </template>
 
@@ -36,7 +36,7 @@ const marks = reactive<Marks>({
   display: flex;
   align-items: center;
 }
-.slider-demo-block .el-slider {
+.slider-demo-block .g-slider {
   margin-top: 0;
   margin-left: 12px;
 }

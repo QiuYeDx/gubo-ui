@@ -1,10 +1,10 @@
 <template>
-  <el-breadcrumb :separator-icon="ArrowRight">
-    <el-breadcrumb-item :to="{ path: '/' }">homepage</el-breadcrumb-item>
-    <el-breadcrumb-item>promotion management</el-breadcrumb-item>
-    <el-breadcrumb-item>promotion list</el-breadcrumb-item>
-    <el-breadcrumb-item>promotion detail</el-breadcrumb-item>
-  </el-breadcrumb>
+  <g-breadcrumb :separator-icon="ArrowRight">
+    <g-breadcrumb-item :to="{ path: '/' }">homepage</g-breadcrumb-item>
+    <g-breadcrumb-item>promotion management</g-breadcrumb-item>
+    <g-breadcrumb-item>promotion list</g-breadcrumb-item>
+    <g-breadcrumb-item>promotion detail</g-breadcrumb-item>
+  </g-breadcrumb>
 </template>
 
 <script lang="ts" setup>

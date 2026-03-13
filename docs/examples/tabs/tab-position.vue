@@ -1,17 +1,17 @@
 <template>
-  <el-radio-group v-model="tabPosition" style="margin-bottom: 30px">
-    <el-radio-button value="top">top</el-radio-button>
-    <el-radio-button value="right">right</el-radio-button>
-    <el-radio-button value="bottom">bottom</el-radio-button>
-    <el-radio-button value="left">left</el-radio-button>
-  </el-radio-group>
+  <g-radio-group v-model="tabPosition" style="margin-bottom: 30px">
+    <g-radio-button value="top">top</g-radio-button>
+    <g-radio-button value="right">right</g-radio-button>
+    <g-radio-button value="bottom">bottom</g-radio-button>
+    <g-radio-button value="left">left</g-radio-button>
+  </g-radio-group>
 
-  <el-tabs :tab-position="tabPosition" style="height: 200px" class="demo-tabs">
-    <el-tab-pane label="User">User</el-tab-pane>
-    <el-tab-pane label="Config">Config</el-tab-pane>
-    <el-tab-pane label="Role">Role</el-tab-pane>
-    <el-tab-pane label="Task">Task</el-tab-pane>
-  </el-tabs>
+  <g-tabs :tab-position="tabPosition" style="height: 200px" class="demo-tabs">
+    <g-tab-pane label="User">User</g-tab-pane>
+    <g-tab-pane label="Config">Config</g-tab-pane>
+    <g-tab-pane label="Role">Role</g-tab-pane>
+    <g-tab-pane label="Task">Task</g-tab-pane>
+  </g-tabs>
 </template>
 
 <script lang="ts" setup>
@@ -23,15 +23,15 @@ const tabPosition = ref<TabsInstance['tabPosition']>('left')
 </script>
 
 <style>
-.demo-tabs > .el-tabs__content {
+.demo-tabs > .g-tabs__content {
   padding: 32px;
   color: #6b778c;
   font-size: 32px;
   font-weight: 600;
 }
 
-.el-tabs--right .el-tabs__content,
-.el-tabs--left .el-tabs__content {
+.g-tabs--right .g-tabs__content,
+.g-tabs--left .g-tabs__content {
   height: 100%;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <el-table-v2
+  <g-table-v2
     fixed
     :columns="fixedColumns"
     :data="data"
@@ -11,7 +11,7 @@
     <template #header="props">
       <customized-header v-bind="props" />
     </template>
-  </el-table-v2>
+  </g-table-v2>
 </template>
 
 <script lang="tsx" setup>
@@ -104,28 +104,28 @@ const CustomizedHeader: FunctionalComponent<
 const headerClass = ({
   headerIndex,
 }: Parameters<HeaderClassNameGetter<any>>[0]) => {
-  if (headerIndex === 1) return 'el-primary-color'
+  if (headerIndex === 1) return 'g-primary-color'
   return ''
 }
 </script>
 
 <style>
-.el-el-table-v2__header-row .custom-header-cell {
-  border-right: 1px solid var(--el-border-color);
+.g-table-v2__header-row .custom-header-cell {
+  border-right: 1px solid var(--g-border-color);
 }
 
-.el-el-table-v2__header-row .custom-header-cell:last-child {
+.g-table-v2__header-row .custom-header-cell:last-child {
   border-right: none;
 }
 
-.el-primary-color {
-  background-color: var(--el-color-primary);
-  color: var(--el-color-white);
+.g-primary-color {
+  background-color: var(--g-color-primary);
+  color: var(--g-color-white);
   font-size: 14px;
   font-weight: bold;
 }
 
-.el-primary-color .custom-header-cell {
+.g-primary-color .custom-header-cell {
   padding: 0 4px;
 }
 </style>

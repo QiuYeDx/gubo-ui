@@ -45,8 +45,8 @@ const onNavClick = (item: Link) => {
     :no-icon="true"
     @click="onNavClick(item)"
   >
-    <el-badge v-if="isNewPage(item) && !isVisited" is-dot class="badge">
-      {{ item.text }}</el-badge
+    <g-badge v-if="isNewPage(item) && !isVisited" is-dot class="badge">
+      {{ item.text }}</g-badge
     >
     <template v-else> {{ item.text }}</template>
   </VPLink>
@@ -60,7 +60,7 @@ const onNavClick = (item: Link) => {
   font-size: 14px;
   font-weight: 500;
   color: var(--text-color);
-  transition: color var(--el-transition-duration);
+  transition: color var(--g-transition-duration);
   border-bottom: 2px solid transparent;
 
   &.active {

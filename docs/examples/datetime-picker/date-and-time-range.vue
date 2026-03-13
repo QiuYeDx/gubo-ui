@@ -2,7 +2,7 @@
   <div class="demo-datetime-picker">
     <div class="block">
       <span class="demonstration">Default</span>
-      <el-date-picker
+      <g-date-picker
         v-model="value1"
         type="datetimerange"
         range-separator="To"
@@ -12,7 +12,7 @@
     </div>
     <div class="block">
       <span class="demonstration">With shortcuts</span>
-      <el-date-picker
+      <g-date-picker
         v-model="value2"
         type="datetimerange"
         :shortcuts="shortcuts"
@@ -75,7 +75,7 @@ const shortcuts = [
 .block {
   padding: 30px 0;
   text-align: center;
-  border-right: solid 1px var(--el-border-color);
+  border-right: solid 1px var(--g-border-color);
   flex: 1;
   min-width: 300px;
 }
@@ -86,7 +86,7 @@ const shortcuts = [
 
 .block .demonstration {
   display: block;
-  color: var(--el-text-color-secondary);
+  color: var(--g-text-color-secondary);
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -95,18 +95,18 @@ const shortcuts = [
   .block {
     flex: 100%;
     border-right: none;
-    border-bottom: solid 1px var(--el-border-color);
+    border-bottom: solid 1px var(--g-border-color);
   }
 
   .block:last-child {
     border-bottom: none;
   }
 
-  :deep(.el-date-editor.el-input) {
+  :deep(.g-date-editor.g-input) {
     width: 100%;
   }
 
-  :deep(.el-date-editor.el-input__wrapper) {
+  :deep(.g-date-editor.g-input__wrapper) {
     width: 100%;
     max-width: 300px;
   }

@@ -1,12 +1,12 @@
 <template>
-  <el-tree-select v-model="value" :data="data" style="width: 240px">
+  <g-tree-select v-model="value" :data="data" style="width: 240px">
     <template #default="{ data: { label } }">
       {{ label }}<span style="color: gray">(suffix)</span>
     </template>
-  </el-tree-select>
-  <el-divider />
+  </g-tree-select>
+  <g-divider />
   use render content:
-  <el-tree-select
+  <g-tree-select
     v-model="value"
     :data="data"
     :render-content="renderContent"

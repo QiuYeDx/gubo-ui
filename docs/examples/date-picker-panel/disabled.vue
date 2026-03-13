@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col items-center">
-    <el-switch
+    <g-switch
       v-model="disabled"
       active-text="Disabled"
       inactive-text="Enabled"
     />
-    <el-date-picker-panel v-model="value" :disabled="disabled" />
+    <g-date-picker-panel v-model="value" :disabled="disabled" />
   </div>
 </template>
 

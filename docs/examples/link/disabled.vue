@@ -1,16 +1,16 @@
 <template>
   <div>
-    <el-link disabled>default</el-link>
-    <el-link type="primary" disabled>primary</el-link>
-    <el-link type="success" disabled>success</el-link>
-    <el-link type="warning" disabled>warning</el-link>
-    <el-link type="danger" disabled>danger</el-link>
-    <el-link type="info" disabled>info</el-link>
+    <g-link disabled>default</g-link>
+    <g-link type="primary" disabled>primary</g-link>
+    <g-link type="success" disabled>success</g-link>
+    <g-link type="warning" disabled>warning</g-link>
+    <g-link type="danger" disabled>danger</g-link>
+    <g-link type="info" disabled>info</g-link>
   </div>
 </template>
 
 <style scoped>
-.el-link {
+.g-link {
   margin-right: 8px;
 }
 </style>

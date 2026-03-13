@@ -1,77 +1,77 @@
 <template>
   <div>
-    <el-radio-group v-model="size" aria-label="size control">
-      <el-radio-button value="large">large</el-radio-button>
-      <el-radio-button value="default">default</el-radio-button>
-      <el-radio-button value="small">small</el-radio-button>
-    </el-radio-group>
-    <el-radio-group v-model="labelPosition" aria-label="position control">
-      <el-radio-button value="left">Left</el-radio-button>
-      <el-radio-button value="right">Right</el-radio-button>
-      <el-radio-button value="top">Top</el-radio-button>
-    </el-radio-group>
+    <g-radio-group v-model="size" aria-label="size control">
+      <g-radio-button value="large">large</g-radio-button>
+      <g-radio-button value="default">default</g-radio-button>
+      <g-radio-button value="small">small</g-radio-button>
+    </g-radio-group>
+    <g-radio-group v-model="labelPosition" aria-label="position control">
+      <g-radio-button value="left">Left</g-radio-button>
+      <g-radio-button value="right">Right</g-radio-button>
+      <g-radio-button value="top">Top</g-radio-button>
+    </g-radio-group>
   </div>
   <br />
-  <el-form
+  <g-form
     style="max-width: 600px"
     :model="sizeForm"
     label-width="auto"
     :label-position="labelPosition"
     :size="size"
   >
-    <el-form-item label="Activity name">
-      <el-input v-model="sizeForm.name" />
-    </el-form-item>
-    <el-form-item label="Activity zone">
-      <el-select
+    <g-form-item label="Activity name">
+      <g-input v-model="sizeForm.name" />
+    </g-form-item>
+    <g-form-item label="Activity zone">
+      <g-select
         v-model="sizeForm.region"
         placeholder="please select your zone"
       >
-        <el-option label="Zone one" value="shanghai" />
-        <el-option label="Zone two" value="beijing" />
-      </el-select>
-    </el-form-item>
-    <el-form-item label="Activity time">
-      <el-col :span="11">
-        <el-date-picker
+        <g-option label="Zone one" value="shanghai" />
+        <g-option label="Zone two" value="beijing" />
+      </g-select>
+    </g-form-item>
+    <g-form-item label="Activity time">
+      <g-col :span="11">
+        <g-date-picker
           v-model="sizeForm.date1"
           type="date"
           aria-label="Pick a date"
           placeholder="Pick a date"
           style="width: 100%"
         />
-      </el-col>
-      <el-col class="text-center" :span="1" style="margin: 0 0.5rem">-</el-col>
-      <el-col :span="11">
-        <el-time-picker
+      </g-col>
+      <g-col class="text-center" :span="1" style="margin: 0 0.5rem">-</g-col>
+      <g-col :span="11">
+        <g-time-picker
           v-model="sizeForm.date2"
           aria-label="Pick a time"
           placeholder="Pick a time"
           style="width: 100%"
         />
-      </el-col>
-    </el-form-item>
-    <el-form-item label="Activity type">
-      <el-checkbox-group v-model="sizeForm.type">
-        <el-checkbox-button value="Online activities" name="type">
+      </g-col>
+    </g-form-item>
+    <g-form-item label="Activity type">
+      <g-checkbox-group v-model="sizeForm.type">
+        <g-checkbox-button value="Online activities" name="type">
           Online activities
-        </el-checkbox-button>
-        <el-checkbox-button value="Promotion activities" name="type">
+        </g-checkbox-button>
+        <g-checkbox-button value="Promotion activities" name="type">
           Promotion activities
-        </el-checkbox-button>
-      </el-checkbox-group>
-    </el-form-item>
-    <el-form-item label="Resources">
-      <el-radio-group v-model="sizeForm.resource">
-        <el-radio border value="Sponsor">Sponsor</el-radio>
-        <el-radio border value="Venue">Venue</el-radio>
-      </el-radio-group>
-    </el-form-item>
-    <el-form-item>
-      <el-button type="primary" @click="onSubmit">Create</el-button>
-      <el-button>Cancel</el-button>
-    </el-form-item>
-  </el-form>
+        </g-checkbox-button>
+      </g-checkbox-group>
+    </g-form-item>
+    <g-form-item label="Resources">
+      <g-radio-group v-model="sizeForm.resource">
+        <g-radio border value="Sponsor">Sponsor</g-radio>
+        <g-radio border value="Venue">Venue</g-radio>
+      </g-radio-group>
+    </g-form-item>
+    <g-form-item>
+      <g-button type="primary" @click="onSubmit">Create</g-button>
+      <g-button>Cancel</g-button>
+    </g-form-item>
+  </g-form>
 </template>
 
 <script lang="ts" setup>
@@ -99,7 +99,7 @@ function onSubmit() {
 </script>
 
 <style>
-.el-radio-group {
+.g-radio-group {
   margin-right: 12px;
 }
 </style>

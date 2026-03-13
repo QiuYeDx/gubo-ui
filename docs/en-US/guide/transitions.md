@@ -10,7 +10,7 @@ Before that, please read the [transition docs](https://vuejs.org/guide/built-ins
 
 ## Fade
 
-:::demo We have two fading effects: `el-fade-in-linear` and `el-fade-in`.
+:::demo We have two fading effects: `g-fade-in-linear` and `g-fade-in`.
 
 transitions/fade
 
@@ -18,7 +18,7 @@ transitions/fade
 
 ## Zoom
 
-:::demo `el-zoom-in-left`, `el-zoom-in-center`, `el-zoom-in-top` and `el-zoom-in-bottom` are provided.
+:::demo `g-zoom-in-left`, `g-zoom-in-center`, `g-zoom-in-top` and `g-zoom-in-bottom` are provided.
 
 transitions/zoom
 
@@ -26,7 +26,7 @@ transitions/zoom
 
 ## Collapse
 
-For collapse effect, use the `el-collapse-transition` component.
+For collapse effect, use the `g-collapse-transition` component.
 
 :::demo
 
@@ -38,11 +38,11 @@ transitions/collapse
 
 ```ts [main.ts]
 // collapse
-import { ElCollapseTransition } from 'element-plus'
+import { GCollapseTransition } from 'element-plus'
 // fade/zoom
 import 'element-plus/theme-chalk/base.css'
 import App from './App.vue'
 
 const app = createApp(App)
-app.component(ElCollapseTransition.name, ElCollapseTransition)
+app.component(GCollapseTransition.name, GCollapseTransition)
 ```

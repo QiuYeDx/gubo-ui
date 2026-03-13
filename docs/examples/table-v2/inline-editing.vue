@@ -1,8 +1,8 @@
 <template>
   <div style="height: 400px">
-    <el-auto-resizer>
+    <g-auto-resizer>
       <template #default="{ height, width }">
-        <el-table-v2
+        <g-table-v2
           :columns="columns"
           :data="data"
           :width="width"
@@ -10,13 +10,13 @@
           fixed
         />
       </template>
-    </el-auto-resizer>
+    </g-auto-resizer>
   </div>
 </template>
 
 <script lang="tsx" setup>
 import { ref, withKeys } from 'vue'
-import { ElInput } from 'element-plus'
+import { GInput } from 'element-plus'
 
 import type { FunctionalComponent } from 'vue'
 import type { Column, InputInstance } from 'element-plus'
@@ -38,7 +38,7 @@ const InputCell: FunctionalComponent<SelectionCellProps> = ({
   forwardRef,
 }) => {
   return (
-    <ElInput
+    <GInput
       ref={forwardRef as any}
       onInput={onChange}
       onBlur={onBlur}
@@ -123,6 +123,6 @@ const data = ref(generateData(columns, 200))
 }
 
 .table-v2-inline-editing-trigger:hover {
-  border-color: var(--el-color-primary);
+  border-color: var(--g-color-primary);
 }
 </style>

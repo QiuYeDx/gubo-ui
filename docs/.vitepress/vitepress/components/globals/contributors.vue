@@ -16,7 +16,7 @@ const withSize = (rawURL: string) => {
 
 <template>
   <div class="flex flex-wrap gap-2 pb-2">
-    <el-tooltip
+    <g-tooltip
       v-for="{ login, avatar, name, hash } of contributors"
       :key="hash"
       :content="name"
@@ -33,7 +33,7 @@ const withSize = (rawURL: string) => {
           loading="lazy"
         />
       </vp-link>
-    </el-tooltip>
+    </g-tooltip>
   </div>
 </template>
 

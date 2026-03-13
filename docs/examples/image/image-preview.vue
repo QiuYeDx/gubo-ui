@@ -1,6 +1,6 @@
 <template>
   <div class="demo-image__preview">
-    <el-image
+    <g-image
       style="width: 100px; height: 100px"
       :src="url"
       :zoom-rate="1.2"
@@ -32,10 +32,10 @@ const srcList = [
 .demo-image__error .image-slot {
   font-size: 30px;
 }
-.demo-image__error .image-slot .el-icon {
+.demo-image__error .image-slot .g-icon {
   font-size: 30px;
 }
-.demo-image__error .el-image {
+.demo-image__error .g-image {
   width: 100%;
   height: 200px;
 }

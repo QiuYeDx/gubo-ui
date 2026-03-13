@@ -1,13 +1,13 @@
 <template>
-  <el-tree-select
+  <g-tree-select
     v-model="value"
     :data="data"
     :render-after-expand="false"
     style="width: 240px"
   />
-  <el-divider />
+  <g-divider />
   show checkbox:
-  <el-tree-select
+  <g-tree-select
     v-model="value"
     :data="data"
     :render-after-expand="false"

@@ -1,5 +1,5 @@
 <template>
-  <el-tree
+  <g-tree
     ref="treeRef"
     style="max-width: 600px"
     :data="data"
@@ -11,11 +11,11 @@
   />
 
   <div class="flex flex-wrap gap-1 mt-2">
-    <el-button class="!ml-0" @click="getCheckedNodes">get by node</el-button>
-    <el-button class="!ml-0" @click="getCheckedKeys">get by key</el-button>
-    <el-button class="!ml-0" @click="setCheckedNodes">set by node</el-button>
-    <el-button class="!ml-0" @click="setCheckedKeys">set by key</el-button>
-    <el-button class="!ml-0" @click="resetChecked">reset</el-button>
+    <g-button class="!ml-0" @click="getCheckedNodes">get by node</g-button>
+    <g-button class="!ml-0" @click="getCheckedKeys">get by key</g-button>
+    <g-button class="!ml-0" @click="setCheckedNodes">set by node</g-button>
+    <g-button class="!ml-0" @click="setCheckedKeys">set by key</g-button>
+    <g-button class="!ml-0" @click="resetChecked">reset</g-button>
   </div>
 </template>
 

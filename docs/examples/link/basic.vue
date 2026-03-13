@@ -1,16 +1,16 @@
 <template>
   <div>
-    <el-link href="https://element-plus.org" target="_blank">default</el-link>
-    <el-link type="primary">primary</el-link>
-    <el-link type="success">success</el-link>
-    <el-link type="warning">warning</el-link>
-    <el-link type="danger">danger</el-link>
-    <el-link type="info">info</el-link>
+    <g-link href="https://element-plus.org" target="_blank">default</g-link>
+    <g-link type="primary">primary</g-link>
+    <g-link type="success">success</g-link>
+    <g-link type="warning">warning</g-link>
+    <g-link type="danger">danger</g-link>
+    <g-link type="info">info</g-link>
   </div>
 </template>
 
 <style scoped>
-.el-link {
+.g-link {
   margin-right: 8px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <el-tooltip
+  <g-tooltip
     v-model:visible="visible"
     content="Bottom center"
     placement="bottom"
@@ -8,7 +8,7 @@
     virtual-triggering
     :virtual-ref="triggerRef"
   />
-  <el-button @click="visible = !visible">test</el-button>
+  <g-button @click="visible = !visible">test</g-button>
 </template>
 
 <script setup lang="ts">

@@ -1,20 +1,20 @@
 <template>
-  <el-button plain @click="visible = true">
+  <g-button plain @click="visible = true">
     Open Dialog with customized header
-  </el-button>
+  </g-button>
 
-  <el-dialog v-model="visible" :show-close="false" width="500">
+  <g-dialog v-model="visible" :show-close="false" width="500">
     <template #header="{ close, titleId, titleClass }">
       <div class="my-header">
         <h4 :id="titleId" :class="titleClass">This is a custom header!</h4>
-        <el-button type="danger" @click="close">
-          <el-icon class="el-icon--left"><CircleCloseFilled /></el-icon>
+        <g-button type="danger" @click="close">
+          <g-icon class="g-icon--left"><CircleCloseFilled /></g-icon>
           Close
-        </el-button>
+        </g-button>
       </div>
     </template>
     This is dialog content.
-  </el-dialog>
+  </g-dialog>
 </template>
 
 <script lang="ts" setup>

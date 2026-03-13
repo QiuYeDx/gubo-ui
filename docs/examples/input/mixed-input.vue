@@ -1,59 +1,59 @@
 <template>
   <div>
-    <el-input
+    <g-input
       v-model="input1"
       style="max-width: 600px"
       placeholder="Please input"
     >
       <template #prepend>Http://</template>
-    </el-input>
+    </g-input>
   </div>
   <div class="mt-4">
-    <el-input
+    <g-input
       v-model="input2"
       style="max-width: 600px"
       placeholder="Please input"
     >
       <template #append>.com</template>
-    </el-input>
+    </g-input>
   </div>
   <div class="mt-4">
-    <el-input
+    <g-input
       v-model="input3"
       style="max-width: 600px"
       placeholder="Please input"
       class="input-with-select"
     >
       <template #prepend>
-        <el-select v-model="select" placeholder="Select" style="width: 115px">
-          <el-option label="Restaurant" value="1" />
-          <el-option label="Order No." value="2" />
-          <el-option label="Tel" value="3" />
-        </el-select>
+        <g-select v-model="select" placeholder="Select" style="width: 115px">
+          <g-option label="Restaurant" value="1" />
+          <g-option label="Order No." value="2" />
+          <g-option label="Tel" value="3" />
+        </g-select>
       </template>
       <template #append>
-        <el-button :icon="Search" />
+        <g-button :icon="Search" />
       </template>
-    </el-input>
+    </g-input>
   </div>
   <div class="mt-4">
-    <el-input
+    <g-input
       v-model="input3"
       style="max-width: 600px"
       placeholder="Please input"
       class="input-with-select"
     >
       <template #prepend>
-        <el-button :icon="Search" />
+        <g-button :icon="Search" />
       </template>
       <template #append>
-        <el-select v-model="select" placeholder="Select" style="width: 115px">
-          <el-option label="Restaurant" value="1" />
-          <el-option label="Order No." value="2" />
-          <el-option label="Tel" value="3" />
-        </el-select>
+        <g-select v-model="select" placeholder="Select" style="width: 115px">
+          <g-option label="Restaurant" value="1" />
+          <g-option label="Order No." value="2" />
+          <g-option label="Tel" value="3" />
+        </g-select>
       </template>
-    </el-input>
+    </g-input>
   </div>
 </template>
 
@@ -68,7 +68,7 @@ const select = ref('')
 </script>
 
 <style>
-.input-with-select .el-input-group__prepend {
-  background-color: var(--el-fill-color-blank);
+.input-with-select .g-input-group__prepend {
+  background-color: var(--g-fill-color-blank);
 }
 </style>

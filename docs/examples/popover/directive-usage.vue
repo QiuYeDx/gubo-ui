@@ -1,9 +1,9 @@
 <template>
-  <el-button v-popover="popoverRef" v-click-outside="onClickOutside">
+  <g-button v-popover="popoverRef" v-click-outside="onClickOutside">
     Click me
-  </el-button>
+  </g-button>
 
-  <el-popover
+  <g-popover
     ref="popoverRef"
     trigger="click"
     title="With title"
@@ -11,7 +11,7 @@
     persistent
   >
     <span> Some content </span>
-  </el-popover>
+  </g-popover>
 </template>
 
 <script setup lang="ts">

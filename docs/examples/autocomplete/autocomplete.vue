@@ -2,7 +2,7 @@
   <div class="demo-autocomplete">
     <div class="demo-block">
       <div class="demo-title">list suggestions when activated</div>
-      <el-autocomplete
+      <g-autocomplete
         v-model="state1"
         :fetch-suggestions="querySearch"
         clearable
@@ -13,7 +13,7 @@
     </div>
     <div class="demo-block">
       <div class="demo-title">list suggestions on input</div>
-      <el-autocomplete
+      <g-autocomplete
         v-model="state2"
         :fetch-suggestions="querySearch"
         :trigger-on-focus="false"
@@ -88,7 +88,7 @@ onMounted(() => {
 
 .demo-title {
   font-size: 0.875rem;
-  color: var(--el-text-color-secondary);
+  color: var(--g-text-color-secondary);
   min-height: 2.5em;
   display: flex;
   align-items: center;

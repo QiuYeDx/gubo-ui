@@ -1,10 +1,10 @@
 <template>
-  <el-radio-group v-model="controllerType">
-    <el-radio-button label="select" value="select" />
-    <el-radio-button label="button" value="button" />
-  </el-radio-group>
+  <g-radio-group v-model="controllerType">
+    <g-radio-button label="select" value="select" />
+    <g-radio-button label="button" value="button" />
+  </g-radio-group>
 
-  <el-calendar v-model="value" :controller-type="controllerType" />
+  <g-calendar v-model="value" :controller-type="controllerType" />
 </template>
 
 <script lang="ts" setup>

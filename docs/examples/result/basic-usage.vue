@@ -1,60 +1,60 @@
 <template>
-  <el-row>
-    <el-col :sm="12" :lg="6" :xl="4">
-      <el-result
+  <g-row>
+    <g-col :sm="12" :lg="6" :xl="4">
+      <g-result
         icon="primary"
         title="Primary Tip"
         sub-title="Please follow the instructions"
       >
         <template #extra>
-          <el-button type="primary">Back</el-button>
+          <g-button type="primary">Back</g-button>
         </template>
-      </el-result>
-    </el-col>
-    <el-col :sm="12" :lg="6" :xl="4">
-      <el-result
+      </g-result>
+    </g-col>
+    <g-col :sm="12" :lg="6" :xl="4">
+      <g-result
         icon="success"
         title="Success Tip"
         sub-title="Please follow the instructions"
       >
         <template #extra>
-          <el-button type="primary">Back</el-button>
+          <g-button type="primary">Back</g-button>
         </template>
-      </el-result>
-    </el-col>
-    <el-col :sm="12" :lg="6" :xl="4">
-      <el-result
+      </g-result>
+    </g-col>
+    <g-col :sm="12" :lg="6" :xl="4">
+      <g-result
         icon="warning"
         title="Warning Tip"
         sub-title="Please follow the instructions"
       >
         <template #extra>
-          <el-button type="primary">Back</el-button>
+          <g-button type="primary">Back</g-button>
         </template>
-      </el-result>
-    </el-col>
-    <el-col :sm="12" :lg="6" :xl="4">
-      <el-result
+      </g-result>
+    </g-col>
+    <g-col :sm="12" :lg="6" :xl="4">
+      <g-result
         icon="error"
         title="Error Tip"
         sub-title="Please follow the instructions"
       >
         <template #extra>
-          <el-button type="primary">Back</el-button>
+          <g-button type="primary">Back</g-button>
         </template>
-      </el-result>
-    </el-col>
-    <el-col :sm="12" :lg="6" :xl="4">
-      <el-result icon="info" title="Info Tip">
+      </g-result>
+    </g-col>
+    <g-col :sm="12" :lg="6" :xl="4">
+      <g-result icon="info" title="Info Tip">
         <template #sub-title>
           <p>Using slot as subtitle</p>
         </template>
         <template #extra>
-          <el-button type="primary">Back</el-button>
+          <g-button type="primary">Back</g-button>
         </template>
-      </el-result>
-    </el-col>
-  </el-row>
+      </g-result>
+    </g-col>
+  </g-row>
 </template>
 
 <script setup lang="ts"></script>

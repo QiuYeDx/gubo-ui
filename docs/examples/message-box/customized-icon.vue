@@ -1,14 +1,14 @@
 <template>
-  <el-button plain @click="open">Click to open Message Box</el-button>
+  <g-button plain @click="open">Click to open Message Box</g-button>
 </template>
 
 <script lang="ts" setup>
 import { markRaw } from 'vue'
-import { ElMessage, ElMessageBox } from 'element-plus'
+import { GMessage, GMessageBox } from 'element-plus'
 import { Delete } from '@element-plus/icons-vue'
 
 const open = () => {
-  ElMessageBox.confirm(
+  GMessageBox.confirm(
     'It will permanently delete the file. Continue?',
     'Warning',
     {
@@ -19,13 +19,13 @@ const open = () => {
     }
   )
     .then(() => {
-      ElMessage({
+      GMessage({
         type: 'success',
         message: 'Delete completed',
       })
     })
     .catch(() => {
-      ElMessage({
+      GMessage({
         type: 'info',
         message: 'Delete canceled',
       })

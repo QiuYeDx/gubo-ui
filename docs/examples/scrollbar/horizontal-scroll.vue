@@ -1,11 +1,11 @@
 <template>
-  <el-scrollbar>
+  <g-scrollbar>
     <div class="scrollbar-flex-content">
       <p v-for="item in 50" :key="item" class="scrollbar-demo-item">
         {{ item }}
       </p>
     </div>
-  </el-scrollbar>
+  </g-scrollbar>
 </template>
 
 <style scoped>
@@ -23,7 +23,7 @@
   margin: 10px;
   text-align: center;
   border-radius: 4px;
-  background: var(--el-color-danger-light-9);
-  color: var(--el-color-danger);
+  background: var(--g-color-danger-light-9);
+  color: var(--g-color-danger);
 }
 </style>

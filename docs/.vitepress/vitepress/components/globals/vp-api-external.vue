@@ -27,7 +27,7 @@ defineProps({
 </template>
 
 <style scoped>
-:deep(.el-icon) {
+:deep(.g-icon) {
   font-size: 18px;
 }
 </style>

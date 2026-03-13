@@ -1,20 +1,20 @@
 <template>
-  <el-radio-group v-model="mode">
-    <el-radio-button label="start" value="start" />
-    <el-radio-button label="alternate" value="alternate" />
-    <el-radio-button label="alternate-reverse" value="alternate-reverse" />
-    <el-radio-button label="end" value="end" />
-  </el-radio-group>
+  <g-radio-group v-model="mode">
+    <g-radio-button label="start" value="start" />
+    <g-radio-button label="alternate" value="alternate" />
+    <g-radio-button label="alternate-reverse" value="alternate-reverse" />
+    <g-radio-button label="end" value="end" />
+  </g-radio-group>
 
-  <el-timeline class="mt-4" :mode="mode">
-    <el-timeline-item
+  <g-timeline class="mt-4" :mode="mode">
+    <g-timeline-item
       v-for="(activity, index) in activities"
       :key="index"
       :timestamp="activity.timestamp"
     >
       {{ activity.content }}
-    </el-timeline-item>
-  </el-timeline>
+    </g-timeline-item>
+  </g-timeline>
 </template>
 
 <script lang="ts" setup>

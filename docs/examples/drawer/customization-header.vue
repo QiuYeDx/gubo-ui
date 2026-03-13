@@ -1,17 +1,17 @@
 <template>
-  <el-button @click="visible = true">
+  <g-button @click="visible = true">
     Open Drawer with customized header
-  </el-button>
-  <el-drawer v-model="visible" :show-close="false">
+  </g-button>
+  <g-drawer v-model="visible" :show-close="false">
     <template #header="{ close, titleId, titleClass }">
       <h4 :id="titleId" :class="titleClass">This is a custom header!</h4>
-      <el-button type="danger" @click="close">
-        <el-icon class="el-icon--left"><CircleCloseFilled /></el-icon>
+      <g-button type="danger" @click="close">
+        <g-icon class="g-icon--left"><CircleCloseFilled /></g-icon>
         Close
-      </el-button>
+      </g-button>
     </template>
     This is drawer content.
-  </el-drawer>
+  </g-drawer>
 </template>
 
 <script lang="ts" setup>

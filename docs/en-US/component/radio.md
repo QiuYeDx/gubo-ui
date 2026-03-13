@@ -22,12 +22,12 @@ If you are using a version **less than** ^(2.6.0), please refer to:
 
 ```vue
 <template>
-  <el-radio-group v-model="radio1">
+  <g-radio-group v-model="radio1">
     <!-- works when >=2.6.0, recommended ✔️ not work when <2.6.0 ❌ -->
-    <el-radio value="Value 1">Option 1</el-radio>
+    <g-radio value="Value 1">Option 1</g-radio>
     <!-- works when <2.6.0, deprecated act as value when >=3.0.0 -->
-    <el-radio label="Label 2 & Value 2">Option 2</el-radio>
-  </el-radio-group>
+    <g-radio label="Label 2 & Value 2">Option 2</g-radio>
+  </g-radio-group>
 </template>
 ```
 
@@ -55,7 +55,7 @@ radio/disabled
 
 Suitable for choosing from some mutually exclusive options.
 
-:::demo Combine `el-radio-group` with `el-radio` to display a radio group. Bind a variable with `v-model` of `el-radio-group` element and set label value in `el-radio`. It also provides `change` event with the current value as its parameter.
+:::demo Combine `g-radio-group` with `g-radio` to display a radio group. Bind a variable with `v-model` of `g-radio-group` element and set label value in `g-radio`. It also provides `change` event with the current value as its parameter.
 
 radio/radio-group
 
@@ -71,7 +71,7 @@ radio/with-borders
 
 ## Options attribute ^(2.11.2)
 
-:::demo Shortcut from basic `el-radio-group` usage. You can customize the alias of the `options` through the `props` attribute.
+:::demo Shortcut from basic `g-radio-group` usage. You can customize the alias of the `options` through the `props` attribute.
 
 radio/options
 
@@ -81,7 +81,7 @@ radio/options
 
 Radio with button group visual effect.
 
-:::demo You just need to change `el-radio` element into `el-radio-button` element. You can also set the style of the button when it is active by using `fill` and `text-color`.
+:::demo You just need to change `g-radio` element into `g-radio-button` element. You can also set the style of the button when it is active by using `fill` and `text-color`.
 
 radio/radio-button
 

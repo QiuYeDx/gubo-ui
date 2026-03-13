@@ -1,4 +1,4 @@
-﻿---
+---
 title: Autocomplete
 lang: en-US
 ---
@@ -122,8 +122,8 @@ autocomplete/custom-header-footer
 | handleKeyEnter   | handle keyboard enter event                 | ^[Function]`() => promise<void>`                    |
 | highlightedIndex | the index of the currently highlighted item | ^[object]`Ref<number>`                              |
 | highlight        | highlight an item in a suggestion           | ^[Function]`(itemIndex: number) => void`            |
-| inputRef         | el-input component instance                 | ^[object]`Ref<ElInputInstance>`                     |
+| inputRef         | g-input component instance                 | ^[object]`Ref<GInputInstance>`                     |
 | loading          | remote search loading indicator             | ^[object]`Ref<boolean>`                             |
-| popperRef        | el-tooltip component instance               | ^[object]`Ref<ElTooltipInstance>`                   |
+| popperRef        | g-tooltip component instance               | ^[object]`Ref<GTooltipInstance>`                   |
 | suggestions      | fetch suggestions result                    | ^[object]`Ref<record<string, any>[]>`               |
 | getData ^(2.8.4) | loading suggestion list                     | ^[Function]`(queryString: string) => promise<void>` |

@@ -2,7 +2,7 @@
   <div class="cascader-custom-header-footer">
     <div>
       <p>Custom header content</p>
-      <el-cascader
+      <g-cascader
         v-model="value"
         popper-class="cascader-custom-header"
         :options="options"
@@ -10,23 +10,23 @@
         clearable
       >
         <template #header>
-          <el-checkbox
+          <g-checkbox
             v-model="checkAll"
             :indeterminate="indeterminate"
             @change="handleCheckAll"
           >
             All
-          </el-checkbox>
+          </g-checkbox>
         </template>
-      </el-cascader>
+      </g-cascader>
     </div>
     <div>
       <p>Custom footer content</p>
-      <el-cascader v-model="value" :options="options" :props="props" clearable>
+      <g-cascader v-model="value" :options="options" :props="props" clearable>
         <template #footer>
-          <el-button link size="small" @click="handleClear"> Clear </el-button>
+          <g-button link size="small" @click="handleClear"> Clear </g-button>
         </template>
-      </el-cascader>
+      </g-cascader>
     </div>
   </div>
 </template>
@@ -111,10 +111,10 @@ const handleClear = () => {
 }
 
 .cascader-custom-header-footer > div:not(:last-child) {
-  border-right: 1px solid var(--el-border-color);
+  border-right: 1px solid var(--g-border-color);
 }
 
-.cascader-custom-header .el-checkbox {
+.cascader-custom-header .g-checkbox {
   display: flex;
   height: unset;
 }

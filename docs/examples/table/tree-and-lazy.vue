@@ -1,18 +1,18 @@
 <template>
   <div>
-    <el-table
+    <g-table
       :data="tableData"
       style="width: 100%; margin-bottom: 20px"
       row-key="id"
       border
       default-expand-all
     >
-      <el-table-column prop="date" label="Date" sortable />
-      <el-table-column prop="name" label="Name" sortable />
-      <el-table-column prop="address" label="Address" sortable />
-    </el-table>
+      <g-table-column prop="date" label="Date" sortable />
+      <g-table-column prop="name" label="Name" sortable />
+      <g-table-column prop="address" label="Address" sortable />
+    </g-table>
 
-    <el-table
+    <g-table
       :data="tableData1"
       style="width: 100%"
       row-key="id"
@@ -21,10 +21,10 @@
       :load="load"
       :tree-props="{ children: 'children', hasChildren: 'hasChildren' }"
     >
-      <el-table-column prop="date" label="Date" />
-      <el-table-column prop="name" label="Name" />
-      <el-table-column prop="address" label="Address" />
-    </el-table>
+      <g-table-column prop="date" label="Date" />
+      <g-table-column prop="name" label="Name" />
+      <g-table-column prop="address" label="Address" />
+    </g-table>
   </div>
 </template>
 

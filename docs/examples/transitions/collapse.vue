@@ -1,14 +1,14 @@
 <template>
   <div>
-    <el-button @click="show = !show">Click Me</el-button>
+    <g-button @click="show = !show">Click Me</g-button>
 
     <div style="margin-top: 20px; height: 210px">
-      <el-collapse-transition>
+      <g-collapse-transition>
         <div v-show="show">
-          <div class="transition-box">el-collapse-transition</div>
-          <div class="transition-box mt-[10px]">el-collapse-transition</div>
+          <div class="transition-box">g-collapse-transition</div>
+          <div class="transition-box mt-[10px]">g-collapse-transition</div>
         </div>
-      </el-collapse-transition>
+      </g-collapse-transition>
     </div>
   </div>
 </template>
@@ -23,8 +23,8 @@ const show = ref(true)
 .transition-box {
   width: 200px;
   height: 100px;
-  border-radius: var(--el-border-radius-base);
-  background-color: var(--el-color-primary);
+  border-radius: var(--g-border-radius-base);
+  background-color: var(--g-color-primary);
   text-align: center;
   color: #fff;
   padding: 40px 20px;

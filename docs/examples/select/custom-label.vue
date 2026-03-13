@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-wrap gap-4 items-center">
-    <el-select
+    <g-select
       v-model="value1"
       placeholder="Select"
       style="width: 240px"
@@ -10,15 +10,15 @@
         <span>{{ label }}: </span>
         <span style="font-weight: bold">{{ value }}</span>
       </template>
-      <el-option
+      <g-option
         v-for="item in options"
         :key="item.value"
         :label="item.label"
         :value="item.value"
       />
-    </el-select>
+    </g-select>
 
-    <el-select
+    <g-select
       v-model="value2"
       placeholder="Select"
       style="width: 240px"
@@ -29,13 +29,13 @@
         <span>{{ label }}: </span>
         <span style="font-weight: bold">{{ value }}</span>
       </template>
-      <el-option
+      <g-option
         v-for="item in options"
         :key="item.value"
         :label="item.label"
         :value="item.value"
       />
-    </el-select>
+    </g-select>
   </div>
 </template>
 

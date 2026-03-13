@@ -1,5 +1,5 @@
 <template>
-  <el-tree-v2
+  <g-tree-v2
     style="max-width: 600px"
     :data="data"
     show-checkbox
@@ -78,7 +78,7 @@ const data: Tree[] = [
 </script>
 
 <style scoped>
-:deep(.is-penultimate .el-tree-node__label) {
+:deep(.is-penultimate .g-tree-node__label) {
   color: #626aef;
   font-weight: 600;
 }

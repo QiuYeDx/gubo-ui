@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-2">
-    <el-tag
+    <g-tag
       v-for="tag in dynamicTags"
       :key="tag"
       closable
@@ -8,8 +8,8 @@
       @close="handleClose(tag)"
     >
       {{ tag }}
-    </el-tag>
-    <el-input
+    </g-tag>
+    <g-input
       v-if="inputVisible"
       ref="InputRef"
       v-model="inputValue"
@@ -18,9 +18,9 @@
       @keyup.enter="handleInputConfirm"
       @blur="handleInputConfirm"
     />
-    <el-button v-else class="button-new-tag" size="small" @click="showInput">
+    <g-button v-else class="button-new-tag" size="small" @click="showInput">
       + New Tag
-    </el-button>
+    </g-button>
   </div>
 </template>
 

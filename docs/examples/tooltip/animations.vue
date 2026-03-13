@@ -1,7 +1,7 @@
 <template>
-  <el-tooltip content="I am an el-tooltip" transition="slide-fade">
-    <el-button>trigger me</el-button>
-  </el-tooltip>
+  <g-tooltip content="I am an g-tooltip" transition="slide-fade">
+    <g-button>trigger me</g-button>
+  </g-tooltip>
 </template>
 
 <script lang="ts" setup></script>

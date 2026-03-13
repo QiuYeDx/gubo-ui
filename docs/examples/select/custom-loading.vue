@@ -2,7 +2,7 @@
   <div class="flex flex-wrap">
     <div class="m-4">
       <p>loading icon1</p>
-      <el-select
+      <g-select
         v-model="value"
         multiple
         filterable
@@ -13,7 +13,7 @@
         :loading="loading"
         style="width: 240px"
       >
-        <el-option
+        <g-option
           v-for="item in options"
           :key="item.value"
           :label="item.label"
@@ -24,11 +24,11 @@
             <circle class="path" cx="25" cy="25" r="20" fill="none" />
           </svg>
         </template>
-      </el-select>
+      </g-select>
     </div>
     <div class="m-4">
       <p>loading icon2</p>
-      <el-select
+      <g-select
         v-model="value"
         multiple
         filterable
@@ -39,14 +39,14 @@
         :loading="loading"
         style="width: 240px"
       >
-        <el-option
+        <g-option
           v-for="item in options"
           :key="item.value"
           :label="item.label"
           :value="item.value"
         />
         <template #loading>
-          <el-icon class="is-loading">
+          <g-icon class="is-loading">
             <svg class="circular" viewBox="0 0 20 20">
               <g
                 class="path2 loading-path"
@@ -59,9 +59,9 @@
                 <circle r="3.375" class="dot3" rx="0" ry="0" />
               </g>
             </svg>
-          </el-icon>
+          </g-icon>
         </template>
-      </el-select>
+      </g-select>
     </div>
   </div>
 </template>
@@ -154,7 +154,7 @@ const states = [
 </script>
 
 <style>
-.el-select-dropdown__loading {
+.g-select-dropdown__loading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,32 +173,32 @@ const states = [
   stroke-dasharray: 90, 150;
   stroke-dashoffset: 0;
   stroke-width: 2;
-  stroke: var(--el-color-primary);
+  stroke: var(--g-color-primary);
   stroke-linecap: round;
 }
 .loading-path .dot1 {
   transform: translate(3.75px, 3.75px);
-  fill: var(--el-color-primary);
+  fill: var(--g-color-primary);
   animation: custom-spin-move 1s infinite linear alternate;
   opacity: 0.3;
 }
 .loading-path .dot2 {
   transform: translate(calc(100% - 3.75px), 3.75px);
-  fill: var(--el-color-primary);
+  fill: var(--g-color-primary);
   animation: custom-spin-move 1s infinite linear alternate;
   opacity: 0.3;
   animation-delay: 0.4s;
 }
 .loading-path .dot3 {
   transform: translate(3.75px, calc(100% - 3.75px));
-  fill: var(--el-color-primary);
+  fill: var(--g-color-primary);
   animation: custom-spin-move 1s infinite linear alternate;
   opacity: 0.3;
   animation-delay: 1.2s;
 }
 .loading-path .dot4 {
   transform: translate(calc(100% - 3.75px), calc(100% - 3.75px));
-  fill: var(--el-color-primary);
+  fill: var(--g-color-primary);
   animation: custom-spin-move 1s infinite linear alternate;
   opacity: 0.3;
   animation-delay: 0.8s;

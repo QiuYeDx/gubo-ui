@@ -1,21 +1,21 @@
 <template>
   <div class="button-example">
     <div class="button-row">
-      <el-button disabled>Default</el-button>
-      <el-button type="primary" disabled>Primary</el-button>
-      <el-button type="success" disabled>Success</el-button>
-      <el-button type="info" disabled>Info</el-button>
-      <el-button type="warning" disabled>Warning</el-button>
-      <el-button type="danger" disabled>Danger</el-button>
+      <g-button disabled>Default</g-button>
+      <g-button type="primary" disabled>Primary</g-button>
+      <g-button type="success" disabled>Success</g-button>
+      <g-button type="info" disabled>Info</g-button>
+      <g-button type="warning" disabled>Warning</g-button>
+      <g-button type="danger" disabled>Danger</g-button>
     </div>
 
     <div class="button-row">
-      <el-button plain disabled>Plain</el-button>
-      <el-button type="primary" plain disabled>Primary</el-button>
-      <el-button type="success" plain disabled>Success</el-button>
-      <el-button type="info" plain disabled>Info</el-button>
-      <el-button type="warning" plain disabled>Warning</el-button>
-      <el-button type="danger" plain disabled>Danger</el-button>
+      <g-button plain disabled>Plain</g-button>
+      <g-button type="primary" plain disabled>Primary</g-button>
+      <g-button type="success" plain disabled>Success</g-button>
+      <g-button type="info" plain disabled>Info</g-button>
+      <g-button type="warning" plain disabled>Warning</g-button>
+      <g-button type="danger" plain disabled>Danger</g-button>
     </div>
   </div>
 </template>

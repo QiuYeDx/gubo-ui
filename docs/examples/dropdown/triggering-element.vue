@@ -1,31 +1,31 @@
 <template>
   <div class="flex flex-wrap items-center">
-    <el-dropdown>
-      <el-button type="primary">
-        Dropdown List<el-icon class="el-icon--right"><arrow-down /></el-icon>
-      </el-button>
+    <g-dropdown>
+      <g-button type="primary">
+        Dropdown List<g-icon class="g-icon--right"><arrow-down /></g-icon>
+      </g-button>
       <template #dropdown>
-        <el-dropdown-menu>
-          <el-dropdown-item>Action 1</el-dropdown-item>
-          <el-dropdown-item>Action 2</el-dropdown-item>
-          <el-dropdown-item>Action 3</el-dropdown-item>
-          <el-dropdown-item>Action 4</el-dropdown-item>
-          <el-dropdown-item>Action 5</el-dropdown-item>
-        </el-dropdown-menu>
+        <g-dropdown-menu>
+          <g-dropdown-item>Action 1</g-dropdown-item>
+          <g-dropdown-item>Action 2</g-dropdown-item>
+          <g-dropdown-item>Action 3</g-dropdown-item>
+          <g-dropdown-item>Action 4</g-dropdown-item>
+          <g-dropdown-item>Action 5</g-dropdown-item>
+        </g-dropdown-menu>
       </template>
-    </el-dropdown>
-    <el-dropdown split-button type="primary" @click="handleClick">
+    </g-dropdown>
+    <g-dropdown split-button type="primary" @click="handleClick">
       Dropdown List
       <template #dropdown>
-        <el-dropdown-menu>
-          <el-dropdown-item>Action 1</el-dropdown-item>
-          <el-dropdown-item>Action 2</el-dropdown-item>
-          <el-dropdown-item>Action 3</el-dropdown-item>
-          <el-dropdown-item divided>Action 4</el-dropdown-item>
-          <el-dropdown-item>Action 5</el-dropdown-item>
-        </el-dropdown-menu>
+        <g-dropdown-menu>
+          <g-dropdown-item>Action 1</g-dropdown-item>
+          <g-dropdown-item>Action 2</g-dropdown-item>
+          <g-dropdown-item>Action 3</g-dropdown-item>
+          <g-dropdown-item divided>Action 4</g-dropdown-item>
+          <g-dropdown-item>Action 5</g-dropdown-item>
+        </g-dropdown-menu>
       </template>
-    </el-dropdown>
+    </g-dropdown>
   </div>
 </template>
 
@@ -39,12 +39,12 @@ const handleClick = () => {
 </script>
 
 <style scoped>
-.example-showcase .el-dropdown + .el-dropdown {
+.example-showcase .g-dropdown + .g-dropdown {
   margin-left: 15px;
 }
-.example-showcase .el-dropdown-link {
+.example-showcase .g-dropdown-link {
   cursor: pointer;
-  color: var(--el-color-primary);
+  color: var(--g-color-primary);
   display: flex;
   align-items: center;
 }

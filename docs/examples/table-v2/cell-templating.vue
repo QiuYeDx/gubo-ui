@@ -1,5 +1,5 @@
 <template>
-  <el-table-v2
+  <g-table-v2
     :columns="columns"
     :data="data"
     :width="700"
@@ -12,10 +12,10 @@
 import { ref } from 'vue'
 import dayjs from 'dayjs'
 import {
-  ElButton,
-  ElIcon,
-  ElTag,
-  ElTooltip,
+  GButton,
+  GIcon,
+  GTag,
+  GTooltip,
   TableV2FixedDir,
 } from 'element-plus'
 import { Timer } from '@element-plus/icons-vue'
@@ -38,16 +38,16 @@ const columns: Column<any>[] = [
     width: 150,
     fixed: TableV2FixedDir.LEFT,
     cellRenderer: ({ cellData: date }) => (
-      <ElTooltip content={dayjs(date).format('YYYY/MM/DD')}>
+      <GTooltip content={dayjs(date).format('YYYY/MM/DD')}>
         {
           <span class="flex items-center">
-            <ElIcon class="mr-3">
+            <GIcon class="mr-3">
               <Timer />
-            </ElIcon>
+            </GIcon>
             {dayjs(date).format('YYYY/MM/DD')}
           </span>
         }
-      </ElTooltip>
+      </GTooltip>
     ),
   },
   {
@@ -56,17 +56,17 @@ const columns: Column<any>[] = [
     dataKey: 'name',
     width: 150,
     align: 'center',
-    cellRenderer: ({ cellData: name }) => <ElTag>{name}</ElTag>,
+    cellRenderer: ({ cellData: name }) => <GTag>{name}</GTag>,
   },
   {
     key: 'operations',
     title: 'Operations',
     cellRenderer: () => (
       <>
-        <ElButton size="small">Edit</ElButton>
-        <ElButton size="small" type="danger">
+        <GButton size="small">Edit</GButton>
+        <GButton size="small" type="danger">
           Delete
-        </ElButton>
+        </GButton>
       </>
     ),
     width: 150,

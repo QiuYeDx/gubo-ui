@@ -3,13 +3,13 @@
     <div class="input-group">
       <span class="label">Using attributes</span>
       <div class="input-container">
-        <el-input
+        <g-input
           v-model="input1"
           class="responsive-input"
           placeholder="Pick a date"
           :suffix-icon="Calendar"
         />
-        <el-input
+        <g-input
           v-model="input2"
           class="responsive-input"
           placeholder="Type something"
@@ -20,24 +20,24 @@
     <div class="input-group">
       <span class="label">Using slots</span>
       <div class="input-container">
-        <el-input
+        <g-input
           v-model="input3"
           class="responsive-input"
           placeholder="Pick a date"
         >
           <template #suffix>
-            <el-icon class="el-input__icon"><calendar /></el-icon>
+            <g-icon class="g-input__icon"><calendar /></g-icon>
           </template>
-        </el-input>
-        <el-input
+        </g-input>
+        <g-input
           v-model="input4"
           class="responsive-input"
           placeholder="Type something"
         >
           <template #prefix>
-            <el-icon class="el-input__icon"><search /></el-icon>
+            <g-icon class="g-input__icon"><search /></g-icon>
           </template>
-        </el-input>
+        </g-input>
       </div>
     </div>
   </div>
@@ -65,7 +65,7 @@ const input4 = ref('')
 .label {
   display: block;
   margin-bottom: 1rem;
-  color: var(--el-text-color-regular);
+  color: var(--g-text-color-regular);
 }
 
 .input-container {

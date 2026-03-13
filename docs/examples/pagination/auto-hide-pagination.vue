@@ -1,8 +1,8 @@
 <template>
   <div>
-    <el-switch v-model="value" />
+    <g-switch v-model="value" />
     <hr class="my-4" />
-    <el-pagination
+    <g-pagination
       :hide-on-single-page="value"
       :total="5"
       layout="prev, pager, next"

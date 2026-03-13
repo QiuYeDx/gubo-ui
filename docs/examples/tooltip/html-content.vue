@@ -1,8 +1,8 @@
 <template>
-  <el-tooltip
+  <g-tooltip
     content="<span>The content can be <strong>HTML</strong></span>"
     raw-content
   >
-    <el-button>hover me</el-button>
-  </el-tooltip>
+    <g-button>hover me</g-button>
+  </g-tooltip>
 </template>

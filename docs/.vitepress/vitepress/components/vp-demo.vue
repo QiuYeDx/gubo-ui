@@ -68,16 +68,16 @@ const copyCode = async () => {
       <slot name="source" />
     </div>
 
-    <ElDivider class="m-0" />
+    <GDivider class="m-0" />
 
     <div class="op-btns">
-      <ElTooltip
+      <GTooltip
         :content="locale['edit-in-editor']"
         :show-arrow="false"
         :trigger="['hover', 'focus']"
         :trigger-keys="[]"
       >
-        <ElIcon :size="16" class="op-btn">
+        <GIcon :size="16" class="op-btn">
           <a
             :href="playgroundUrl"
             :aria-label="locale['edit-in-editor']"
@@ -86,15 +86,15 @@ const copyCode = async () => {
           >
             <i-ri-flask-line />
           </a>
-        </ElIcon>
-      </ElTooltip>
-      <ElTooltip
+        </GIcon>
+      </GTooltip>
+      <GTooltip
         :content="locale['edit-on-github']"
         :show-arrow="false"
         :trigger="['hover', 'focus']"
         :trigger-keys="[]"
       >
-        <ElIcon :size="16" class="op-btn github">
+        <GIcon :size="16" class="op-btn github">
           <a
             :href="demoSourceUrl"
             :aria-label="locale['edit-on-github']"
@@ -103,15 +103,15 @@ const copyCode = async () => {
           >
             <i-ri-github-line />
           </a>
-        </ElIcon>
-      </ElTooltip>
-      <ElTooltip
+        </GIcon>
+      </GTooltip>
+      <GTooltip
         :content="locale['copy-code']"
         :show-arrow="false"
         :trigger="['hover', 'focus']"
         :trigger-keys="[]"
       >
-        <ElIcon
+        <GIcon
           :size="16"
           :aria-label="locale['copy-code']"
           class="op-btn"
@@ -122,9 +122,9 @@ const copyCode = async () => {
           @keydown.prevent.space="copyCode"
         >
           <i-ri-file-copy-line />
-        </ElIcon>
-      </ElTooltip>
-      <ElTooltip
+        </GIcon>
+      </GTooltip>
+      <GTooltip
         :content="locale['view-source']"
         :show-arrow="false"
         :trigger="['hover', 'focus']"
@@ -135,21 +135,21 @@ const copyCode = async () => {
           :aria-label="
             sourceVisible ? locale['hide-source'] : locale['view-source']
           "
-          class="reset-btn el-icon op-btn"
+          class="reset-btn g-icon op-btn"
           @click="toggleSourceVisible()"
         >
-          <ElIcon :size="16">
+          <GIcon :size="16">
             <i-ri-code-line />
-          </ElIcon>
+          </GIcon>
         </button>
-      </ElTooltip>
+      </GTooltip>
     </div>
 
-    <ElCollapseTransition>
+    <GCollapseTransition>
       <SourceCode :visible="sourceVisible" :source="source" />
-    </ElCollapseTransition>
+    </GCollapseTransition>
 
-    <Transition name="el-fade-in-linear">
+    <Transition name="g-fade-in-linear">
       <div
         v-show="sourceVisible"
         class="example-float-control"
@@ -158,9 +158,9 @@ const copyCode = async () => {
         @click="toggleSourceVisible(false)"
         @keydown="onSourceVisibleKeydown"
       >
-        <ElIcon :size="16">
+        <GIcon :size="16">
           <CaretTop />
-        </ElIcon>
+        </GIcon>
         <span>{{ locale['hide-source'] }}</span>
       </div>
     </Transition>
@@ -170,15 +170,15 @@ const copyCode = async () => {
 <style scoped lang="scss">
 .example {
   border: 1px solid var(--border-color);
-  border-radius: var(--el-border-radius-base);
+  border-radius: var(--g-border-radius-base);
 
   .example-showcase {
     padding: 1.5rem;
     margin: 0.5px;
     background-color: var(--bg-color);
-    border-radius: var(--el-border-radius-base);
+    border-radius: var(--g-border-radius-base);
     overflow: auto;
-    &:has(.el-affix) {
+    &:has(.g-affix) {
       overflow: visible;
     }
   }
@@ -190,7 +190,7 @@ const copyCode = async () => {
     justify-content: flex-end;
     height: 2.5rem;
 
-    .el-icon {
+    .g-icon {
       &:hover {
         color: var(--text-color);
       }
@@ -224,7 +224,7 @@ const copyCode = async () => {
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     margin-top: -1px;
-    color: var(--el-text-color-secondary);
+    color: var(--g-text-color-secondary);
     cursor: pointer;
     position: sticky;
     left: 0;
@@ -237,7 +237,7 @@ const copyCode = async () => {
     }
 
     &:hover {
-      color: var(--el-color-primary);
+      color: var(--g-color-primary);
     }
   }
 }

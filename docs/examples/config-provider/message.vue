@@ -1,14 +1,14 @@
 <template>
   <div>
-    <el-config-provider :message="config">
-      <el-button @click="open">OPEN</el-button>
-    </el-config-provider>
+    <g-config-provider :message="config">
+      <g-button @click="open">OPEN</g-button>
+    </g-config-provider>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { reactive } from 'vue'
-import { ElMessage } from 'element-plus'
+import { GMessage } from 'element-plus'
 
 const config = reactive({
   max: 3,
@@ -17,6 +17,6 @@ const config = reactive({
 })
 
 const open = () => {
-  ElMessage('This is a message from bottom.')
+  GMessage('This is a message from bottom.')
 }
 </script>

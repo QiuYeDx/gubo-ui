@@ -15,15 +15,15 @@ const goHome = () => {
 </script>
 
 <template>
-  <el-result icon="error" :title="locale.title" :sub-title="locale.desc">
+  <g-result icon="error" :title="locale.title" :sub-title="locale.desc">
     <template #extra>
-      <el-button @click="goHome">{{ locale['button-title'] }}</el-button>
+      <g-button @click="goHome">{{ locale['button-title'] }}</g-button>
     </template>
-  </el-result>
+  </g-result>
 </template>
 
 <style scoped>
-.el-result {
+.g-result {
   height: 100vh;
   width: 100vw;
 }

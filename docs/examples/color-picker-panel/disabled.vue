@@ -1,5 +1,5 @@
 <template>
-  <el-color-picker-panel
+  <g-color-picker-panel
     v-model="color"
     disabled
     show-alpha

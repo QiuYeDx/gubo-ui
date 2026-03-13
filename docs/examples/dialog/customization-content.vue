@@ -1,43 +1,43 @@
 <template>
   <div class="flex flex-wrap gap-1">
-    <el-button class="!ml-0" plain @click="dialogTableVisible = true">
+    <g-button class="!ml-0" plain @click="dialogTableVisible = true">
       Open a Table nested Dialog
-    </el-button>
+    </g-button>
 
-    <el-button class="!ml-0" plain @click="dialogFormVisible = true">
+    <g-button class="!ml-0" plain @click="dialogFormVisible = true">
       Open a Form nested Dialog
-    </el-button>
+    </g-button>
   </div>
 
-  <el-dialog v-model="dialogTableVisible" title="Shipping address" width="800">
-    <el-table :data="gridData">
-      <el-table-column property="date" label="Date" width="150" />
-      <el-table-column property="name" label="Name" width="200" />
-      <el-table-column property="address" label="Address" />
-    </el-table>
-  </el-dialog>
+  <g-dialog v-model="dialogTableVisible" title="Shipping address" width="800">
+    <g-table :data="gridData">
+      <g-table-column property="date" label="Date" width="150" />
+      <g-table-column property="name" label="Name" width="200" />
+      <g-table-column property="address" label="Address" />
+    </g-table>
+  </g-dialog>
 
-  <el-dialog v-model="dialogFormVisible" title="Shipping address" width="500">
-    <el-form :model="form">
-      <el-form-item label="Promotion name" :label-width="formLabelWidth">
-        <el-input v-model="form.name" autocomplete="off" />
-      </el-form-item>
-      <el-form-item label="Zones" :label-width="formLabelWidth">
-        <el-select v-model="form.region" placeholder="Please select a zone">
-          <el-option label="Zone No.1" value="shanghai" />
-          <el-option label="Zone No.2" value="beijing" />
-        </el-select>
-      </el-form-item>
-    </el-form>
+  <g-dialog v-model="dialogFormVisible" title="Shipping address" width="500">
+    <g-form :model="form">
+      <g-form-item label="Promotion name" :label-width="formLabelWidth">
+        <g-input v-model="form.name" autocomplete="off" />
+      </g-form-item>
+      <g-form-item label="Zones" :label-width="formLabelWidth">
+        <g-select v-model="form.region" placeholder="Please select a zone">
+          <g-option label="Zone No.1" value="shanghai" />
+          <g-option label="Zone No.2" value="beijing" />
+        </g-select>
+      </g-form-item>
+    </g-form>
     <template #footer>
       <div class="dialog-footer">
-        <el-button @click="dialogFormVisible = false">Cancel</el-button>
-        <el-button type="primary" @click="dialogFormVisible = false">
+        <g-button @click="dialogFormVisible = false">Cancel</g-button>
+        <g-button type="primary" @click="dialogFormVisible = false">
           Confirm
-        </el-button>
+        </g-button>
       </div>
     </template>
-  </el-dialog>
+  </g-dialog>
 </template>
 
 <script lang="ts" setup>

@@ -1,17 +1,17 @@
 <template>
   <div class="flex items-center mb-4">
-    <el-radio-group v-model="size" class="mr-4">
-      <el-radio-button value="default">default</el-radio-button>
-      <el-radio-button value="large">large</el-radio-button>
+    <g-radio-group v-model="size" class="mr-4">
+      <g-radio-button value="default">default</g-radio-button>
+      <g-radio-button value="large">large</g-radio-button>
 
-      <el-radio-button value="small">small</el-radio-button>
-    </el-radio-group>
+      <g-radio-button value="small">small</g-radio-button>
+    </g-radio-group>
     <div>
       background:
-      <el-switch v-model="background" class="ml-2" />
+      <g-switch v-model="background" class="ml-2" />
     </div>
     <div class="ml-4">
-      disabled: <el-switch v-model="disabled" class="ml-2" />
+      disabled: <g-switch v-model="disabled" class="ml-2" />
     </div>
   </div>
 
@@ -19,7 +19,7 @@
 
   <div class="demo-pagination-block">
     <div class="demonstration">Total item count</div>
-    <el-pagination
+    <g-pagination
       v-model:current-page="currentPage1"
       :page-size="100"
       :size="size"
@@ -33,7 +33,7 @@
   </div>
   <div class="demo-pagination-block">
     <div class="demonstration">Change page size</div>
-    <el-pagination
+    <g-pagination
       v-model:current-page="currentPage2"
       v-model:page-size="pageSize2"
       :page-sizes="[100, 200, 300, 400]"
@@ -48,7 +48,7 @@
   </div>
   <div class="demo-pagination-block">
     <div class="demonstration">Jump to</div>
-    <el-pagination
+    <g-pagination
       v-model:current-page="currentPage3"
       v-model:page-size="pageSize3"
       :size="size"
@@ -62,7 +62,7 @@
   </div>
   <div class="demo-pagination-block">
     <div class="demonstration">All combined</div>
-    <el-pagination
+    <g-pagination
       v-model:current-page="currentPage4"
       v-model:page-size="pageSize4"
       :page-sizes="[100, 200, 300, 400]"
