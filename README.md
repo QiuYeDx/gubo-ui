@@ -39,9 +39,3 @@ import {
   GTooltip,
 } from '@guwave/ui'
 ```
-
-### 引入 reset 样式
-
-```ts
-import '@guwave/ui/theme-chalk/src/g-reset.css'
-```
