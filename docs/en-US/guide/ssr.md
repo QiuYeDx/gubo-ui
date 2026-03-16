@@ -5,7 +5,7 @@ lang: en-US
 
 # Server-Side Rendering (SSR)
 
-When using Element Plus for SSR development, you need to carry out special handling during SSR to avoid hydrate errors.
+When using GuBo UI for SSR development, you need to carry out special handling during SSR to avoid hydrate errors.
 
 :::tip
 
@@ -15,7 +15,7 @@ For Nuxt users, we provide a [Nuxt module](https://github.com/element-plus/eleme
 
 ## Provide an ID
 
-The provided value is used to generate the unique ID in Element Plus.
+The provided value is used to generate the unique ID in GuBo UI.
 Because the different IDs are prone to hydrate errors in SSR, in order to ensure that the server side and client side generate the same ID, we need to inject the `ID_injection_key` into Vue.
 
 ```ts [main.ts]
@@ -47,7 +47,7 @@ app.provide(ZINDEX_INJECTION_KEY, { current: 0 })
 
 ## Teleports
 
-[Teleport](https://vuejs.org/guide/scaling-up/ssr.html#teleports) is used internally by multiple components in Element Plus (eg. GDialog, GDrawer, GTooltip, GDropdown, GSelect, GDatePicker ...), so special handling is required during SSR.
+[Teleport](https://vuejs.org/guide/scaling-up/ssr.html#teleports) is used internally by multiple components in GuBo UI (eg. GDialog, GDrawer, GTooltip, GDropdown, GSelect, GDatePicker ...), so special handling is required during SSR.
 
 ### Render the Teleport on the mount
 
@@ -93,7 +93,7 @@ You need to inject the teleport markup close to the `<body>` tag.
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Element Plus</title>
+    <title>GuBo UI</title>
     <!--preload-links-->
   </head>
   <body>

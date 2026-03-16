@@ -3,8 +3,8 @@
     <Content />
   </div>
   <g-divider style="margin-bottom: 0" />
-  <div class="text-center py-6 text-xs">
-    <p class="mb-1">
+  <div class="text-center text-xs">
+    <!-- <p class="mb-1">
       Released under the
       <a
         href="https://opensource.org/licenses/MIT"
@@ -19,8 +19,8 @@
         href="https://github.com/element-plus"
         target="_blank"
         rel="noopener noreferer"
-        >Element Plus</a
+        >GuBo UI</a
       >
-    </p>
+    </p> -->
   </div>
 </template>

@@ -28,9 +28,5 @@ const { dynamicClass } = useDynamicClass(
 </script>
 
 <template>
-  <div :class="dynamicClass">
-    <p class="title">{{ sponsor.sponsoredBy }}</p>
-    <VPSponsorLarge />
-    <VPSponsorSmall />
-  </div>
+  <div />
 </template>

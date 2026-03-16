@@ -37,7 +37,7 @@ switch/text-description
 
 :::tip
 
-Use the `active-icon` and `inactive-icon` attribute to add icon. You can pass either string for the component name (registered in advance) or the component itself which is a SVG Vue component. Element Plus has provided a set of icon that you can find at [icon](./icon.md)
+Use the `active-icon` and `inactive-icon` attribute to add icon. You can pass either string for the component name (registered in advance) or the component itself which is a SVG Vue component. GuBo UI has provided a set of icon that you can find at [icon](./icon.md)
 
 :::
 
@@ -121,9 +121,9 @@ switch/custom-action-slot
 | id                            | id for input                                                                                                                                    | ^[string]                                      | —       |
 | tabindex                      | tabindex for input                                                                                                                              | ^[string] / ^[number]                          | —       |
 | aria-label ^(a11y) ^(2.7.2)   | same as `aria-label` in native input                                                                                                            | ^[string]                                      | —       |
-| active-color ^(deprecated)    | background color when in `on` state ( use CSS var `--g-switch-on-color` instead )                                                              | ^[string]                                      | ''      |
-| inactive-color ^(deprecated)  | background color when in `off` state ( use CSS var `--g-switch-off-color` instead )                                                            | ^[string]                                      | ''      |
-| border-color ^(deprecated)    | border color of the switch ( use CSS var `--g-switch-border-color` instead )                                                                   | ^[string]                                      | ''      |
+| active-color ^(deprecated)    | background color when in `on` state ( use CSS var `--g-switch-on-color` instead )                                                               | ^[string]                                      | ''      |
+| inactive-color ^(deprecated)  | background color when in `off` state ( use CSS var `--g-switch-off-color` instead )                                                             | ^[string]                                      | ''      |
+| border-color ^(deprecated)    | border color of the switch ( use CSS var `--g-switch-border-color` instead )                                                                    | ^[string]                                      | ''      |
 | label ^(a11y) ^(deprecated)   | same as `aria-label` in native input                                                                                                            | ^[string]                                      | —       |
 
 ### Events

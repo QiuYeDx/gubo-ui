@@ -81,7 +81,7 @@ layout/responsive-layout
 
 ## Utility classes for hiding elements
 
-Additionally, Element Plus provides a series of classes for hiding elements under
+Additionally, GuBo UI provides a series of classes for hiding elements under
 certain conditions. These classes can be added to any DOM elements or custom components.
 You need to import the following CSS file to use these classes:
 

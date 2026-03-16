@@ -5,7 +5,7 @@ lang: en-US
 
 # Custom theme
 
-Element Plus uses BEM-styled CSS so that you can override styles easily. But if
+GuBo UI uses BEM-styled CSS so that you can override styles easily. But if
 you need to replace styles at a large scale, e.g. change the theme color from
 blue to orange or green, maybe overriding them one by one is not a good idea.
 
@@ -68,7 +68,7 @@ $colors: map.deep-merge(
 
 ### How to override it?
 
-If your project also uses SCSS, you can directly change Element Plus style variables. Create a new style file, e.g. `styles/element/index.scss`:
+If your project also uses SCSS, you can directly change GuBo UI style variables. Create a new style file, e.g. `styles/element/index.scss`:
 
 :::warning
 

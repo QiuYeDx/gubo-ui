@@ -5,7 +5,7 @@ lang: en-US
 
 # Icon
 
-Element Plus provides a set of common icons.
+GuBo UI provides a set of common icons.
 
 ## Icon Usage
 
@@ -55,7 +55,7 @@ You can also refer to [this template](https://codepen.io/sxzz/pen/xxpvdrg).
 
 ### Import in Browser
 
-Import Element Plus Icons through browser HTML tags directly, and use global variable `ElementPlusIconsVue`.
+Import GuBo UI Icons through browser HTML tags directly, and use global variable `ElementPlusIconsVue`.
 
 According to different CDN providers, there are different introduction methods.
 Here we use [unpkg](https://unpkg.com) and [jsDelivr](https://jsdelivr.com) as example.
@@ -75,8 +75,8 @@ You can also use other CDN providers.
 
 :::tip
 
-We recommend using CDN to import Element Plus users to lock the version
-on the link address, so as not to be affected by incompatible updates when Element Plus
+We recommend using CDN to import GuBo UI users to lock the version
+on the link address, so as not to be affected by incompatible updates when GuBo UI
 is upgraded in the future. Please check [unpkg.com](https://unpkg.com) for
 the method to lock the version.
 

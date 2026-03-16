@@ -121,7 +121,7 @@ message-box/draggable
 
 ## Global method
 
-If Element Plus is fully imported, it will add the following global methods for `app.config.globalProperties`: `$msgbox`, `$alert`, `$confirm` and `$prompt`. So in a Vue instance you can call `MessageBox` like what we did in this page. The parameters are:
+If GuBo UI is fully imported, it will add the following global methods for `app.config.globalProperties`: `$msgbox`, `$alert`, `$confirm` and `$prompt`. So in a Vue instance you can call `MessageBox` like what we did in this page. The parameters are:
 
 - `$msgbox(options)`
 - `$alert(message, title, options)` or `$alert(message, options)`

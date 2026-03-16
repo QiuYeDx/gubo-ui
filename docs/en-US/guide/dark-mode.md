@@ -5,7 +5,7 @@ lang: en-US
 
 # Dark Mode ^(2.2.0)
 
-After a long time, Element Plus supports dark mode!
+After a long time, GuBo UI supports dark mode!
 
 We extracted and unified all necessary variables to make it possible to implement based on CSS Vars.
 
@@ -48,7 +48,7 @@ html.dark {
 }
 ```
 
-Import it after styles of Element Plus:
+Import it after styles of GuBo UI:
 
 ```ts [main.ts]
 import 'element-plus/theme-chalk/dark/css-vars.css'

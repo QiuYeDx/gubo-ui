@@ -11,7 +11,7 @@ lang: en-US
 
 # Changelog
 
-Element Plus team uses **weekly** release strategy under normal circumstance, but critical bug fixes would require hotfix so the actual release number **could be** more than 1 per week.
+GuBo UI team uses **weekly** release strategy under normal circumstance, but critical bug fixes would require hotfix so the actual release number **could be** more than 1 per week.
 
 On this page you can only see the latest 30 records of our [Changelog](https://github.com/element-plus/element-plus/blob/dev/CHANGELOG.en-US.md).
 

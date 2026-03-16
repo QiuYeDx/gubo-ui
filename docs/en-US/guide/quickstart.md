@@ -5,7 +5,7 @@ lang: en-US
 
 # Quick Start
 
-This section describes how to use Element Plus in your project.
+This section describes how to use GuBo UI in your project.
 
 ## Usage
 
@@ -140,7 +140,7 @@ Refer to the [docs](https://github.com/element-plus/element-plus-nuxt#readme) fo
 
 ### Manually import
 
-Element Plus provides out of box [Tree Shaking](https://webpack.js.org/guides/tree-shaking/)
+GuBo UI provides out of box [Tree Shaking](https://webpack.js.org/guides/tree-shaking/)
 functionalities based on ES Module.
 
 But you need install [unplugin-element-plus](https://github.com/element-plus/unplugin-element-plus) for style import.
@@ -180,7 +180,7 @@ For Laravel users we have a [Laravel Template](https://github.com/element-plus/e
 
 ## Global Configuration
 
-When registering Element Plus, you can pass a global config object with `size` and
+When registering GuBo UI, you can pass a global config object with `size` and
 `zIndex` to set the default `size` for form components, and `zIndex` for
 popup components, the default value for `zIndex` is `2000`.
 
@@ -224,7 +224,7 @@ export default defineComponent({
 
 ## Using Nuxt.js
 
-We can also use [Nuxt.js](https://nuxt.com). Please refer to [Element Plus Nuxt.js starter template](https://github.com/element-plus/element-plus-nuxt-starter) for more details.
+We can also use [Nuxt.js](https://nuxt.com). Please refer to [GuBo UI Nuxt.js starter template](https://github.com/element-plus/element-plus-nuxt-starter) for more details.
 
 ## Let's Get Started
 

@@ -34,11 +34,12 @@ const currentLink = computed(() => {
     <div class="header-container">
       <div class="logo-container">
         <a :href="withBase(currentLink)">
-          <img
+          <!-- <img
             class="logo"
             src="/images/element-plus-logo.svg"
-            alt="Element Plus Logo"
-          />
+            alt="GuBo UI Logo"
+          /> -->
+          <span class="text-20px font-bold word-spacing-widest">GuBo UI</span>
         </a>
         <g-tag round size="small" title="latest version">{{
           epVersion.replace('0.0.0-staging.', '')
@@ -49,7 +50,7 @@ const currentLink = computed(() => {
         <VPNavbarMenu class="menu" />
         <VPNavbarThemeToggler class="theme-toggler" />
         <VPNavbarTranslation class="translation" />
-        <VPNavbarSocialLinks class="social-links" />
+        <!-- <VPNavbarSocialLinks class="social-links" /> -->
         <VPNavbarHamburger
           :active="fullScreen"
           class="hamburger"
@@ -67,7 +68,7 @@ const currentLink = computed(() => {
   height: var(--header-height);
   > a {
     height: 28px;
-    width: 128px;
+    width: 88px;
   }
   .logo {
     position: relative;

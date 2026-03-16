@@ -3,7 +3,7 @@ import { reactive, watch } from 'vue'
 import { isDark } from '~/composables/dark'
 
 const config = reactive({
-  content: 'Element Plus',
+  content: 'GuBo UI',
   font: {
     fontSize: 16,
     color: 'rgba(0, 0, 0, 0.15)',
@@ -37,7 +37,7 @@ watch(
       :offset="config.offset"
     >
       <div class="watermark-container">
-        <h1>Element Plus</h1>
+        <h1>GuBo UI</h1>
         <h2>A Vue 3 based component library for designers and developers</h2>
         <img src="/images/hamburger.png" alt="示例图片" />
       </div>

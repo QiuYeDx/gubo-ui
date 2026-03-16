@@ -49,7 +49,7 @@ languages.forEach((lang) => {
 
 const setupConfig = (configEnv) => {
   const config: UserConfig<any> = {
-    title: 'Element Plus',
+    title: 'GuBo UI',
     description: 'A Vue 3 based component library for designers and developers',
     lastUpdated: true,
     head,

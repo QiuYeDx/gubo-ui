@@ -11,7 +11,7 @@ Used to show feedback after an activity. The difference with Notification is tha
 
 Displays at the top by default, and disappears after 3 seconds. You can control the position using the `placement` property.
 
-:::demo The setup of Message is very similar to notification, so parts of the options won't be explained in detail here. You can check the options table below combined with notification doc to understand it. Element Plus has registered a `$message` method for invoking. Message can take a string or a VNode as parameter, and it will be shown as the main body.
+:::demo The setup of Message is very similar to notification, so parts of the options won't be explained in detail here. You can check the options table below combined with notification doc to understand it. GuBo UI has registered a `$message` method for invoking. Message can take a string or a VNode as parameter, and it will be shown as the main body.
 
 message/basic
 
@@ -85,7 +85,7 @@ message/placement
 
 ## Global method
 
-Element Plus has added a global method `$message` for `app.config.globalProperties`. So in a vue instance you can call `Message` like what we did in this page.
+GuBo UI has added a global method `$message` for `app.config.globalProperties`. So in a vue instance you can call `Message` like what we did in this page.
 
 ## Local import
 

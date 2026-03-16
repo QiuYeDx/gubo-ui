@@ -33,7 +33,7 @@
               class="demo-rich-content__name"
               style="margin: 0; font-weight: 500"
             >
-              Element Plus
+              GuBo UI
             </p>
             <p
               class="demo-rich-content__mention"
@@ -44,8 +44,8 @@
           </div>
 
           <p class="demo-rich-content__desc" style="margin: 0">
-            Element Plus, a Vue 3 based component library for developers,
-            designers and product managers
+            GuBo UI, a Vue 3 based component library for developers, designers
+            and product managers
           </p>
         </div>
       </template>

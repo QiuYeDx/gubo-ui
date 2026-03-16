@@ -12,7 +12,8 @@ const homeLang = computed(() => homeLocale[lang.value])
 </script>
 
 <template>
-  <footer class="footer" :class="{ 'is-home': isHome }">
+  <div />
+  <!-- <footer class="footer" :class="{ 'is-home': isHome }">
     <div class="footer-main">
       <h4>{{ homeLang['10'] }}</h4>
       <a
@@ -83,7 +84,7 @@ const homeLang = computed(() => homeLocale[lang.value])
         {{ homeLang['18'] }}
       </a>
     </div>
-  </footer>
+  </footer> -->
 </template>
 
 <style lang="scss">

@@ -7,7 +7,7 @@ lang: en-US
 
 ## Documentation
 
-In this chapter, we will discuss how to help translating the documentation of Element Plus.
+In this chapter, we will discuss how to help translating the documentation of GuBo UI.
 
 ### Background
 
@@ -25,7 +25,7 @@ We took [Crowdin](https://crowdin.com) as our first step to make the documentati
 ### How do I translate the documentation?
 
 1. Create an account on [Crowdin](https://crowdin.com), it is recommended that you use your GitHub account to authorize Crowdin.
-2. Go to [Element Plus](https://crowdin.com/project/element-plus) project.
+2. Go to [GuBo UI](https://crowdin.com/project/element-plus) project.
 3. Choose the language you want to contribute to.
 4. Find the file you want to translate.
 5. Do the translation.
