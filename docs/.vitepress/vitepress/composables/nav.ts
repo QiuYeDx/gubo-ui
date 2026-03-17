@@ -4,7 +4,6 @@ import { useLang } from './lang'
 
 export const useNav = () => {
   const { theme } = useData()
-  console.info('>>> theme', theme.value)
   const lang = useLang()
 
   return computed(() => {
