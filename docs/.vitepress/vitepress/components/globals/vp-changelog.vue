@@ -9,11 +9,18 @@ import changelogLocale from '../../../i18n/component/changelog.json'
 interface Release {
   id: number
   name: string
+  author: {
+    login: string
+  }
+  published_at: string
+  html_url: string
+  body?: string
+  body_html?: string
 }
 
 const loading = ref(true)
 const releases = ref<Release[]>([])
-const currentRelease = ref()
+const currentRelease = ref<Release | undefined>()
 const changelog = useLocale(changelogLocale)
 const lang = useLang()
 
@@ -25,7 +32,12 @@ const onVersionChange = (val) => {
 onMounted(async () => {
   try {
     const response = await fetch(
-      'https://api.github.com/repos/element-plus/element-plus/releases'
+      'https://api.github.com/repos/element-plus/element-plus/releases',
+      {
+        headers: {
+          Accept: 'application/vnd.github.full+json',
+        },
+      }
     )
     const data: Release[] = await response.json()
     if (response.ok) {
@@ -88,7 +100,9 @@ onMounted(async () => {
             </div>
           </template>
           <div>
-            <VPMarkdown :content="currentRelease.body" />
+            <VPMarkdown
+              :content="currentRelease.body_html || currentRelease.body || ''"
+            />
           </div>
         </GCard>
       </GSkeleton>

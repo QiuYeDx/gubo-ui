@@ -1,27 +1,29 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
-import MarkdownIt from 'markdown-it'
-
-const md = new MarkdownIt()
 
 const props = defineProps({
   content: { type: String, required: true },
 })
 
-const attr = 'rel="noreferrer noopenner" target="_blank"'
+const htmlTagRE = /<\/?[a-z][\s\S]*>/i
+
+const escapeHtml = (content: string) =>
+  content
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
 
 const parsed = computed(() => {
-  // Note this is relatively arbitrary so that this could be buggy.
-  return md
-    .render(props.content)
-    .replace(
-      /#([0-9]+) by/g,
-      `<a href="https://github.com/element-plus/element-plus/pull/$1" ${attr}>#$1</a> by`
-    )
-    .replace(
-      /@([A-Za-z0-9_-]+)/g,
-      `<a href="https://github.com/$1" ${attr}>@$1</a>`
-    )
+  const content = props.content?.trim() ?? ''
+
+  if (!content) return ''
+
+  if (htmlTagRE.test(content)) return content
+
+  // Fallback for plain text when body_html is unavailable.
+  return escapeHtml(content).replace(/\n/g, '<br />')
 })
 </script>
 
