@@ -94,7 +94,7 @@ export const watermarkProps = buildProps({
    */
   content: {
     type: definePropType<string | string[]>([String, Array]),
-    default: 'Element Plus',
+    default: 'GuBo UI',
   },
   /**
    * @description Text style

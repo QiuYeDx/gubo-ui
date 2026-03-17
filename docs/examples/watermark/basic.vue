@@ -20,7 +20,7 @@ watch(
 </script>
 
 <template>
-  <g-watermark :font="font">
+  <g-watermark :font="font" content="GuBo UI">
     <div style="height: 500px" />
   </g-watermark>
 </template>

@@ -32,7 +32,7 @@ const style: CSSProperties = {
 const props = withDefaults(defineProps<WatermarkProps>(), {
   zIndex: 9,
   rotate: -22,
-  content: 'Element Plus',
+  content: 'GuBo UI',
   gap: () => [100, 100],
 })
 const fontGap = computed(() => props.font?.fontGap ?? 3)

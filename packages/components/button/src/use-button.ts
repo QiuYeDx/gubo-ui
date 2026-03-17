@@ -52,6 +52,14 @@ export const useButton = (
     () => props.dashed ?? globalConfig.value?.dashed ?? false
   )
 
+  const _isIconOnly = computed(() => {
+    return (
+      !props.circle &&
+      !slots.default &&
+      (!!props.icon || !!slots.icon || props.loading)
+    )
+  })
+
   const _props = computed(() => {
     if (props.tag === 'button') {
       return {
@@ -98,6 +106,7 @@ export const useButton = (
     _round,
     _text,
     _dashed,
+    _isIconOnly,
     shouldAddSpace,
     handleClick,
   }

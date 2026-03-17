@@ -68,6 +68,7 @@ const {
   _round,
   _text,
   _dashed,
+  _isIconOnly,
   shouldAddSpace,
   handleClick,
 } = useButton(props, emit)
@@ -80,6 +81,7 @@ const buttonKls = computed(() => [
   ns.is('plain', _plain.value),
   ns.is('round', _round.value),
   ns.is('circle', props.circle),
+  ns.is('icon-only', _isIconOnly.value),
   ns.is('text', _text.value),
   ns.is('dashed', _dashed.value),
   ns.is('link', props.link),

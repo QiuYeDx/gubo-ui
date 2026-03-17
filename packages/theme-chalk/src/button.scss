@@ -172,6 +172,17 @@ $button-icon-span-gap: map.merge(
     padding: map.get($button-padding-vertical, 'default') - $button-border-width;
   }
 
+  @include when(icon-only) {
+    width: map.get($input-height, 'default');
+    padding: map.get($button-padding-vertical, 'default') - $button-border-width;
+  }
+
+  // icon placed in default slot, e.g. <g-button><g-icon>...</g-icon></g-button>
+  // &:not(.is-circle):not(.is-icon-only):has(> span:only-child > [class*='#{$namespace}-icon']:only-child) {
+  //   width: map.get($input-height, 'default');
+  //   padding: map.get($button-padding-vertical, 'default') - $button-border-width;
+  // }
+
   @include when(text) {
     color: getCssVar('button', 'text-color');
     border: 0 solid transparent;
@@ -316,6 +327,16 @@ $button-icon-span-gap: map.merge(
       }
 
       @include when(circle) {
+        width: getCssVar('button', 'size');
+        padding: map.get($button-padding-vertical, $size) - $button-border-width;
+      }
+
+      @include when(icon-only) {
+        width: getCssVar('button', 'size');
+        padding: map.get($button-padding-vertical, $size) - $button-border-width;
+      }
+
+      &:not(.is-circle):not(.is-icon-only):has(> span:only-child > [class*='#{$namespace}-icon']:only-child) {
         width: getCssVar('button', 'size');
         padding: map.get($button-padding-vertical, $size) - $button-border-width;
       }
