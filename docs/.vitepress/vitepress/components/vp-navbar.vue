@@ -41,15 +41,15 @@ const currentLink = computed(() => {
           /> -->
           <span class="text-20px font-bold word-spacing-widest">GuBo UI</span>
         </a>
-        <g-tag round size="small" title="latest version">{{
+        <!-- <g-tag round size="small" title="latest version">{{
           epVersion.replace('0.0.0-staging.', '')
-        }}</g-tag>
+        }}</g-tag> -->
       </div>
       <div class="content">
         <VPNavbarSearch class="search" :options="theme.agolia" multilang />
         <VPNavbarMenu class="menu" />
         <VPNavbarThemeToggler class="theme-toggler" />
-        <VPNavbarTranslation class="translation" />
+        <!-- <VPNavbarTranslation class="translation" /> -->
         <!-- <VPNavbarSocialLinks class="social-links" /> -->
         <VPNavbarHamburger
           :active="fullScreen"
