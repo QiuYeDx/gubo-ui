@@ -52,19 +52,19 @@ registry=https://registry.npmmirror.com/
 **pnpm（推荐）：**
 
 ```bash
-pnpm i @guwave/ui
+pnpm i @guwave/ui@latest
 ```
 
 **npm：**
 
 ```bash
-npm i @guwave/ui
+npm i @guwave/ui@latest
 ```
 
 **yarn：**
 
 ```bash
-yarn add @guwave/ui
+yarn add @guwave/ui@latest
 ```
 
 ### 安装失败排查
