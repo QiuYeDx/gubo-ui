@@ -15,7 +15,7 @@ description: >-
 基于 Element Plus 的企业级 Vue 3 组件库，使用 TypeScript 编写，组件统一采用 **`G` 前缀**（如 `GButton`、`GTable`）。
 
 - **包名**：`@guwave/ui`
-- **Vue 版本要求**：`vue ^3.3.0`
+- **Vue 版本要求**：`vue ^3.5.22`
 - **样式方案**：SCSS（theme-chalk），需单独导入 CSS
 - **组件前缀**：`G`（模板中使用 `<g-button>` 或 `<GButton>`）
 
