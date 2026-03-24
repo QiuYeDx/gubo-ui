@@ -30,6 +30,7 @@
   "devDependencies": {
     "@pnpm/types": "^8.4.0",
     "unbuild": "^3.0.0",
-    "vue-tsc": "^3.2.3"
+    "vue-tsc": "^3.2.3",
+    "jiti": "^2.4.2"
   }
 }
